@@ -14,6 +14,7 @@ namespace GoEdu.Models
 
         public virtual List<Attend>? Attend { get; set; }
         public virtual List<Comment>? Comment { get; set; }
+        public virtual List<Question> Question { get; set; }
 
         [ForeignKey("CourseID")]
         public virtual Course? Course { get; set; }
