@@ -10,7 +10,7 @@ namespace GoEdu.Models
         public string Semester { get; set; }
         public double Price { get; set; }
         public int Hours { get; set; }
-        public int InsID { get; set; }
+        public int InstructorID { get; set; }
 
         public virtual List<Lecture>? Lecture { get; set; }
         public virtual List<Register>? Register { get; set; }
