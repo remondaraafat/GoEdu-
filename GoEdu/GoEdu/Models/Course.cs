@@ -14,7 +14,7 @@ namespace GoEdu.Models
 
         public virtual List<Lecture>? Lecture { get; set; }
         public virtual List<Register>? Register { get; set; }
-        [ForeignKey("InsID")]
+      
         public virtual Instructor? Instructor { get; set; }
 
     }
