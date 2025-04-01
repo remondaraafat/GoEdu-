@@ -15,7 +15,10 @@ namespace GoEdu.Models
         [Range(10, 150)]
         public int MCQCount {  get; set; }
 
-        public virtual List<Answer> Answers { get; set; }
-        public virtual List<StdPerformeExam>? Students { get; set; }
+        public virtual List<Answer>? Answers { get; set; }
+        public virtual List<Question>? Question { get; set; }
+        public virtual List<StudentPerformeExam>? Students { get; set; }
+
+        public virtual List<ExamPerLecture>? ExamPerLectures { get; set; }
     }
 }
