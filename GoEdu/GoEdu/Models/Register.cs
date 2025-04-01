@@ -1,23 +1,25 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace GoEdu.Models
 {
-    public class Register
+    [PrimaryKey(nameof(StudentID), nameof(CourseID), nameof(InstructorID))]
+    public class Register:IsDeleted
     {
-        public int StdID { get; set; }
-        public int CrsID { get; set; }
-        public int InsID {  get; set; }
+        public int StudentID { get; set; }
+        public int CourseID { get; set; }
+        public int InstructorID {  get; set; }
 
         public DateTime Data { get; set; }
         public string? Status { get; set; }
 
-        [ForeignKey("StdID")]
+        [ForeignKey("StudentID")]
         public virtual Student? Student { get; set; }
 
-        [ForeignKey("CrsID")]
+        [ForeignKey("CourseID")]
         public virtual Course? Course { get; set; }
 
-        [ForeignKey("InsID")]
+        [ForeignKey("InstructorID")]
         public virtual Instructor? Instructor { get; set; }
 
 

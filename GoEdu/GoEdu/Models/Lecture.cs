@@ -2,7 +2,7 @@
 
 namespace GoEdu.Models
 {
-    public class Lecture
+    public class Lecture:IsDeleted
     {
         public int ID { get; set; }
         public string Title { get; set; }
@@ -14,7 +14,8 @@ namespace GoEdu.Models
 
         public virtual List<Attend>? Attend { get; set; }
         public virtual List<Comment>? Comment { get; set; }
-
+        public virtual List<Question> Question { get; set; }
+        public virtual List<ExamLecture> ExamLecture { get; set; }
         [ForeignKey("CourseID")]
         public virtual Course? Course { get; set; }
 

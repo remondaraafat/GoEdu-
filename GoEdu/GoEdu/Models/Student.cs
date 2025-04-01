@@ -2,12 +2,13 @@
 
 namespace GoEdu.Models
 {
-    public class Student
+    public class Student:IsDeleted
     {
         public int ID { get; set; }
 
+        [Required(ErrorMessage = "*")]
         [MaxLength(50, ErrorMessage = "Name Must be less than 50 char")]
-        [MinLength(2, ErrorMessage = "Name Must be More than 1 char")]
+        [MinLength(2, ErrorMessage = "Name Must be More than 2 char")]
         public string Name { get; set; }
 
         [RegularExpression(@"\w+\.(com)")]
@@ -29,7 +30,8 @@ namespace GoEdu.Models
         public virtual List<Register>? Register { get; set; }
         public virtual List<Attend>? Attend { get; set; }    
         public virtual List<Comment>? Comment { get; set; }
-
+        public virtual List<Answer>? Answers { get; set; }
+        public virtual List<StudentPerformeExam>? Exams { get; set; }
     }
     public enum Stage
     {

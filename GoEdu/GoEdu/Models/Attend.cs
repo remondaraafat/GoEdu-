@@ -1,17 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace GoEdu.Models
 {
-    public class Attend
+    [PrimaryKey(nameof(StudentID), nameof(LectureID))]
+    public class Attend:IsDeleted
     {
-        public int StdID { get; set; }
-        public int LectID { get; set; }
-        public string? ViewsCount { get; set; }
 
-        [ForeignKey("StdID")]
+        public int StudentID { get; set; }
+        public int LectureID { get; set; }
+        public int ViewsCount { get; set; }
+
+        [ForeignKey("StudentID")]
         public virtual Student? Student { get; set; }
 
-        [ForeignKey("LectID")]
+        [ForeignKey("LectureID")]
         public virtual Lecture? Lecture { get; set; }
 
 
