@@ -29,7 +29,8 @@ namespace GoEdu.Models
         public virtual List<Register>? Register { get; set; }
         public virtual List<Attend>? Attend { get; set; }    
         public virtual List<Comment>? Comment { get; set; }
-
+        public virtual List<Answer> Answers { get; set; }
+        public virtual List<StdPerformeExam>? Exams { get; set; }
     }
     public enum Stage
     {
