@@ -13,16 +13,21 @@ namespace GoEdu.Models
         [MinLength(2, ErrorMessage = "Course Name Must be More than 1 char")]
         public string Name { get; set; }
 
-        public int CrsLevel { get; set; }
-        public Semester Semester { get; set; }
 
         [Range(50, 10000, ErrorMessage = "Invalid Price")]
         public double Price { get; set; }
 
         [Range(1, 1000, ErrorMessage = "Invalid Hours, must be positive")]
         public int Hours { get; set; }
+        public int MaxViews { get; set; }
 
+
+        public int CourseLevel { get; set; }
+        public Semester Semester { get; set; }
+        public Stage StudentStage { get; set; }
+        public Level StudentLevel { get; set; }
         public int InstructorID { get; set; }
+
 
         public virtual List<Lecture>? Lecture { get; set; }
         public virtual List<Register>? Register { get; set; }
@@ -30,11 +35,26 @@ namespace GoEdu.Models
         public virtual Instructor? Instructor { get; set; }
 
     }
+
     public enum Semester
     {
         First,
         Second,
     }
+
+    public enum Stage
+    {
+        Preparatory,
+        Secondary,
+    }
+
+    public enum Level
+    {
+        First,
+        Second,
+        Third
+    }
+
 }
 
 

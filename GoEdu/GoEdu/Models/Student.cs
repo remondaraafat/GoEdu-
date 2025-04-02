@@ -24,8 +24,7 @@ namespace GoEdu.Models
         [RegularExpression(@"^\\+?[0-9][0-9]{7,14}$", ErrorMessage = "Invalid Phone Number")]
         [Compare("StudentPhone")]
         public string ParentPhone { get; set; }
-        public Stage StudentStage { get; set; }
-        public Level StudentLevel { get; set; }
+       
 
         public virtual List<Register>? Register { get; set; }
         public virtual List<Attend>? Attend { get; set; }    
@@ -33,18 +32,6 @@ namespace GoEdu.Models
         public virtual List<Answer>? Answers { get; set; }
         public virtual List<StudentPerformeExam>? Exams { get; set; }
     }
-    public enum Stage
-    {
-        Preparatory,
-        Secondary,
-    }
-
-    public enum Level
-    {
-        First,
-        Second,
-        Third
-    }
-
+   
 
 }

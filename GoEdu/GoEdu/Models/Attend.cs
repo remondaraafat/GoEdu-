@@ -10,6 +10,8 @@ namespace GoEdu.Models
         public int StudentID { get; set; }
         public int LectureID { get; set; }
         public int ViewsCount { get; set; }
+        public bool Status { get; set; }
+
 
         [ForeignKey("StudentID")]
         public virtual Student? Student { get; set; }

@@ -8,14 +8,13 @@ namespace GoEdu.Models
         public string Title { get; set; }
         public string VideoURL { get; set; }
         public DateTime ReleaseDate { get; set; }
-        public int MaxViews { get; set; }
         public string? Description { get; set; }
         public int CourseID { get; set; }
 
         public virtual List<Attend>? Attend { get; set; }
         public virtual List<Comment>? Comment { get; set; }
-        public virtual List<Question> Question { get; set; }
-        public virtual List<ExamLecture> ExamLecture { get; set; }
+        public virtual List<Question>? Question { get; set; }
+        public virtual List<ExamLecture>? ExamLecture { get; set; }
         [ForeignKey("CourseID")]
         public virtual Course? Course { get; set; }
 
