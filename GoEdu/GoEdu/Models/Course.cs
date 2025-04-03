@@ -27,7 +27,7 @@ namespace GoEdu.Models
         public Stage StudentStage { get; set; }
         public Level StudentLevel { get; set; }
         public int InstructorID { get; set; }
-        public bool isDeleted { get; set; }
+        public bool isDeleted { get; set; } = false;
 
         public virtual List<Lecture>? Lecture { get; set; }
         public virtual List<Register>? Register { get; set; }

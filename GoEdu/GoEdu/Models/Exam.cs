@@ -14,7 +14,7 @@ namespace GoEdu.Models
         public int TrueFalseCount { get; set; }
         [Range(10, 150)]
         public int MCQCount {  get; set; }
-        public bool isDeleted { get; set; }
+        public bool isDeleted { get; set; } = false;
 
         public virtual List<Answer>? Answers { get; set; }
         public virtual List<Question>? Question { get; set; }

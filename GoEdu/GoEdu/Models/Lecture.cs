@@ -9,7 +9,7 @@ namespace GoEdu.Models
         public string VideoURL { get; set; }
         public DateTime ReleaseDate { get; set; }
         public string? Description { get; set; }
-        public bool isDeleted { get; set; }
+        public bool isDeleted { get; set; } = false;
         public int CourseID { get; set; }
 
         public virtual List<Attend>? Attend { get; set; }

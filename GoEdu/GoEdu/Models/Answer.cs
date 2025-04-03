@@ -13,7 +13,7 @@ namespace GoEdu.Models
         [ForeignKey("Student")]
         public int StudentId { get; set; }
         public string? StudentAnswer { get; set; }
-        public bool isDeleted { get; set; }
+        public bool isDeleted { get; set; } = false;
 
         [ForeignKey("Question")]
         public int QuestionId { get; set; }

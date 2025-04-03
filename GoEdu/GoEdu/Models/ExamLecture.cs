@@ -8,7 +8,7 @@ namespace GoEdu.Models
     {
         [ForeignKey("Exam")]
         public int ExamId { get; set; }
-        public bool isDeleted { get; set; }
+        public bool isDeleted { get; set; } = false;
         [ForeignKey("Lecture")]
        
         public int LectureId { get; set; }

@@ -9,7 +9,7 @@ namespace GoEdu.Models
         public int StudentID { get; set; }
         public string? Content { get; set; }    
         public DateTime Date { get; set; }
-        public bool isDeleted { get; set; }
+        public bool isDeleted { get; set; } = false;
 
         [ForeignKey("StudentID")]
         public virtual Student? Student { get; set; }

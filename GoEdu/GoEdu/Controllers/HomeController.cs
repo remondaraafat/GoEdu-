@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using GoEdu.Models;
+using GoEdu.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GoEdu.Controllers

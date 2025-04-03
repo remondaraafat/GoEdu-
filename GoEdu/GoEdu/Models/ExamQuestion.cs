@@ -6,9 +6,10 @@ namespace GoEdu.Models
     [PrimaryKey(nameof(ExamId), nameof(QuestionId))]
     public class ExamQuestion: IDeleted
     {
+        public bool isDeleted { get; set; } 
         [ForeignKey("Exam")]
         public int ExamId { get; set; }
-        public bool isDeleted { get; set; }
+        
         [ForeignKey("Question")]
         public int QuestionId { get; set; }
 

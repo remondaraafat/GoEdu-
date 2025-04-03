@@ -10,7 +10,7 @@ namespace GoEdu.Models
         [Range(0,100)]
         public int Grade { get; set; }
         public bool Status {  get; set; }
-        public bool isDeleted { get; set; }
+        public bool isDeleted { get; set; } = false;
 
         [ForeignKey("Student")]
         public int StudentId {  get; set; }
