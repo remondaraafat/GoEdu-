@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GoEdu.Data
 {
-    public class ITIContext : DbContext
+    public class GoEduContext : DbContext
     {
         public DbSet<Student> Students { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
