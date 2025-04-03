@@ -4,11 +4,13 @@ using Microsoft.EntityFrameworkCore;
 namespace GoEdu.Models
 {
     [PrimaryKey(nameof(ExamId), nameof(LectureId))]
-    public class ExamPerLecture:IsDeleted
+    public class ExamPerLecture: IDeleted
     {
         [ForeignKey("Exam")]
         public int ExamId { get; set; }
+        public bool isDeleted { get; set; }
         [ForeignKey("Lecture")]
+
         public int LectureId { get; set; }
 
 

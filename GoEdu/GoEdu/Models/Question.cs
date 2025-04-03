@@ -8,7 +8,7 @@ namespace GoEdu.Models
         TrueFalse,
         MCQ
     }
-    public class Question:IsDeleted
+    public class Question: IDeleted
     {
         [Key]
         public int Id { get; set; }
@@ -18,6 +18,7 @@ namespace GoEdu.Models
         public string Content { get; set; }
 
         public int ModelAnswer {  get; set; }
+        public bool isDeleted { get; set; }
 
         [ForeignKey("Lecture")]
         public int LectureId {  get; set; }

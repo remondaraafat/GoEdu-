@@ -2,7 +2,7 @@
 
 namespace GoEdu.Models
 {
-    public class Student:IsDeleted
+    public class Student: IDeleted
     {
         public int ID { get; set; }
 
@@ -24,7 +24,7 @@ namespace GoEdu.Models
         [RegularExpression(@"^\\+?[0-9][0-9]{7,14}$", ErrorMessage = "Invalid Phone Number")]
         [Compare("StudentPhone")]
         public string ParentPhone { get; set; }
-       
+        public bool isDeleted { get; set; }
 
         public virtual List<Register>? Register { get; set; }
         public virtual List<Attend>? Attend { get; set; }    

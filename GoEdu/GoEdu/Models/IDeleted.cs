@@ -1,6 +1,6 @@
 ﻿namespace GoEdu.Models
 {
-    public class IsDeleted
+    public interface IDeleted
     {
         public bool isDeleted { get; set; }
     }

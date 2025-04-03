@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GoEdu.Models
 {
-    public class Course:IsDeleted
+    public class Course: IDeleted
     {
         public int ID { get; set; }
 
@@ -27,7 +27,7 @@ namespace GoEdu.Models
         public Stage StudentStage { get; set; }
         public Level StudentLevel { get; set; }
         public int InstructorID { get; set; }
-
+        public bool isDeleted { get; set; }
 
         public virtual List<Lecture>? Lecture { get; set; }
         public virtual List<Register>? Register { get; set; }

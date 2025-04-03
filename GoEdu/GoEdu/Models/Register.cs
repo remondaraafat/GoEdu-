@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 namespace GoEdu.Models
 {
     [PrimaryKey(nameof(StudentID), nameof(CourseID), nameof(InstructorID))]
-    public class Register:IsDeleted
+    public class Register: IDeleted
     {
         public int StudentID { get; set; }
         public int CourseID { get; set; }
@@ -12,6 +12,7 @@ namespace GoEdu.Models
 
         public DateTime Data { get; set; }
         public string? Status { get; set; }
+        public bool isDeleted { get; set; }
 
         [ForeignKey("StudentID")]
         public virtual Student? Student { get; set; }

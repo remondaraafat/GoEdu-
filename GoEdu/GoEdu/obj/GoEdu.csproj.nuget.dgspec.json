@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\GoEdu.csproj": {}
+    "R:\\iti_intake_45\\22_MVC\\Project\\GoEdu\\GoEdu\\GoEdu.csproj": {}
   },
   "projects": {
-    "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\GoEdu.csproj": {
+    "R:\\iti_intake_45\\22_MVC\\Project\\GoEdu\\GoEdu\\GoEdu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\GoEdu.csproj",
+        "projectUniqueName": "R:\\iti_intake_45\\22_MVC\\Project\\GoEdu\\GoEdu\\GoEdu.csproj",
         "projectName": "GoEdu",
-        "projectPath": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\GoEdu.csproj",
-        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\obj\\",
+        "projectPath": "R:\\iti_intake_45\\22_MVC\\Project\\GoEdu\\GoEdu\\GoEdu.csproj",
+        "packagesPath": "C:\\Users\\remon\\.nuget\\packages\\",
+        "outputPath": "R:\\iti_intake_45\\22_MVC\\Project\\GoEdu\\GoEdu\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\remon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

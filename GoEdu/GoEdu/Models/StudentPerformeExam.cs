@@ -5,11 +5,12 @@ using Microsoft.EntityFrameworkCore;
 namespace GoEdu.Models
 {
     [PrimaryKey(nameof(StudentId), nameof(ExamId))]
-    public class StudentPerformeExam:IsDeleted
+    public class StudentPerformeExam: IDeleted
     {
         [Range(0,100)]
         public int Grade { get; set; }
         public bool Status {  get; set; }
+        public bool isDeleted { get; set; }
 
         [ForeignKey("Student")]
         public int StudentId {  get; set; }
