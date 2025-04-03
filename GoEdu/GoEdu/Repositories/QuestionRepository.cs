@@ -1,6 +1,6 @@
 ﻿namespace GoEdu.Repositories
 {
-    public class QuestionRepo
+    public class QuestionRepository
     {
     }
 }

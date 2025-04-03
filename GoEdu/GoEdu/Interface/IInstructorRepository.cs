@@ -2,8 +2,7 @@
 
 namespace GoEdu.Repositories
 {
-    public interface IExam:ICRUD<Exam>
+    public interface IInstructorRepository : ICRUD<Instructor>
     {
-
     }
 }

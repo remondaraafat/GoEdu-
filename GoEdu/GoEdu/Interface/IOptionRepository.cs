@@ -2,7 +2,7 @@
 
 namespace GoEdu.Repositories
 {
-    public interface IComment : ICRUD<Comment>
+    public interface IOptionRepository:ICRUD<Option>
     {
     }
 }
