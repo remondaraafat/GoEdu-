@@ -2,7 +2,7 @@
 
 namespace GoEdu.Repositories
 {
-    public interface IInstructor : ICRUD<Instructor>
+    public interface IRegisterRepository : ICRUD<Register>
     {
     }
 }

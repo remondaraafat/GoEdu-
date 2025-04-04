@@ -1,3 +1,6 @@
+using GoEdu.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace GoEdu
 {
     public class Program
@@ -8,6 +11,10 @@ namespace GoEdu
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            // add context
+            builder.Services.AddDbContext<GoEduContext>(option => {
+                option.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
+            });
 
             var app = builder.Build();
 

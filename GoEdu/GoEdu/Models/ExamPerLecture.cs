@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using GoEdu.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace GoEdu.Models

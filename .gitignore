@@ -4,3 +4,8 @@
 "*.suo" 
 "*.user" 
 .vs/
+".vs/" 
+"bin/" 
+"obj/" 
+"*.suo" 
+"*.user" 

@@ -2,7 +2,7 @@
 
 namespace GoEdu.Repositories
 {
-    public interface IExamQuestion:ICRUD<ExamQuestion>
+    public interface IQuestionRepository:ICRUD<Question>
     {
     }
 }

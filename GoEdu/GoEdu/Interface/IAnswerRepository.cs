@@ -2,7 +2,8 @@
 
 namespace GoEdu.Repositories
 {
-    public interface IOption:ICRUD<Option>
+    public interface IAnswerRepository : ICRUD<Answer>
     {
+       
     }
 }
