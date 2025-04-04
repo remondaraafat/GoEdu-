@@ -15,6 +15,10 @@ namespace GoEdu
             builder.Services.AddDbContext<GoEduContext>(option => {
                 option.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
             });
+            //register unit of work 
+            builder.Services.AddScoped<UnitOfWork, UnitOfWork>();
+
+
 
             var app = builder.Build();
 

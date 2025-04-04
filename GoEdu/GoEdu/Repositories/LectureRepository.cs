@@ -11,35 +11,38 @@ namespace GoEdu.Repositories
         {
             this.context = context;
         }
-
+        // all methods need to be tested
         public void Delete(Lecture Entity)
         {
-            throw new NotImplementedException();
+            context.lectures.Remove(Entity);
         }
 
         public List<Lecture> GetAll()
         {
             throw new NotImplementedException();
         }
+        public List<Lecture> GetAllCourseLectures(int CourseID) {
+            return context.lectures.Where(l=>l.CourseID==CourseID).ToList(); 
+        }
 
-        public List<Lecture> GetByID(int id)
+        public Lecture GetByID(int id)
         {
-            throw new NotImplementedException();
+            return context.lectures.FirstOrDefault(d => d.ID == id);
         }
 
         public void Insert(Lecture Entity)
         {
-            throw new NotImplementedException();
+            context.lectures.Add(Entity);
         }
 
         public void SaveData()
         {
-            throw new NotImplementedException();
+            context.SaveChanges();
         }
-
+        
         public void Update(int id, Lecture Entity)
         {
-            throw new NotImplementedException();
+            context.Update(Entity);
         }
     }
 }
