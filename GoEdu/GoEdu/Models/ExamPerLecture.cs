@@ -9,11 +9,9 @@ namespace GoEdu.Models
     {
         [ForeignKey("Exam")]
         public int ExamId { get; set; }
-        public bool isDeleted { get; set; } = false;
         [ForeignKey("Lecture")]
-
         public int LectureId { get; set; }
-
+        public bool isDeleted { get; set; } = false;
 
         public virtual Exam? Exam { get; set; }
         public virtual Lecture? Lecture { get; set; }
