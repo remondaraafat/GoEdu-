@@ -22,7 +22,7 @@ namespace GoEdu.Repositories
             throw new NotImplementedException();
         }
 
-        public List<Attend> GetByID(int id)
+        public Attend GetByID(int id)
         {
             throw new NotImplementedException();
         }

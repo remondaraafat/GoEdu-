@@ -110,7 +110,7 @@ namespace GoEdu.Data
         //    }
         //}
 
-        public ILectureRepository LectureRepo
+        public ILectureRepository LectureRepository
         {
             get
             {

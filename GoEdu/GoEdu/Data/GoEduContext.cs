@@ -5,6 +5,10 @@ namespace GoEdu.Data
 {
     public class GoEduContext : DbContext
     {
+        public GoEduContext(DbContextOptions<GoEduContext> options) : base(options)
+        {
+
+        }
         public DbSet<Student> Students { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Course> Courses { get; set; }
@@ -24,10 +28,10 @@ namespace GoEdu.Data
         public DbSet<ExamQuestion> ExamQuestions { get; set; }
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Education_System;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Education_System;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
+        //}
 
     }
 }
