@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 namespace GoEdu.Models
 {
     [PrimaryKey(nameof(ExamId), nameof(LectureId))]
-    public class ExamPerLecture: IDeleted
+    public class ExamLecture: IDeleted
     {
         [ForeignKey("Exam")]
         public int ExamId { get; set; }
