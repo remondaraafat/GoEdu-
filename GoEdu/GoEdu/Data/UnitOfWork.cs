@@ -50,67 +50,67 @@ namespace GoEdu.Data
             }
         }
 
-        public ICommentRepository CommentRepo
-        {
-            get
-            {
-                if (_CommentRepo == null)
-                    _CommentRepo = new CommentRepository(context);
-                return _CommentRepo;
-            }
-        }
+        //public ICommentRepository CommentRepo
+        //{
+        //    get
+        //    {
+        //        if (_CommentRepo == null)
+        //            _CommentRepo = new CommentRepository(context);
+        //        return _CommentRepo;
+        //    }
+        //}
 
-        public ICourseRepository CourseRepo
-        {
-            get
-            {
-                if (_CourseRepo == null)
-                    _CourseRepo = new CourseRepository(context);
-                return _CourseRepo;
-            }
-        }
+        //public ICourseRepository CourseRepo
+        //{
+        //    get
+        //    {
+        //        if (_CourseRepo == null)
+        //            _CourseRepo = new CourseRepository(context);
+        //        return _CourseRepo;
+        //    }
+        //}
 
-        public IExamPerLectureRepository ExamPerLectureRepo
-        {
-            get
-            {
-                if (_ExamPerLectureRepo == null)
-                    _ExamPerLectureRepo = new ExamPerLectureRepository(context);
-                return _ExamPerLectureRepo;
-            }
-        }
+        //public IExamPerLectureRepository ExamPerLectureRepo
+        //{
+        //    get
+        //    {
+        //        if (_ExamPerLectureRepo == null)
+        //            _ExamPerLectureRepo = new ExamPerLectureRepository(context);
+        //        return _ExamPerLectureRepo;
+        //    }
+        //}
 
-        public IExamQuestionRepository ExamQuestionRepo
-        {
-            get
-            {
-                if (_ExamQuestionRepo == null)
-                    _ExamQuestionRepo = new ExamQuestionRepository(context);
-                return _ExamQuestionRepo;
-            }
-        }
+        //public IExamQuestionRepository ExamQuestionRepo
+        //{
+        //    get
+        //    {
+        //        if (_ExamQuestionRepo == null)
+        //            _ExamQuestionRepo = new ExamQuestionRepository(context);
+        //        return _ExamQuestionRepo;
+        //    }
+        //}
 
-        public IExamRepository ExamRepo
-        {
-            get
-            {
-                if (_ExamRepo == null)
-                    _ExamRepo = new ExamRepository(context);
-                return _ExamRepo;
-            }
-        }
+        //public IExamRepository ExamRepo
+        //{
+        //    get
+        //    {
+        //        if (_ExamRepo == null)
+        //            _ExamRepo = new ExamRepository(context);
+        //        return _ExamRepo;
+        //    }
+        //}
 
-        public IInstructorRepository InstructorRepo
-        {
-            get
-            {
-                if (_InstructorRepo == null)
-                    _InstructorRepo = new InstructorRepository(context);
-                return _InstructorRepo;
-            }
-        }
+        //public IInstructorRepository InstructorRepo
+        //{
+        //    get
+        //    {
+        //        if (_InstructorRepo == null)
+        //            _InstructorRepo = new InstructorRepository(context);
+        //        return _InstructorRepo;
+        //    }
+        //}
 
-        public ILectureRepository LectureRepo
+        public ILectureRepository LectureRepository
         {
             get
             {
@@ -120,55 +120,55 @@ namespace GoEdu.Data
             }
         }
 
-        public IOptionRepository OptionRepo
-        {
-            get
-            {
-                if (_OptionRepo == null)
-                    _OptionRepo = new OptionRepository(context);
-                return _OptionRepo;
-            }
-        }
+        //public IOptionRepository OptionRepo
+        //{
+        //    get
+        //    {
+        //        if (_OptionRepo == null)
+        //            _OptionRepo = new OptionRepository(context);
+        //        return _OptionRepo;
+        //    }
+        //}
 
-        public IQuestionRepository QuestionRepo
-        {
-            get
-            {
-                if (_QuestionRepo == null)
-                    _QuestionRepo = new QuestionRepository(context);
-                return _QuestionRepo;
-            }
-        }
+        //public IQuestionRepository QuestionRepo
+        //{
+        //    get
+        //    {
+        //        if (_QuestionRepo == null)
+        //            _QuestionRepo = new QuestionRepository(context);
+        //        return _QuestionRepo;
+        //    }
+        //}
 
-        public IRegisterRepository RegisterRepo
-        {
-            get
-            {
-                if (_RegisterRepo == null)
-                    _RegisterRepo = new RegisterRepository(context);
-                return _RegisterRepo;
-            }
-        }
+        //public IRegisterRepository RegisterRepo
+        //{
+        //    get
+        //    {
+        //        if (_RegisterRepo == null)
+        //            _RegisterRepo = new RegisterRepository(context);
+        //        return _RegisterRepo;
+        //    }
+        //}
 
-        public IStudentPerformanceExamRepository StudentPerformanceExamRepo
-        {
-            get
-            {
-                if (_StudentPerformanceExamRepo == null)
-                    _StudentPerformanceExamRepo = new StudentPerformanceExamRepository(context);
-                return _StudentPerformanceExamRepo;
-            }
-        }
+        //public IStudentPerformanceExamRepository StudentPerformanceExamRepo
+        //{
+        //    get
+        //    {
+        //        if (_StudentPerformanceExamRepo == null)
+        //            _StudentPerformanceExamRepo = new StudentPerformanceExamRepository(context);
+        //        return _StudentPerformanceExamRepo;
+        //    }
+        //}
 
-        public IStudentRepository StudentRepo
-        {
-            get
-            {
-                if (_StudentRepo == null)
-                    _StudentRepo = new RegisterRepository(context);
-                return _StudentRepo;
-            }
-        }
+        //public IStudentRepository StudentRepo
+        //{
+        //    get
+        //    {
+        //        if (_StudentRepo == null)
+        //            _StudentRepo = new RegisterRepository(context);
+        //        return _StudentRepo;
+        //    }
+        //}
 
         
     }
