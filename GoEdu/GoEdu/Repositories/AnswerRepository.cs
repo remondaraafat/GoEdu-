@@ -38,7 +38,7 @@ namespace GoEdu.Repositories
         }
 
         public void Update(int id, Answer Entity)
-        {
+    {
             throw new NotImplementedException();
         }
     }

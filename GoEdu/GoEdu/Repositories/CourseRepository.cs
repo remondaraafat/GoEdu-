@@ -1,6 +1,8 @@
 ﻿namespace GoEdu.Repositories
 {
-    public class CourseRepository
+<<<<<<<< HEAD:GoEdu/GoEdu/Repositories/CommentRepository.cs
+    public class CommentRepository
+========
     {
     }
 }
