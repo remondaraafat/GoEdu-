@@ -1,7 +1,9 @@
+# User-specific files
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -10,9 +12,9 @@
 x64/
 x86/
 bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
+bin/
+obj/
+log/
 
 # Visual Studio cache/options directory
 .vs/
@@ -24,7 +26,7 @@ bld/
 
 # NuGet Packages
 *.nupkg
-packages/*
+packages/
 
 # ASP.NET Core
 project.lock.json
@@ -36,17 +38,6 @@ appsettings.*.json
 ._*
 .DS_Store
 
+# JetBrains Rider / Resharper
 *_Resharper*
 *.Resharper
-
-".vs/" 
-"bin/" 
-"obj/" 
-"*.suo" 
-"*.user" 
-.vs/
-".vs/" 
-"bin/" 
-"obj/" 
-"*.suo" 
-"*.user" 
