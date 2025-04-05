@@ -10,6 +10,13 @@ namespace GoEdu.ViewModel
         public int CourseId { get; set; }
         public int statusValue { get; set; }
 
+        //public int InstructorId { get; set; }
+
+        public StudentsCoursesVM()
+        {
+            status = new();
+        }
+
     }
 
 

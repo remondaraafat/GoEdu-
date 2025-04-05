@@ -60,15 +60,15 @@ namespace GoEdu.Data
         //    }
         //}
 
-        //public ICourseRepository CourseRepo
-        //{
-        //    get
-        //    {
-        //        if (_CourseRepo == null)
-        //            _CourseRepo = new CourseRepository(context);
-        //        return _CourseRepo;
-        //    }
-        //}
+        public ICourseRepository CourseRepo
+        {
+            get
+            {
+                if (_CourseRepo == null)
+                    _CourseRepo = new CourseRepository(context);
+                return _CourseRepo;
+            }
+        }
 
         //public IExamPerLectureRepository ExamPerLectureRepo
         //{

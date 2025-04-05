@@ -14,7 +14,7 @@ namespace GoEdu.Models
         public int ID { get; set; }
 
         [Required(ErrorMessage = "Title is required")]
-        [StringLength(200, MinimumLength = 5, ErrorMessage = "Title must be between 5-200 characters")]
+        [StringLength(200, MinimumLength = 4, ErrorMessage = "Title must be between 4-200 characters")]
         [Display(Name = "Lecture Title")]
         public string Title { get; set; }
 
@@ -41,7 +41,8 @@ namespace GoEdu.Models
         [Required(ErrorMessage = "Course ID is required")]
         [Display(Name = "Course ID")]
         public int CourseID { get; set; }
-
+        //not fk => to know the exam of the lecture 
+        public int ExamID { get; set; }
         // Navigation properties
         [Display(Name = "Attendance Records")]
         public virtual List<Attend>? Attend { get; set; }

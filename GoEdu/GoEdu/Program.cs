@@ -1,4 +1,5 @@
 using GoEdu.Data;
+using GoEdu.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace GoEdu
@@ -17,7 +18,7 @@ namespace GoEdu
             });
             //register unit of work 
             builder.Services.AddScoped<UnitOfWork, UnitOfWork>();
-
+            builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 
 
             var app = builder.Build();

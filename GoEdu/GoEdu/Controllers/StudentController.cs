@@ -1,4 +1,5 @@
 ﻿using GoEdu.Data;
+using GoEdu.Models;
 using GoEdu.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,11 +8,11 @@ namespace GoEdu.Controllers
     public class StudentController : Controller
     {
         private readonly UnitOfWork context;
-
         public StudentController(UnitOfWork context)
         {
             this.context = context;
         }
+
         public IActionResult AllStudentsByInstructor(int instructorId)
         {
             StudentsCoursesVM StdVM = new();
@@ -19,32 +20,37 @@ namespace GoEdu.Controllers
             //all Students by instructor
             StdVM.Students = context.StudentRepo.GetStudentsByInstructor(instructorId);
 
-            // Enum of student status filter
-            StdVM.status = new();
-            // Alert: add courses by instructor here
-            //StdVM.Courses = 
+            // get courses by instructor
+            StdVM.Courses = context.CourseRepo.CoursesByInstructor(instructorId);            
 
             return View(StdVM);
         }
 
         [HttpPost]
-        public IActionResult FilterStudentsByCourse(StudentsCoursesVM StudentsfromView)
+        public IActionResult FilterStudentsByCourse(int id, StudentsCoursesVM StudentsfromView)
         {
             if (StudentsfromView.CourseId != 0)
             {
                 // get students with a specific course
-
+                StudentsfromView.Students = context.StudentRepo.
+                                            GetStudentsByCourse(StudentsfromView.CourseId);
             }
-            //all Students by instructor
-            StdVM.Students = context.StudentRepo.GetStudentsByInstructor(instructorId);
-
-            // Enum of student status filter
-            StdVM.status = new();
-
-            // Alert: add courses by instructor here
-            //StdVM.Courses = 
-
-            return View(StdVM);
+            // filter by status 
+            //if(StudentsfromView.statusValue != 0)
+            //{
+            //    foreach (var std in StudentsfromView.Students)
+            //    {
+            //        if(StudentsfromView.statusValue == StudentsfromView.status[])
+            //    }
+            //}
+            
+            return View("AllStudentsByInstructor", StudentsfromView);
         }
+
+        public IActionResult Details(int id)
+        {
+            Student std = context.StudentRepo.GetByID(id);
+            return View(std);
+        }       
     }
 }

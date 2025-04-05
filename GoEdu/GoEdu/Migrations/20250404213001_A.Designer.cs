@@ -4,6 +4,7 @@ using GoEdu.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GoEdu.Migrations
 {
     [DbContext(typeof(GoEduContext))]
-    partial class GoEduContextModelSnapshot : ModelSnapshot
+    [Migration("20250404213001_A")]
+    partial class A
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -123,6 +126,9 @@ namespace GoEdu.Migrations
                     b.Property<int>("CourseLevel")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("Hours")
                         .HasColumnType("int");
 
@@ -142,6 +148,9 @@ namespace GoEdu.Migrations
 
                     b.Property<int>("Semester")
                         .HasColumnType("int");
+
+                    b.Property<string>("Specialization")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("StudentLevel")
                         .HasColumnType("int");
@@ -273,9 +282,6 @@ namespace GoEdu.Migrations
                     b.Property<string>("Description")
                         .HasMaxLength(2000)
                         .HasColumnType("nvarchar(2000)");
-
-                    b.Property<int>("ExamID")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("LectureTime")
                         .HasColumnType("datetime2");

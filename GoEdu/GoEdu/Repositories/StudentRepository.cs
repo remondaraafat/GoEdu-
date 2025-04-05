@@ -30,6 +30,12 @@ namespace GoEdu.Repositories
             //    Register = s.Register.Where(r => r.InstructorID == instructorId).ToList(),
             //}).ToList();
         }
+        public List<Student> GetStudentsByCourse(int CoureId)
+        {
+            List<Student> std = ctx.Registers.Where(r => r.CourseID == CoureId).Select(r => r.Student).ToList();
+
+            return std;
+        }
 
         public List<Student> GetAll()
         {
