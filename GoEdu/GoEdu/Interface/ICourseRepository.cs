@@ -10,5 +10,6 @@ namespace GoEdu.Repositories
         //, string? specialization, string? sortBy
 
         public List<Course> search(string searchQuery);
+        public CourseDetailsViewModel GetCourseWithLectures(int courseId);
     }
 }
