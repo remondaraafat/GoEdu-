@@ -1,0 +1,68 @@
+﻿ @model List<Course>
+
+<h2>جميع الكورسات</h2>
+<form method="get" class="mb-4 d-flex gap-3 align-items-end">
+    <div>
+        <label class="form-label">نوع الفلترة</label>
+        <select name="filterBy" class="form-select" id="filterBy">
+            <option value="instructorName">اسم المعلم</option>
+            <option value="courseName">اسم الكورس</option>
+        </select>
+    </div>
+
+    <div>
+        <label class="form-label">الكلمة المفتاحية</label>
+        <input type="text" name="searchQuery" class="form-control" placeholder="اكتب هنا..." value="@Context.Request.Query["searchQuery"]" />
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">فلتر</button>
+    </div>
+</form>
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>اسم الكورس</th>
+
+            <th>السعر</th>
+            <th>عدد الساعات</th>
+            <th>المستوى</th>
+            <th>الفصل الدراسي</th>
+            <th>المرحلة الدراسية</th>
+            <th>المدرب</th>
+            <th>الإجراءات</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model)
+        {
+            <tr>
+                <td>@course.Name</td>
+
+                <td>@course.Price</td>
+                <td>@course.Hours</td>
+                <td>@course.CourseLevel</td>
+                <td>@course.Semester</td>
+                <td>@course.StudentStage</td>
+                <td>
+                    @course.Instructor.Name
+                <td>
+
+                    <a href="/Course/Details">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    
+    var filterBy = '@Context.Request.Query["filterBy"]';
+    if (filterBy) {
+        document.getElementById('filterBy').value = filterBy;
+    }
+</script>
