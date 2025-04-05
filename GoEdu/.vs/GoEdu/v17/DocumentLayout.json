@@ -1,55 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\",
+  "WorkspaceRootPath": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\",
   "Documents": [
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\interface\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\interface\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\views\\course\\coursedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\course\\coursedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-=======
-=======
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\viewmodel\\vmlecturedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\vmlecturedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\viewmodel\\vmlecturewithinstructorcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\vmlecturewithinstructorcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\viewmodel\\vmcourselist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\vmcourselist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\viewmodel\\studentscoursesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\studentscoursesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
->>>>>>> origin/main
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> origin/main
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\views\\lecture\\lecturedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\lecture\\lecturedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\views\\lecture\\editlecture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\lecture\\editlecture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\viewmodel\\lecturedetailsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\lecturedetailsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\views\\lecture\\lecturedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\lecture\\lecturedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -68,16 +43,8 @@
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\course\\getallwithins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\interface\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\interface\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\viewmodel\\coursedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\coursedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\viewmodel\\lecturewithinstructorcoursesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\lecturewithinstructorcoursesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -136,25 +103,12 @@
     {
       "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\views\\student\\allstudentsbyinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\student\\allstudentsbyinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\models\\examquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\examquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> origin/main
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\models\\examlecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\examlecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -209,10 +163,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|e:\\projectmvc-third\\goedu-\\goedu\\goedu\\migrations\\20250404213001_a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\migrations\\20250404213001_a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> origin/main
     }
   ],
   "DocumentGroupContainers": [
@@ -222,107 +172,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 7,
-=======
-          "SelectedChildIndex": 0,
->>>>>>> origin/main
+          "SelectedChildIndex": 33,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "EditLecture.cshtml",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Views\\Lecture\\EditLecture.cshtml",
               "RelativeDocumentMoniker": "GoEdu\\Views\\Lecture\\EditLecture.cshtml",
               "ToolTip": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Views\\Lecture\\EditLecture.cshtml",
               "RelativeToolTip": "GoEdu\\Views\\Lecture\\EditLecture.cshtml",
-              "ViewState": "AgIAADIAAABA/f////8gwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-05T17:47:35.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CourseDetails.cshtml",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Views\\Course\\CourseDetails.cshtml",
               "RelativeDocumentMoniker": "GoEdu\\Views\\Course\\CourseDetails.cshtml",
               "ToolTip": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Views\\Course\\CourseDetails.cshtml",
               "RelativeToolTip": "GoEdu\\Views\\Course\\CourseDetails.cshtml",
-              "ViewState": "AgIAAEQAAACAMjMzMzMrwAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-05T16:43:04.511Z",
-=======
-              "DocumentIndex": 0,
-              "Title": "VMLectureDetails.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\VMLectureDetails.cs",
-              "RelativeDocumentMoniker": "GoEdu\\ViewModel\\VMLectureDetails.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\VMLectureDetails.cs",
-              "RelativeToolTip": "GoEdu\\ViewModel\\VMLectureDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T18:09:41.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VMLectureWithInstructorCourses.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\VMLectureWithInstructorCourses.cs",
-              "RelativeDocumentMoniker": "GoEdu\\ViewModel\\VMLectureWithInstructorCourses.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\VMLectureWithInstructorCourses.cs",
-              "RelativeToolTip": "GoEdu\\ViewModel\\VMLectureWithInstructorCourses.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T18:09:03.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VMCourseList.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\VMCourseList.cs",
-              "RelativeDocumentMoniker": "GoEdu\\ViewModel\\VMCourseList.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\VMCourseList.cs",
-              "RelativeToolTip": "GoEdu\\ViewModel\\VMCourseList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T18:08:21.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Controllers\\CourseController.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "GoEdu\\Controllers\\CourseController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T17:51:57.672Z",
->>>>>>> origin/main
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 5,
-<<<<<<< HEAD
-              "Title": "LectureDetailsVM.cs",
-              "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\LectureDetailsVM.cs",
-              "RelativeDocumentMoniker": "GoEdu\\ViewModel\\LectureDetailsVM.cs",
-              "ToolTip": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\LectureDetailsVM.cs",
-              "RelativeToolTip": "GoEdu\\ViewModel\\LectureDetailsVM.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAA6wCkAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T15:37:00.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "CourseDetailsViewModel.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\CourseDetailsViewModel.cs",
               "RelativeDocumentMoniker": "GoEdu\\ViewModel\\CourseDetailsViewModel.cs",
@@ -334,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -344,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
@@ -354,28 +258,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "GoEduContextModelSnapshot.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Migrations\\GoEduContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "GoEdu\\Migrations\\GoEduContextModelSnapshot.cs",
               "ToolTip": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Migrations\\GoEduContextModelSnapshot.cs",
               "RelativeToolTip": "GoEdu\\Migrations\\GoEduContextModelSnapshot.cs",
               "ViewState": "AgIAANUAAAAAYpmZmRkUwAAAAAAAAAAAAAAAAA==",
-=======
-              "Title": "Student.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Models\\Student.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Models\\Student.cs",
-              "RelativeToolTip": "GoEdu\\Models\\Student.cs",
-              "ViewState": "AgIAABYAAACg/f////8nwAAAAAAAAAAAAAAAAA==",
->>>>>>> origin/main
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T17:51:41.008Z"
+              "WhenOpened": "2025-04-04T22:11:06.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-<<<<<<< HEAD
+              "DocumentIndex": 5,
               "Title": "Comment.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Models\\Comment.cs",
               "RelativeDocumentMoniker": "GoEdu\\Models\\Comment.cs",
@@ -383,8 +278,7 @@
               "RelativeToolTip": "GoEdu\\Models\\Comment.cs",
               "ViewState": "AgIAAAUAAACA//////8wwAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T22:10:42.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T22:10:42.743Z"
             },
             {
               "$type": "Document",
@@ -400,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "IStudentPerformanceExamRepository.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Interface\\IStudentPerformanceExamRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Interface\\IStudentPerformanceExamRepository.cs",
@@ -412,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "IExamQuestionRepository.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Interface\\IExamQuestionRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Interface\\IExamQuestionRepository.cs",
@@ -424,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "IExamPerLectureRepository.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Interface\\IExamPerLectureRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Interface\\IExamPerLectureRepository.cs",
@@ -436,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "StudentPerformeExam.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Models\\StudentPerformeExam.cs",
               "RelativeDocumentMoniker": "GoEdu\\Models\\StudentPerformeExam.cs",
@@ -448,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 26,
               "Title": "ExamQuestion.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Models\\ExamQuestion.cs",
               "RelativeDocumentMoniker": "GoEdu\\Models\\ExamQuestion.cs",
@@ -460,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 27,
               "Title": "ExamLecture.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Models\\ExamLecture.cs",
               "RelativeDocumentMoniker": "GoEdu\\Models\\ExamLecture.cs",
@@ -472,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 25,
               "Title": "Answer.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Models\\Answer.cs",
               "RelativeDocumentMoniker": "GoEdu\\Models\\Answer.cs",
@@ -484,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "IExamRepository.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Interface\\IExamRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Interface\\IExamRepository.cs",
@@ -496,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 40,
               "Title": "20250404213001_A.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Migrations\\20250404213001_A.cs",
               "RelativeDocumentMoniker": "GoEdu\\Migrations\\20250404213001_A.cs",
@@ -508,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 30,
               "Title": "filtered.cshtml",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Views\\Course\\filtered.cshtml",
               "RelativeDocumentMoniker": "GoEdu\\Views\\Course\\filtered.cshtml",
@@ -520,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "Exam.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Models\\Exam.cs",
               "RelativeDocumentMoniker": "GoEdu\\Models\\Exam.cs",
@@ -532,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 29,
               "Title": "20250404210933_tenaa.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Migrations\\20250404210933_tenaa.cs",
               "RelativeDocumentMoniker": "GoEdu\\Migrations\\20250404210933_tenaa.cs",
@@ -544,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 31,
               "Title": "20250404210413_tena.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Migrations\\20250404210413_tena.cs",
               "RelativeDocumentMoniker": "GoEdu\\Migrations\\20250404210413_tena.cs",
@@ -568,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 37,
               "Title": "Details.cshtml",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Views\\Course\\Details.cshtml",
               "RelativeDocumentMoniker": "GoEdu\\Views\\Course\\Details.cshtml",
@@ -588,12 +482,11 @@
               "RelativeToolTip": "GoEdu\\Views\\Course\\Index.cshtml",
               "ViewState": "AgIAADMAAABAMTMzMzMrwAoAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T20:02:57.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T20:02:57.706Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "CourseViewModel.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\CourseViewModel.cs",
               "RelativeDocumentMoniker": "GoEdu\\ViewModel\\CourseViewModel.cs",
@@ -605,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CourseRepository.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\CourseRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Repositories\\CourseRepository.cs",
@@ -613,12 +506,11 @@
               "RelativeToolTip": "GoEdu\\Repositories\\CourseRepository.cs",
               "ViewState": "AgIAAHsAAAA4MzMzMzMhwIEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:00:13.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T20:00:13.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "Course.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Models\\Course.cs",
               "RelativeDocumentMoniker": "GoEdu\\Models\\Course.cs",
@@ -630,15 +522,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "ICourseRepository.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Interface\\ICourseRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Interface\\ICourseRepository.cs",
               "ToolTip": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Interface\\ICourseRepository.cs",
               "RelativeToolTip": "GoEdu\\Interface\\ICourseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAABoZmZmZuY5wBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T19:59:38.541Z"
+              "WhenOpened": "2025-04-04T19:59:38.541Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -649,48 +542,12 @@
               "ToolTip": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\CourseController.cs",
               "RelativeToolTip": "GoEdu\\Controllers\\CourseController.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAgwD0AAAAKAAAAAAAAAA==",
-=======
-=======
-              "DocumentIndex": 7,
->>>>>>> origin/main
-              "Title": "Course.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Models\\Course.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Models\\Course.cs",
-              "RelativeToolTip": "GoEdu\\Models\\Course.cs",
-              "ViewState": "AgIAAAAAAADoMDMzMzMLwBQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T17:51:41.069Z"
+              "WhenOpened": "2025-04-04T19:58:32.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AllStudentsByInstructor.cshtml",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Views\\Student\\AllStudentsByInstructor.cshtml",
-              "RelativeDocumentMoniker": "GoEdu\\Views\\Student\\AllStudentsByInstructor.cshtml",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Views\\Student\\AllStudentsByInstructor.cshtml",
-              "RelativeToolTip": "GoEdu\\Views\\Student\\AllStudentsByInstructor.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-05T17:51:41.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Controllers\\StudentController.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "GoEdu\\Controllers\\StudentController.cs",
-              "ViewState": "AgIAABcAAACAyszMzMwEwCMAAAAAAAAAAAAAAA==",
->>>>>>> origin/main
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T17:51:41.075Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LectureDetails.cshtml",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
               "RelativeDocumentMoniker": "GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
@@ -698,78 +555,35 @@
               "RelativeToolTip": "GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
               "ViewState": "AgIAADcAAABAMjMzM5MwwAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T16:46:06.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T16:46:06.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 32,
               "Title": "20250404162203_init.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Migrations\\20250404162203_init.cs",
               "RelativeDocumentMoniker": "GoEdu\\Migrations\\20250404162203_init.cs",
               "ToolTip": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Migrations\\20250404162203_init.cs",
               "RelativeToolTip": "GoEdu\\Migrations\\20250404162203_init.cs",
               "ViewState": "AgIAANcBAAAA2P/////5v3ABAAA8AAAAAAAAAA==",
-=======
-              "DocumentIndex": 3,
-              "Title": "StudentsCoursesVM.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\StudentsCoursesVM.cs",
-              "RelativeDocumentMoniker": "GoEdu\\ViewModel\\StudentsCoursesVM.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\StudentsCoursesVM.cs",
-              "RelativeToolTip": "GoEdu\\ViewModel\\StudentsCoursesVM.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAAAQAAAD4MzMzMzMrwA0AAAAAAAAAAAAAAA==",
->>>>>>> origin/main
-=======
-              "ViewState": "AgIAAAQAAAD8mZmZmZk8wA0AAAAAAAAAAAAAAA==",
->>>>>>> origin/main
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T17:51:41.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T16:22:03.71Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 30,
+              "DocumentIndex": 28,
               "Title": "GoEduContext.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Data\\GoEduContext.cs",
               "RelativeDocumentMoniker": "GoEdu\\Data\\GoEduContext.cs",
               "ToolTip": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Data\\GoEduContext.cs",
               "RelativeToolTip": "GoEdu\\Data\\GoEduContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
-=======
-              "DocumentIndex": 6,
-=======
-              "DocumentIndex": 8,
-              "Title": "Student.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Models\\Student.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Models\\Student.cs",
-              "RelativeToolTip": "GoEdu\\Models\\Student.cs",
-              "ViewState": "AgIAABYAAACg/f////8nwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T17:51:41.008Z"
+              "WhenOpened": "2025-04-04T16:14:25.507Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
->>>>>>> origin/main
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Repositories\\StudentRepository.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\StudentRepository.cs",
-              "RelativeToolTip": "GoEdu\\Repositories\\StudentRepository.cs",
-              "ViewState": "AgIAAAgAAAAcZmZmZmYowBQAAAAAAAAAAAAAAA==",
->>>>>>> origin/main
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T17:51:41.083Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\appsettings.json",
               "RelativeDocumentMoniker": "GoEdu\\appsettings.json",
@@ -781,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 38,
               "Title": "LectureController.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\LectureController.cs",
               "RelativeDocumentMoniker": "GoEdu\\Controllers\\LectureController.cs",
@@ -793,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "AnswerRepository.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\AnswerRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Repositories\\AnswerRepository.cs",
@@ -805,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 33,
               "Title": "AttendRepository.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\AttendRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Repositories\\AttendRepository.cs",
@@ -817,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Data\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "GoEdu\\Data\\UnitOfWork.cs",
@@ -829,19 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LectureWithInstructorCoursesVM.cs",
-              "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\LectureWithInstructorCoursesVM.cs",
-              "RelativeDocumentMoniker": "GoEdu\\ViewModel\\LectureWithInstructorCoursesVM.cs",
-              "ToolTip": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\LectureWithInstructorCoursesVM.cs",
-              "RelativeToolTip": "GoEdu\\ViewModel\\LectureWithInstructorCoursesVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T15:40:20.292Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 36,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Program.cs",
               "RelativeDocumentMoniker": "GoEdu\\Program.cs",
@@ -853,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 34,
               "Title": "ICRUD.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Interface\\ICRUD.cs",
               "RelativeDocumentMoniker": "GoEdu\\Interface\\ICRUD.cs",
@@ -865,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 35,
               "Title": "LectureRepository.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\LectureRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Repositories\\LectureRepository.cs",
@@ -877,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 39,
               "Title": "ILectureRepository.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Interface\\ILectureRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Interface\\ILectureRepository.cs",
@@ -904,20 +706,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-=======
-              "DocumentIndex": 7,
-=======
-              "DocumentIndex": 10,
->>>>>>> origin/main
-              "Title": "Register.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Models\\Register.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Models\\Register.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Models\\Register.cs",
-              "RelativeToolTip": "GoEdu\\Models\\Register.cs",
-              "ViewState": "AgIAAAsAAABImpmZmZkzwAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T17:51:41.086Z"
->>>>>>> origin/main
             }
           ]
         }
