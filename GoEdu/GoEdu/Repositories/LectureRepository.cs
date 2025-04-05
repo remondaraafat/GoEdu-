@@ -12,6 +12,10 @@ namespace GoEdu.Repositories
         {
             this.context = context;
         }
+
+        //david's Methods
+
+
         // all methods need to be tested
         public void Delete(Lecture Entity)
         {
