@@ -19,18 +19,18 @@ namespace GoEdu.Controllers
         [HttpGet]
         public IActionResult LectureDetails(int id, int StudentID)
         {
-            LectureDetailsVM lecture = UnitOfWork.LectureRepository.GetLectureVMByID(id, StudentID);
+            VMLectureDetails lecture = UnitOfWork.LectureRepository.GetLectureVMByID(id, StudentID);
             return View(lecture);
         }
         [HttpGet]
         public IActionResult EditLecture(int id, int InstructorID)
         {
-            LectureWithInstructorCoursesVM lecture = UnitOfWork.LectureRepository.GetLectureWithCourseList(id, InstructorID);
+            VMLectureWithInstructorCourses lecture = UnitOfWork.LectureRepository.GetLectureWithCourseList(id, InstructorID);
 
             return View(lecture);
         }
         [HttpPost]
-        public IActionResult EditLecture(LectureWithInstructorCoursesVM lectureVM)
+        public IActionResult EditLecture(VMLectureWithInstructorCourses lectureVM)
         {
 
             if (ModelState.IsValid)
