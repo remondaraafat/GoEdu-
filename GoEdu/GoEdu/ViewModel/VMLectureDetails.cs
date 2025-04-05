@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GoEdu.ViewModel
 {
-    public class LectureDetailsVM
+    public class VMLectureDetails
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

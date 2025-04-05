@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GoEdu.ViewModel
 {
-    public class LectureWithInstructorCoursesVM
+    public class VMLectureWithInstructorCourses
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -43,6 +43,6 @@ namespace GoEdu.ViewModel
 
 
         [Display(Name = "الدورات")]
-        public List<CourseListVM>? InstructorCourses { get; set; }
+        public List<VMCourseList>? InstructorCourses { get; set; }
     }
 }
