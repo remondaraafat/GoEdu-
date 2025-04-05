@@ -39,5 +39,10 @@ appsettings.*.json
 .DS_Store
 
 # JetBrains Rider / Resharper
+<<<<<<< HEAD
 _Resharper
 *.Resharper
+=======
+*_Resharper*
+*.Resharper
+>>>>>>> 6c7a0c81ef567543c930f128146569bb0837af8b
