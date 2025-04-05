@@ -34,9 +34,9 @@ namespace GoEdu.Repositories
         {
             return context.lectures.FirstOrDefault(d => d.ID == id);
         }
-        public LectureDetailsVM GetLectureVMByID(int id,int StudentID)
+        public VMLectureDetails GetLectureVMByID(int id,int StudentID)
         {
-           return context.lectures.Select(l => new LectureDetailsVM { ID = l.ID,
+           return context.lectures.Select(l => new VMLectureDetails { ID = l.ID,
                Comments=l.Comment,
                CourseName=l.Course.Name,
                Description=l.Description,
@@ -59,18 +59,18 @@ namespace GoEdu.Repositories
         
         public void Update(int id, Lecture Entity)
         {
-            Lecture l = GetByID(id);
+           // Lecture l = GetByID(id);
             context.Update(Entity);
         }
         //need edit
-        public LectureWithInstructorCoursesVM GetLectureWithCourseList(int LectureId, int InstructorID)
+        public VMLectureWithInstructorCourses GetLectureWithCourseList(int LectureId, int InstructorID)
         {
-            List<CourseListVM> InstCourseList = context.Courses.Select(c=>new CourseListVM {
+            List<VMCourseList> InstCourseList = context.Courses.Select(c=>new VMCourseList {
             ID=c.ID,
             Name=c.Name,
             }).ToList();
 
-            return context.lectures.Select(l => new LectureWithInstructorCoursesVM
+            return context.lectures.Select(l => new VMLectureWithInstructorCourses
             {
                 ID = l.ID,
                 Comments = l.Comment,

@@ -2,7 +2,7 @@
 
 namespace GoEdu.ViewModel
 {
-    public class CourseListVM
+    public class VMCourseList
     {
         public int ID { get; set; }
 
