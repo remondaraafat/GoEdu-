@@ -9,12 +9,23 @@ namespace GoEdu.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
+<<<<<<< HEAD
+=======
+
+        [Range(50, 10000, ErrorMessage = "Invalid Price")]
+>>>>>>> origin/main
         public double Price { get; set; }
         public int Hours { get; set; }
         public int MaxViews { get; set; }
+<<<<<<< HEAD
         public double Degree { get; set; }
         public double MinDegree { get; set; }
 
+=======
+        //public DateTime? CreatedDate { get; set; }
+        //public string? Specialization { get; set; }
+        public int CourseLevel { get; set; }
+>>>>>>> origin/main
         public Semester Semester { get; set; }
         public Stage StudentStage { get; set; }
         public Level CourseLevel { get; set; }
@@ -23,7 +34,6 @@ namespace GoEdu.Models
 
         public virtual List<Lecture>? Lecture { get; set; }
         public virtual List<Register>? Register { get; set; }
-      
         public virtual Instructor? Instructor { get; set; }
 
     }

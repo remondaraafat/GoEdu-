@@ -60,15 +60,15 @@ namespace GoEdu.Data
         //    }
         //}
 
-        //public ICourseRepository CourseRepo
-        //{
-        //    get
-        //    {
-        //        if (_CourseRepo == null)
-        //            _CourseRepo = new CourseRepository(context);
-        //        return _CourseRepo;
-        //    }
-        //}
+        public ICourseRepository CourseRepo
+        {
+            get
+            {
+                if (_CourseRepo == null)
+                    _CourseRepo = new CourseRepository(context);
+                return _CourseRepo;
+            }
+        }
 
         //public IExamPerLectureRepository ExamPerLectureRepo
         //{
@@ -140,15 +140,15 @@ namespace GoEdu.Data
         //    }
         //}
 
-        //public IRegisterRepository RegisterRepo
-        //{
-        //    get
-        //    {
-        //        if (_RegisterRepo == null)
-        //            _RegisterRepo = new RegisterRepository(context);
-        //        return _RegisterRepo;
-        //    }
-        //}
+        public IRegisterRepository RegisterRepo
+        {
+            get
+            {
+                if (_RegisterRepo == null)
+                    _RegisterRepo = new RegisterRepository(context);
+                return _RegisterRepo;
+            }
+        }
 
         //public IStudentPerformanceExamRepository StudentPerformanceExamRepo
         //{
@@ -160,16 +160,16 @@ namespace GoEdu.Data
         //    }
         //}
 
-        //public IStudentRepository StudentRepo
-        //{
-        //    get
-        //    {
-        //        if (_StudentRepo == null)
-        //            _StudentRepo = new RegisterRepository(context);
-        //        return _StudentRepo;
-        //    }
-        //}
+        public IStudentRepository StudentRepo
+        {
+            get
+            {
+                if (_StudentRepo == null)
+                    _StudentRepo = new StudentRepository(context);
+                return _StudentRepo;
+            }
+        }
 
-        
+
     }
 }

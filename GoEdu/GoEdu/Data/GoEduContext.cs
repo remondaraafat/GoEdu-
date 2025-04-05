@@ -5,10 +5,8 @@ namespace GoEdu.Data
 {
     public class GoEduContext : DbContext
     {
-        public GoEduContext(DbContextOptions<GoEduContext> options) : base(options)
-        {
-
-        }
+        public GoEduContext(DbContextOptions<GoEduContext> options) : base(options) { }
+        
         public DbSet<Student> Students { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Course> Courses { get; set; }
