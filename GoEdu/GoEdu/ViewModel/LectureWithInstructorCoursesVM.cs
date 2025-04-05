@@ -43,6 +43,6 @@ namespace GoEdu.ViewModel
 
 
         [Display(Name = "الدورات")]
-        public List<CourseListVM> InstructorCourses { get; set; }
+        public List<CourseListVM>? InstructorCourses { get; set; }
     }
 }
