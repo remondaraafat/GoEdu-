@@ -1,10 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using GoEdu.Interface;
 
-namespace GoEdu.Models
+namespace GoEdu.ViewModel
 {
-    public class Course: IDeleted
+    public class CourseViewModel
     {
         public int ID { get; set; }
 
@@ -21,8 +19,8 @@ namespace GoEdu.Models
         [Range(1, 1000, ErrorMessage = "Invalid Hours, must be positive")]
         public int Hours { get; set; }
         public int MaxViews { get; set; }
-        //public DateTime? CreatedDate { get; set; }
-        //public string? Specialization { get; set; }
+
+
         public int CourseLevel { get; set; }
         public Semester Semester { get; set; }
         public Stage StudentStage { get; set; }
@@ -30,10 +28,9 @@ namespace GoEdu.Models
         public int InstructorID { get; set; }
         public bool isDeleted { get; set; } = false;
 
-        public virtual List<Lecture>? Lecture { get; set; }
-        public virtual List<Register>? Register { get; set; }
-      
-        public virtual Instructor? Instructor { get; set; }
+
+        public string InstructorName { get; set; }
+        //public virtual Instructor? Instructor{ get; set; }
 
     }
 
@@ -55,7 +52,6 @@ namespace GoEdu.Models
         Second,
         Third
     }
-
 }
 
 
