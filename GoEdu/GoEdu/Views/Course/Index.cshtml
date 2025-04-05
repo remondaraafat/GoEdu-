@@ -1,6 +1,27 @@
 ﻿ @model List<Course>
 
 <h2>جميع الكورسات</h2>
+<form method="get" class="mb-4 d-flex gap-3 align-items-end">
+    <div>
+        <label class="form-label">نوع الفلترة</label>
+        <select name="filterBy" class="form-select" id="filterBy">
+            <option value="instructorName">اسم المعلم</option>
+            <option value="courseName">اسم الكورس</option>
+        </select>
+    </div>
+
+    <div>
+        <label class="form-label">الكلمة المفتاحية</label>
+        <input type="text" name="searchQuery" class="form-control" placeholder="اكتب هنا..." value="@Context.Request.Query["searchQuery"]" />
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">فلتر</button>
+    </div>
+</form>
+
+
+
 
 <table class="table">
     <thead>
@@ -37,3 +58,11 @@
         }
     </tbody>
 </table>
+
+<script>
+    
+    var filterBy = '@Context.Request.Query["filterBy"]';
+    if (filterBy) {
+        document.getElementById('filterBy').value = filterBy;
+    }
+</script>

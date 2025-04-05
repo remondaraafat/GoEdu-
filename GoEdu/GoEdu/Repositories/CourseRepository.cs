@@ -1,6 +1,7 @@
 ﻿using GoEdu.Data;
 using GoEdu.Models;
 using GoEdu.ViewModel;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 namespace GoEdu.Repositories
 {
@@ -77,38 +78,39 @@ namespace GoEdu.Repositories
             }
         }
 
-       public List<Course> FilterCourses(string? instructorName, string? NameOfCourse)
-            //string? instructorName, string? specialization, string? sortBy)
+       public List<Course> FilterCourses(string filterBy, string searchQuery)
+           
             {
-                // var Query=Context.Courses.Include(c => c.Instructor).AsQueryable();
+                
                 IQueryable<Course> coursesQuery = Context.Courses;
-            if (!string.IsNullOrEmpty(instructorName))
+            if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(searchQuery))
             {
-                coursesQuery = coursesQuery.Where(c=>c.Instructor.Name.Contains(instructorName));
+                if (filterBy == "instructorName")
+                {
+                    var instructorIds =Context.Instructors
+                    .Where(i => i.Name.Contains(searchQuery))
+                    .Select(i => i.ID)
+                    .ToList();
+                    coursesQuery = coursesQuery.Where(c => instructorIds.Contains(c.InstructorID));
+                }
+                else if (filterBy == "courseName")
+                {
+
+                    coursesQuery = coursesQuery.Where(c => c.Name.Contains(searchQuery));
+                }
+
             }
-            if (!string.IsNullOrEmpty(NameOfCourse))
-            {
-                coursesQuery = coursesQuery.Where(c => c.Name.Contains(NameOfCourse));
-            }
-            //if (!string.IsNullOrEmpty(specialization))
-            //{
-            //  coursesQuery = coursesQuery.Where(c => c.Specialization.Contains(specialization));
-            //}
-            //if (sortBy == "name")
-            //{
-            //    coursesQuery = coursesQuery.OrderBy(c => c.Name);
-            //}
-            //else if (sortBy == "price")
-            //{
-            //    coursesQuery = coursesQuery.OrderBy(c => c.Price);
-            //}
-            //else if (sortBy == "date")
-            //{
-            //    coursesQuery = coursesQuery.OrderBy(c => c.CreatedDate);
-            //}
+           
+            
             return coursesQuery.ToList();
 
         }
+      
+
+
+
+
+
         public List<Course> search(string searchQuery)
         {
             List<Course> courses = Context.Courses.ToList(); ;

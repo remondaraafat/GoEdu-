@@ -1,11 +1,43 @@
-".vs/" 
-"bin/" 
-"obj/" 
-"*.suo" 
-"*.user" 
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+bin/
+obj/
+log/
+
+# Visual Studio cache/options directory
 .vs/
-".vs/" 
-"bin/" 
-"obj/" 
-"*.suo" 
-"*.user" 
+.vscode/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NuGet Packages
+*.nupkg
+packages/
+
+# ASP.NET Core
+project.lock.json
+appsettings.*.json
+
+# Others
+*.sw?
+*~
+._*
+.DS_Store
+
+# JetBrains Rider / Resharper
+_Resharper
+*.Resharper
