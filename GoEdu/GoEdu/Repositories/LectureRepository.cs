@@ -55,7 +55,7 @@ namespace GoEdu.Repositories
         
         public void Update(int id, Lecture Entity)
         {
-            Lecture l = GetByID(id);
+           // Lecture l = GetByID(id);
             context.Update(Entity);
         }
         //need edit

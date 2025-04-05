@@ -1,0 +1,67 @@
+﻿@using GoEdu.ViewModel
+@model StudentsCoursesVM
+
+@{
+    ViewData["Title"] = "AllStudentsByInstructor";
+    SelectList Courses = new SelectList(Model.Courses, "Id", "Name");
+}
+
+<h1>AllStudentsByInstructor</h1>
+
+<form asp-action="FilterStudentsByCourse" asp-controller="Student" method="post" class="m-5">
+    <div class="form-group">
+        <label asp-for="CourseId"></label>
+        <select class="form-control" asp-for="CourseId" asp-items="Courses">
+            <option>كل الكورسات</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div>عدد الطلبة = @Model.Students.Count()</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                StudentPhone
+            </th>
+            <th>
+                ParentPhone
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Students) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParentPhone)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new {  id=item.ID }) |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

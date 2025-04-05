@@ -1,8 +1,8 @@
 ﻿using GoEdu.Data;
 using GoEdu.Models;
 using GoEdu.ViewModel;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+
 namespace GoEdu.Repositories
 {
     public class CourseRepository:ICourseRepository
@@ -11,6 +11,11 @@ namespace GoEdu.Repositories
         public CourseRepository(GoEduContext contxt)
         {
             Context = contxt;
+        }
+
+        public List<Course> CoursesByInstructor(int instructorId)
+        {
+            return Context.Courses.Where(c=>c.InstructorID == instructorId).ToList();
         }
 
         public void Delete(Course obj)
@@ -104,11 +109,6 @@ namespace GoEdu.Repositories
 
         }
       
-
-
-
-
-
         public List<Course> search(string searchQuery)
         {
             List<Course> courses = Context.Courses.ToList(); ;

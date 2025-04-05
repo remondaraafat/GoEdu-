@@ -14,7 +14,6 @@ namespace GoEdu.Models
         [MinLength(2, ErrorMessage = "Course Name Must be More than 1 char")]
         public string Name { get; set; }
 
-
         [Range(50, 10000, ErrorMessage = "Invalid Price")]
         public double Price { get; set; }
 
@@ -32,7 +31,6 @@ namespace GoEdu.Models
 
         public virtual List<Lecture>? Lecture { get; set; }
         public virtual List<Register>? Register { get; set; }
-      
         public virtual Instructor? Instructor { get; set; }
 
     }

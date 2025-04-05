@@ -10,6 +10,12 @@ namespace GoEdu.Repositories
         //, string? specialization, string? sortBy
 
         public List<Course> search(string searchQuery);
+<<<<<<< HEAD
         public CourseDetailsViewModel GetCourseWithLectures(int courseId);
+=======
+
+        //david methods
+        public List<Course> CoursesByInstructor(int instructorId);
+>>>>>>> origin/main
     }
 }
