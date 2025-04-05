@@ -208,8 +208,7 @@
               "RelativeToolTip": "GoEdu\\Views\\Lecture\\EditLecture.cshtml",
               "ViewState": "AgIAADEAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-05T17:47:35.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T17:47:35.78Z"
             },
             {
               "$type": "Document",
@@ -221,8 +220,7 @@
               "RelativeToolTip": "GoEdu\\Views\\Course\\CourseDetails.cshtml",
               "ViewState": "AgIAADsAAAAAAAAAAAAwwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-05T16:43:04.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T16:43:04.511Z"
             },
             {
               "$type": "Document",
@@ -528,7 +526,7 @@
               "RelativeDocumentMoniker": "GoEdu\\Interface\\ICourseRepository.cs",
               "ToolTip": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Interface\\ICourseRepository.cs",
               "RelativeToolTip": "GoEdu\\Interface\\ICourseRepository.cs",
-              "ViewState": "AgIAAAgAAABoZmZmZuY5wBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAACAMzMzMzMPwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T19:59:38.541Z",
               "EditorCaption": ""
