@@ -16,6 +16,17 @@ VALUES
 (N'مقدمة في البرمجة', N'http://example.com/intro.mp4', '2025-04-04 10:00:00.0000000', N'مقدمة عامة عن أساسيات البرمجة', 0, 6),
 
 (N'تصميم الجداول', N'http://example.com/dbdesign.mp4', '2025-04-05 14:30:00.0000000', N'شرح مبادئ تصميم الجداول وعلاقاتها في قواعد البيانات', 0, 7);
+--student 
+INSERT INTO Students ( Name, Email, Age, Address, StudentPhone, ParentPhone, isDeleted)
+VALUES 
+( N'أحمد علي', N'ahmed.ali@example.com', 21, N'شارع النيل، القاهرة', '01012345678', '01098765432', 0),
+( N'سارة محمد', N'sara.mohamed@example.com', 23, N'شارع الجامعة، الإسكندرية', '01087654321', '01045678901', 0);
+--attend
+INSERT INTO Attends (StudentID, LectureID, ViewsCount, Status, isDeleted)
+VALUES 
+(1, 2, 2, 1, 0),
+(2, 2, 0, 0, 0),
+(2, 3, 0, 0, 0); 
 
 --select
-SELECT ID, Name FROM Courses;
+SELECT ID, Name FROM Students;
