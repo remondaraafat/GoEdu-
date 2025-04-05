@@ -17,45 +17,81 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GoEdu
 build_property.RootNamespace = GoEdu
-build_property.ProjectDir = R:\iti_intake_45\22_MVC\GoEdu-\GoEdu\GoEdu\
+build_property.ProjectDir = C:\Users\Mark Malak\source\repos\GoEdu--\GoEdu\GoEdu\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = R:\iti_intake_45\22_MVC\GoEdu-\GoEdu\GoEdu
+build_property.MSBuildProjectDirectory = C:\Users\Mark Malak\source\repos\GoEdu--\GoEdu\GoEdu
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[R:/iti_intake_45/22_MVC/GoEdu-/GoEdu/GoEdu/Views/Home/Index.cshtml]
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Course/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Course/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Course/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[R:/iti_intake_45/22_MVC/GoEdu-/GoEdu/GoEdu/Views/Home/Privacy.cshtml]
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[R:/iti_intake_45/22_MVC/GoEdu-/GoEdu/GoEdu/Views/Lecture/LectureDetails.cshtml]
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Lecture/GetAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZVxHZXRBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Lecture/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZVxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Lecture/LectureDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZVxMZWN0dXJlRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[R:/iti_intake_45/22_MVC/GoEdu-/GoEdu/GoEdu/Views/Shared/Error.cshtml]
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Lecture/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[R:/iti_intake_45/22_MVC/GoEdu-/GoEdu/GoEdu/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Shared/_NavPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Shared/_SideBarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlQmFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[R:/iti_intake_45/22_MVC/GoEdu-/GoEdu/GoEdu/Views/_ViewImports.cshtml]
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[R:/iti_intake_45/22_MVC/GoEdu-/GoEdu/GoEdu/Views/_ViewStart.cshtml]
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[R:/iti_intake_45/22_MVC/GoEdu-/GoEdu/GoEdu/Views/Shared/_Layout.cshtml]
+[C:/Users/Mark Malak/source/repos/GoEdu--/GoEdu/GoEdu/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kjoxofz9j6

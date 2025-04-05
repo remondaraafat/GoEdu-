@@ -1,57 +1,133 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\",
+  "WorkspaceRootPath": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\viewmodel\\coursewithinstructorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\coursewithinstructorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\course\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\course\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\course\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\course\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\viewmodel\\addoreditlecturevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\addoreditlecturevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\views\\lecture\\lecturedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\lecture\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\lecture\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\lecture\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\lecture\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\lecture\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\lecture\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\models\\studentperformeexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\studentperformeexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\enumextensions\\enumextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\enumextensions\\enumextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\viewmodel\\studentwithinstructorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\studentwithinstructorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\goedu.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\goedu.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\interface\\ideleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\interface\\ideleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\views\\lecture\\lecturedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\lecture\\lecturedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\migrations\\20250404162203_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\migrations\\20250404162203_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\data\\goeducontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\data\\goeducontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\repositories\\attendrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\repositories\\attendrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\repositories\\attendrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\repositories\\answerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\repositories\\answerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\repositories\\answerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\viewmodel\\lecturewithinstructorcoursesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\viewmodel\\lecturewithinstructorcoursesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\repositories\\lecturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\repositories\\lecturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\repositories\\lecturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\interface\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\interface\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\interface\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|r:\\iti_intake_45\\22_mvc\\goedu-\\goedu\\goedu\\interface\\ilecturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|c:\\users\\mark malak\\source\\repos\\goedu--\\goedu\\goedu\\interface\\ilecturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\interface\\ilecturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -61,81 +137,246 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 449,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LectureDetails.cshtml",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
-              "RelativeDocumentMoniker": "GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
-              "RelativeToolTip": "GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "LectureController.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Controllers\\LectureController.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Controllers\\LectureController.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Controllers\\LectureController.cs",
+              "RelativeToolTip": "GoEdu\\Controllers\\LectureController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwDYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T15:41:19.879Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T16:46:06.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20250404162203_init.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Migrations\\20250404162203_init.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Migrations\\20250404162203_init.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Migrations\\20250404162203_init.cs",
-              "RelativeToolTip": "GoEdu\\Migrations\\20250404162203_init.cs",
-              "ViewState": "AgIAAKQBAAAAAAAAAAApwHABAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T16:22:03.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GoEduContext.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Data\\GoEduContext.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Data\\GoEduContext.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Data\\GoEduContext.cs",
-              "RelativeToolTip": "GoEdu\\Data\\GoEduContext.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAywCEAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T16:14:25.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\appsettings.json",
-              "RelativeDocumentMoniker": "GoEdu\\appsettings.json",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\appsettings.json",
-              "RelativeToolTip": "GoEdu\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-04T16:00:57.233Z",
+              "WhenOpened": "2025-04-05T08:52:30.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LectureController.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\LectureController.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Controllers\\LectureController.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\LectureController.cs",
-              "RelativeToolTip": "GoEdu\\Controllers\\LectureController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBEAAAAzAAAAAAAAAA==",
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "GoEdu\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAE0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T15:41:19.879Z",
+              "WhenOpened": "2025-04-04T19:03:25.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Lecture\\Home.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Lecture\\Home.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Lecture\\Home.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Lecture\\Home.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T09:00:16.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Course\\Edit.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Course\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Course\\Edit.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Course\\Edit.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwBcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T02:21:59.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T07:53:20.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T07:53:12.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetAll.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Lecture\\GetAll.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Lecture\\GetAll.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Lecture\\GetAll.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Lecture\\GetAll.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T03:58:34.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "GoEdu\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:11:46.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T21:41:17.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T20:32:04.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Lecture\\New.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Lecture\\New.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Lecture\\New.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Lecture\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T04:48:58.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EnumExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\EnumExtensions\\EnumExtensions.cs",
+              "RelativeDocumentMoniker": "GoEdu\\EnumExtensions\\EnumExtensions.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\EnumExtensions\\EnumExtensions.cs",
+              "RelativeToolTip": "GoEdu\\EnumExtensions\\EnumExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:31:08.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GoEdu.csproj",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\GoEdu.csproj",
+              "RelativeDocumentMoniker": "GoEdu\\GoEdu.csproj",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\GoEdu.csproj",
+              "RelativeToolTip": "GoEdu\\GoEdu.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-04T20:30:03.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Answer.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Models\\Answer.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Models\\Answer.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Models\\Answer.cs",
+              "RelativeToolTip": "GoEdu\\Models\\Answer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T17:57:58.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IDeleted.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Interface\\IDeleted.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Interface\\IDeleted.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Interface\\IDeleted.cs",
+              "RelativeToolTip": "GoEdu\\Interface\\IDeleted.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T17:57:48.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LectureDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Lecture\\LectureDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T16:46:06.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\appsettings.json",
+              "RelativeDocumentMoniker": "GoEdu\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\appsettings.json",
+              "RelativeToolTip": "GoEdu\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-04T16:00:57.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "AnswerRepository.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\AnswerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Repositories\\AnswerRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Repositories\\AnswerRepository.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\AnswerRepository.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Repositories\\AnswerRepository.cs",
               "RelativeToolTip": "GoEdu\\Repositories\\AnswerRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -143,11 +384,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 27,
               "Title": "AttendRepository.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\AttendRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Repositories\\AttendRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Repositories\\AttendRepository.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\AttendRepository.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Repositories\\AttendRepository.cs",
               "RelativeToolTip": "GoEdu\\Repositories\\AttendRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -155,47 +396,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Data\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Data\\UnitOfWork.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Data\\UnitOfWork.cs",
-              "RelativeToolTip": "GoEdu\\Data\\UnitOfWork.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAkwHAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T15:47:38.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LectureWithInstructorCoursesVM.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\LectureWithInstructorCoursesVM.cs",
-              "RelativeDocumentMoniker": "GoEdu\\ViewModel\\LectureWithInstructorCoursesVM.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\ViewModel\\LectureWithInstructorCoursesVM.cs",
-              "RelativeToolTip": "GoEdu\\ViewModel\\LectureWithInstructorCoursesVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T15:40:20.292Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Program.cs",
-              "RelativeDocumentMoniker": "GoEdu\\Program.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Program.cs",
-              "RelativeToolTip": "GoEdu\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T15:01:58.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 30,
               "Title": "ICRUD.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Interface\\ICRUD.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Interface\\ICRUD.cs",
               "RelativeDocumentMoniker": "GoEdu\\Interface\\ICRUD.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Interface\\ICRUD.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Interface\\ICRUD.cs",
               "RelativeToolTip": "GoEdu\\Interface\\ICRUD.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -203,11 +408,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 29,
               "Title": "LectureRepository.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\LectureRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Repositories\\LectureRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Repositories\\LectureRepository.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\LectureRepository.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Repositories\\LectureRepository.cs",
               "RelativeToolTip": "GoEdu\\Repositories\\LectureRepository.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -215,15 +420,134 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 31,
               "Title": "ILectureRepository.cs",
-              "DocumentMoniker": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Interface\\ILectureRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Interface\\ILectureRepository.cs",
               "RelativeDocumentMoniker": "GoEdu\\Interface\\ILectureRepository.cs",
-              "ToolTip": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\Interface\\ILectureRepository.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Interface\\ILectureRepository.cs",
               "RelativeToolTip": "GoEdu\\Interface\\ILectureRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T14:48:37.342Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 11,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseWithInstructorVM.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\ViewModel\\CourseWithInstructorVM.cs",
+              "RelativeDocumentMoniker": "GoEdu\\ViewModel\\CourseWithInstructorVM.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\ViewModel\\CourseWithInstructorVM.cs",
+              "RelativeToolTip": "GoEdu\\ViewModel\\CourseWithInstructorVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T17:49:25.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Course\\Index.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Course\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Course\\Index.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Course\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T06:26:27.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Course\\New.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Course\\New.cshtml",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Views\\Course\\New.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Course\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T07:29:03.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Lecture.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Models\\Lecture.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Models\\Lecture.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Models\\Lecture.cs",
+              "RelativeToolTip": "GoEdu\\Models\\Lecture.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T18:00:46.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddOrEditLectureVM.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\ViewModel\\AddOrEditLectureVM.cs",
+              "RelativeDocumentMoniker": "GoEdu\\ViewModel\\AddOrEditLectureVM.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\ViewModel\\AddOrEditLectureVM.cs",
+              "RelativeToolTip": "GoEdu\\ViewModel\\AddOrEditLectureVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:52:05.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "GoEdu\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T06:04:08.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Models\\Student.cs",
+              "RelativeToolTip": "GoEdu\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T17:58:00.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StudentPerformeExam.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Models\\StudentPerformeExam.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Models\\StudentPerformeExam.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\Models\\StudentPerformeExam.cs",
+              "RelativeToolTip": "GoEdu\\Models\\StudentPerformeExam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:12:09.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StudentWithInstructorVM.cs",
+              "DocumentMoniker": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\ViewModel\\StudentWithInstructorVM.cs",
+              "RelativeDocumentMoniker": "GoEdu\\ViewModel\\StudentWithInstructorVM.cs",
+              "ToolTip": "C:\\Users\\Mark Malak\\source\\repos\\GoEdu--\\GoEdu\\GoEdu\\ViewModel\\StudentWithInstructorVM.cs",
+              "RelativeToolTip": "GoEdu\\ViewModel\\StudentWithInstructorVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:06:54.023Z"
             }
           ]
         }

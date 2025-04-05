@@ -1,4 +1,5 @@
 using GoEdu.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace GoEdu
@@ -17,6 +18,11 @@ namespace GoEdu
             });
             //register unit of work 
             builder.Services.AddScoped<UnitOfWork, UnitOfWork>();
+
+            builder.Services.AddControllersWithViews(options =>
+            {
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            });
 
 
 

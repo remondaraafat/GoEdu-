@@ -28,10 +28,5 @@ namespace GoEdu.Data
         public DbSet<ExamQuestion> ExamQuestions { get; set; }
 
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Education_System;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
-        //}
-
     }
 }
