@@ -12,6 +12,14 @@ namespace GoEdu.Repositories
             this.context = context;
         }
 
+        //get by two ids
+        public Attend GetBy2Ids(int StudentId, int LectureId)
+        {
+            return context.Attends.FirstOrDefault(a => a.StudentID == StudentId && a.LectureID == LectureId && a.isDeleted);
+        }
+
+
+        // Default CRUD
         public void Delete(Attend Entity)
         {
             throw new NotImplementedException();
@@ -19,17 +27,17 @@ namespace GoEdu.Repositories
 
         public List<Attend> GetAll()
         {
-            throw new NotImplementedException();
+            return context.Attends.ToList();
         }
 
         public Attend GetByID(int id)
         {
-            throw new NotImplementedException();
+            return context.Attends.FirstOrDefault(a=>a.LectureID==id);
         }
 
         public void Insert(Attend Entity)
         {
-            throw new NotImplementedException();
+            context.Attends.Add(Entity);
         }
 
         public void SaveData()
@@ -39,7 +47,7 @@ namespace GoEdu.Repositories
 
         public void Update(int id, Attend Entity)
         {
-            throw new NotImplementedException();
+            context.Attends.Update(Entity);
         }
     }
 }

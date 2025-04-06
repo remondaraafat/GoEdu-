@@ -9,5 +9,8 @@ namespace GoEdu.Repositories
         public List<VMLectureSchedule> GetStudentLectureSchedual(int StudentID);
         public VMLectureDetails GetLectureVMByID(int id, int StudentID);
         public VMLectureWithInstructorCourses  GetLectureWithCourseList(int LectureId, int InstructorID);
+
+        public List<VMLectureSchedule> GetTodayLectureByStudentId(int StudentID);
+        public List<VMLectureSchedule> GetLateLectures(int StudentID);
     }
 }

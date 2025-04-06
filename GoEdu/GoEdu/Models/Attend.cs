@@ -11,6 +11,8 @@ namespace GoEdu.Models
         public int StudentID { get; set; }
         public int LectureID { get; set; }
         public int ViewsCount { get; set; }
+
+        //ملهاش لازمة دلوقتي عشان عملنا لوجيك جديد
         public bool Status { get; set; }
         public bool isDeleted { get; set; } = false;
 
