@@ -4,5 +4,6 @@
     {
         public List<VMLectureSchedule> TodayLectures { get; set; }
         public List<VMLectureSchedule> LateLectures { get; set; }
+
     }
 }

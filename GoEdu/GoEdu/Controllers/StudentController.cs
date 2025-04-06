@@ -12,14 +12,16 @@ namespace GoEdu.Controllers
         {
             this.unitOfWork = unitOfWork;
         }
-
+        
         public IActionResult StudentDashBoard(int StudentId)
         {
-            VMStudentDashBoard Dashboard = new VMStudentDashBoard
-            {
-                TodayLectures = unitOfWork.LectureRepository.GetTodayLectureByStudentId(StudentId),
-                LateLectures = unitOfWork.LectureRepository.GetLateLectures(StudentId),
-            };
+                VMStudentDashBoard Dashboard = new VMStudentDashBoard
+                {
+                    TodayLectures = unitOfWork.LectureRepository.GetTodayLectureByStudentId(StudentId),
+                    LateLectures = unitOfWork.LectureRepository.GetLateLectures(StudentId),
+                };
+            //nessecary need to send error from action "LectureDetails" in lecture controller
+            if (ModelState.IsValid) { }
             return View(Dashboard);
         }
 
