@@ -8,40 +8,29 @@ namespace GoEdu.Controllers
 {
     public class LectureController : Controller
     {
-<<<<<<< HEAD
-        GoEduContext context;
 
-        public LectureController(GoEduContext context)
-=======
         UnitOfWork UnitOfWork;
         public LectureController(UnitOfWork unitOfWork)
         {
             this.UnitOfWork = unitOfWork;
         }
-        public IActionResult Index()
->>>>>>> origin/main
-        {
-            this.context = context;
-        }
-<<<<<<< HEAD
-        //UnitOfWork UnitOfWork;
-        //public LectureController(UnitOfWork unitOfWork) {
-        //    this.UnitOfWork = unitOfWork;
-        //}
+        //public IActionResult Index()
+
+
         #region Getll
-        public IActionResult GetAll(int id)
-        {
-            List<LectureWithInstructorVM> lectures = context.lectures.Where(l => l.CourseID == id && l.isDeleted == false)
-                .Select(l => new LectureWithInstructorVM()
-                {
-                    LctID = l.ID,
-                    Title = l.Title,
-                    LctTime = l.LectureTime,
-                    Description = l.Description,
-                    CrsID = l.CourseID
-                }).AsNoTracking().ToList();
-            return View(lectures);
-        }
+        //public IActionResult GetAll(int id)
+        //{
+        //    List<LectureWithInstructorVM> lectures = context.lectures.Where(l => l.CourseID == id && l.isDeleted == false)
+        //        .Select(l => new LectureWithInstructorVM()
+        //        {
+        //            LctID = l.ID,
+        //            Title = l.Title,
+        //            LctTime = l.LectureTime,
+        //            Description = l.Description,
+        //            CrsID = l.CourseID
+        //        }).AsNoTracking().ToList();
+        //    return View(lectures);
+        //}
         #endregion
 
         #region New
@@ -93,7 +82,7 @@ namespace GoEdu.Controllers
         //    Lecture lecture = UnitOfWork.LectureRepository.GetByID(id);
         //    return View(lecture);
         //}
-=======
+
         [HttpGet]
         public IActionResult LectureDetails(int id, int StudentID)
         {
@@ -147,7 +136,6 @@ namespace GoEdu.Controllers
             lectureVM.InstructorCourses = UnitOfWork.LectureRepository.GetLectureWithCourseList(lectureVM.ID, 1).InstructorCourses;
             return View(lectureVM);
         }
->>>>>>> origin/main
     }
 }
 

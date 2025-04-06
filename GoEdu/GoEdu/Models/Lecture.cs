@@ -12,13 +12,12 @@ namespace GoEdu.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
-<<<<<<< HEAD
-=======
+
 
         [Required(ErrorMessage = "Title is required")]
         [StringLength(200, MinimumLength = 4, ErrorMessage = "Title must be between 4-200 characters")]
         [Display(Name = "Lecture Title")]
->>>>>>> origin/main
+
         public string Title { get; set; }
         public string VideoURL { get; set; }
         public DateTime LectureTime { get; set; }

@@ -1,9 +1,6 @@
 using GoEdu.Data;
-<<<<<<< HEAD
 using Microsoft.AspNetCore.Mvc;
-=======
 using GoEdu.Repositories;
->>>>>>> origin/main
 using Microsoft.EntityFrameworkCore;
 
 namespace GoEdu
@@ -22,16 +19,13 @@ namespace GoEdu
             });
             //register unit of work 
             builder.Services.AddScoped<UnitOfWork, UnitOfWork>();
-<<<<<<< HEAD
 
             builder.Services.AddControllersWithViews(options =>
             {
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             });
 
-=======
             builder.Services.AddScoped<ICourseRepository, CourseRepository>();
->>>>>>> origin/main
 
 
             var app = builder.Build();

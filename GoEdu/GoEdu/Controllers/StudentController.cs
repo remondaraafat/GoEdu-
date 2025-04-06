@@ -1,30 +1,22 @@
 ﻿using GoEdu.Data;
-<<<<<<< HEAD
 using GoEdu.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-=======
 using GoEdu.Models;
 using GoEdu.ViewModel;
 using Microsoft.AspNetCore.Mvc;
->>>>>>> origin/main
 
 namespace GoEdu.Controllers
 {
     public class StudentController : Controller
     {
-<<<<<<< HEAD
-        GoEduContext context;
-        public StudentController(GoEduContext context)
-=======
-        private readonly UnitOfWork context;
-        public StudentController(UnitOfWork context)
->>>>>>> origin/main
+        private UnitOfWork unitOfWork;
+        public StudentController(UnitOfWork unitOfWork)
         {
-            this.context = context;
+            this.unitOfWork = unitOfWork;
         }
 
-<<<<<<< HEAD
+
         public IActionResult Index(int insID = 3)
         {
             List<StudentWithInstructorVM> student = context.Registers.Where(r=>r.InstructorID ==insID&& r.isDeleted==false).Select(s=>new StudentWithInstructorVM()
@@ -37,7 +29,6 @@ namespace GoEdu.Controllers
             }).AsNoTracking().ToList();
             return View(student);
         }
-=======
         public IActionResult AllStudentsByInstructor(int instructorId)
         {
             StudentsCoursesVM StdVM = new();
@@ -77,6 +68,5 @@ namespace GoEdu.Controllers
             Student std = context.StudentRepo.GetByID(id);
             return View(std);
         }       
->>>>>>> origin/main
     }
 }

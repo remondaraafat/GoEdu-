@@ -1,11 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using GoEdu.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GoEdu.ViewModel
 {
     public class CourseViewModel
     {
         public int ID { get; set; }
-
 
         [Required(ErrorMessage = "*")]
         [MaxLength(50, ErrorMessage = "Course Name Must be less than 50 char")]
@@ -21,7 +22,7 @@ namespace GoEdu.ViewModel
         public int MaxViews { get; set; }
 
 
-        public int CourseLevel { get; set; }
+        public Level CourseLevel { get; set; }
         public Semester Semester { get; set; }
         public Stage StudentStage { get; set; }
         public Level StudentLevel { get; set; }
@@ -31,26 +32,6 @@ namespace GoEdu.ViewModel
 
         public string InstructorName { get; set; }
         //public virtual Instructor? Instructor{ get; set; }
-
-    }
-
-    public enum Semester
-    {
-        First,
-        Second,
-    }
-
-    public enum Stage
-    {
-        Preparatory,
-        Secondary,
-    }
-
-    public enum Level
-    {
-        First,
-        Second,
-        Third
     }
 }
 

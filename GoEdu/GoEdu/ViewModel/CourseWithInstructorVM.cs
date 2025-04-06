@@ -10,10 +10,11 @@ namespace GoEdu.ViewModel
         public string CrsName { get; set; }
         public double CrsPrice { get; set; }
         public int CrsHours { get; set; }
-        public int CrsMinDegree { get; set; }
+        public double CrsMinDegree { get; set; }
         public Semester CrsSemester { get; set; }
         public Stage CrsStage { get; set; }
         public Level CrsLevel { get; set; }
+
 
         public int InsID { get; set; }
         //public int NumOfCourses { get; set; }
@@ -24,4 +25,5 @@ namespace GoEdu.ViewModel
         public List<Course> courses { get; set; }
 
     }
+
 }
