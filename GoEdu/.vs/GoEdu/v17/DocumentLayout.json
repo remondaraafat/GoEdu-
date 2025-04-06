@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\",
   "Documents": [
     {
@@ -83,6 +84,37 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+=======
+  "WorkspaceRootPath": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|f:\\dot_net_9_month\\16 mvc\\project\\goedu-\\goedu\\goedu\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|f:\\dot_net_9_month\\16 mvc\\project\\goedu-\\goedu\\goedu\\views\\student\\studentdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\views\\student\\studentdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|f:\\dot_net_9_month\\16 mvc\\project\\goedu-\\goedu\\goedu\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|f:\\dot_net_9_month\\16 mvc\\project\\goedu-\\goedu\\goedu\\repositories\\lecturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\repositories\\lecturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|f:\\dot_net_9_month\\16 mvc\\project\\goedu-\\goedu\\goedu\\models\\attend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\models\\attend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|f:\\dot_net_9_month\\16 mvc\\project\\goedu-\\goedu\\goedu\\interface\\iattendrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\interface\\iattendrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|f:\\dot_net_9_month\\16 mvc\\project\\goedu-\\goedu\\goedu\\repositories\\attendrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79782868-548F-44EF-998F-CCA4FFC9B319}|GoEdu\\GoEdu.csproj|solutionrelative:goedu\\repositories\\attendrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> origin/main
     }
   ],
   "DocumentGroupContainers": [
@@ -92,6 +124,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 6,
           "Children": [
             {
@@ -117,10 +150,57 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+=======
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Attend.cs",
+              "DocumentMoniker": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Models\\Attend.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Models\\Attend.cs",
+              "ToolTip": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Models\\Attend.cs",
+              "RelativeToolTip": "GoEdu\\Models\\Attend.cs",
+              "ViewState": "AgIAAAYAAADAIjMzMzMLwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T21:52:53.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAttendRepository.cs",
+              "DocumentMoniker": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Interface\\IAttendRepository.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Interface\\IAttendRepository.cs",
+              "ToolTip": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Interface\\IAttendRepository.cs",
+              "RelativeToolTip": "GoEdu\\Interface\\IAttendRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T21:44:59.039Z",
+              "EditorCaption": ""
+>>>>>>> origin/main
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AttendRepository.cs",
+              "DocumentMoniker": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\AttendRepository.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Repositories\\AttendRepository.cs",
+              "ToolTip": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\AttendRepository.cs",
+              "RelativeToolTip": "GoEdu\\Repositories\\AttendRepository.cs",
+              "ViewState": "AgIAAAkAAAAAmZmZmZkVwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T21:35:53.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "_AdvancedLayout.cshtml",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Views\\Shared\\_AdvancedLayout.cshtml",
               "RelativeDocumentMoniker": "GoEdu\\Views\\Shared\\_AdvancedLayout.cshtml",
@@ -129,10 +209,47 @@
               "ViewState": "AgIAAB0AAAAAwDMzMzMbwOUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-06T23:28:27.293Z",
+=======
+              "Title": "LectureController.cs",
+              "DocumentMoniker": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\LectureController.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Controllers\\LectureController.cs",
+              "ToolTip": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\LectureController.cs",
+              "RelativeToolTip": "GoEdu\\Controllers\\LectureController.cs",
+              "ViewState": "AgIAABoAAADAo5mZmZktwCgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T19:00:41.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentDashBoard.cshtml",
+              "DocumentMoniker": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Views\\Student\\StudentDashBoard.cshtml",
+              "RelativeDocumentMoniker": "GoEdu\\Views\\Student\\StudentDashBoard.cshtml",
+              "ToolTip": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Views\\Student\\StudentDashBoard.cshtml",
+              "RelativeToolTip": "GoEdu\\Views\\Student\\StudentDashBoard.cshtml",
+              "ViewState": "AgIAAE4AAAAAY2ZmZmYkwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T18:54:32.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LectureRepository.cs",
+              "DocumentMoniker": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\LectureRepository.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Repositories\\LectureRepository.cs",
+              "ToolTip": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Repositories\\LectureRepository.cs",
+              "RelativeToolTip": "GoEdu\\Repositories\\LectureRepository.cs",
+              "ViewState": "AgIAAC8AAADAW2ZmZmYSwCIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T15:55:00.452Z",
+>>>>>>> origin/main
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "ICRUD.cs",
               "DocumentMoniker": "E:\\ProjectMVC-Third\\GoEdu-\\GoEdu\\GoEdu\\Interface\\ICRUD.cs",
@@ -387,6 +504,18 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+=======
+              "DocumentIndex": 2,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "GoEdu\\Controllers\\StudentController.cs",
+              "ToolTip": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "GoEdu\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAcAAAAemJmZmZk+wBgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T15:41:17.979Z",
+              "EditorCaption": ""
+>>>>>>> origin/main
             }
           ]
         }

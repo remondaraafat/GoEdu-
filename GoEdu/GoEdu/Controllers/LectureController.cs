@@ -20,6 +20,26 @@ namespace GoEdu.Controllers
         public IActionResult LectureDetails(int id, int StudentID)
         {
             VMLectureDetails lecture = UnitOfWork.LectureRepository.GetLectureVMByID(id, StudentID);
+            Attend attend = UnitOfWork.AttendRepo.GetBy2Ids(StudentID, id);
+            if (attend == null)
+            {
+                attend = new Attend();
+                attend.StudentID = StudentID;
+                attend.LectureID = id;
+                attend.ViewsCount += 1;
+                UnitOfWork.AttendRepo.Insert(attend);
+            }
+            else
+            {
+                if (UnitOfWork.CourseRepo.GetByID(UnitOfWork.LectureRepository.GetByID(id).CourseID).MaxViews > attend.ViewsCount)
+                    attend.ViewsCount += 1;
+                else
+                {
+                    ModelState.AddModelError("", "You Have reached maximum Views");
+                    return RedirectToAction("StudentDashBoard", "Student");
+                }
+            }
+
             return View(lecture);
         }
         [HttpGet]

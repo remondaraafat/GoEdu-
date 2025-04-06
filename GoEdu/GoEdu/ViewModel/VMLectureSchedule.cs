@@ -26,5 +26,10 @@ namespace GoEdu.ViewModel
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:mm}", ApplyFormatInEditMode = true)]
         public DateTime LectureTime { get; set; }
 
+        [StringLength(2000, ErrorMessage = "لا يمكن أن يتجاوز الوصف 2000 حرف")]
+        [DataType(DataType.MultilineText)]
+        [Display(Name = "الوصف")]
+        public string? Description { get; set; }
+
     }
 }
