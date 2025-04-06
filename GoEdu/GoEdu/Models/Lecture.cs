@@ -6,58 +6,61 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GoEdu.Models
 {
-  
+
     public class Lecture : IDeleted
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
-        [Required(ErrorMessage = "Title is required")]
-        [StringLength(200, MinimumLength = 4, ErrorMessage = "Title must be between 4-200 characters")]
-        [Display(Name = "Lecture Title")]
+        [Required(ErrorMessage = "عنوان المحاضرة مطلوب")]
+        [StringLength(200, MinimumLength = 4, ErrorMessage = "يجب أن يكون العنوان بين 4 و 200 حرف")]
+        [Display(Name = "عنوان المحاضرة")]
         public string Title { get; set; }
 
-        [Required(ErrorMessage = "Video URL is required")]
-        [Url(ErrorMessage = "Invalid URL format")]
-        [StringLength(500, ErrorMessage = "URL cannot exceed 500 characters")]
-        [Display(Name = "Video URL")]
+        [Required(ErrorMessage = "رابط الفيديو مطلوب")]
+        [Url(ErrorMessage = "صيغة الرابط غير صحيحة")]
+        [StringLength(500, ErrorMessage = "لا يمكن أن يتجاوز الرابط 500 حرف")]
+        [Display(Name = "رابط الفيديو")]
         public string VideoURL { get; set; }
 
-        [Required(ErrorMessage = "Lecture time is required")]
+        [Required(ErrorMessage = "وقت المحاضرة مطلوب")]
         [DataType(DataType.DateTime)]
-        [Display(Name = "Lecture Time")]
+        [Display(Name = "وقت المحاضرة")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:mm}", ApplyFormatInEditMode = true)]
         public DateTime LectureTime { get; set; }
 
-        [StringLength(2000, ErrorMessage = "Description cannot exceed 2000 characters")]
+        [StringLength(2000, ErrorMessage = "لا يمكن أن يتجاوز الوصف 2000 حرف")]
         [DataType(DataType.MultilineText)]
-        [Display(Name = "Description")]
+        [Display(Name = "الوصف")]
         public string? Description { get; set; }
 
-        [Display(Name = "Is Deleted")]
+        [Display(Name = "تم الحذف")]
         public bool isDeleted { get; set; } = false;
 
-        [Required(ErrorMessage = "Course ID is required")]
-        [Display(Name = "Course ID")]
+        [Required(ErrorMessage = "رقم المعرف الخاص بالمقرر مطلوب")]
+        [Display(Name = "معرف المقرر")]
         public int CourseID { get; set; }
-        //not fk => to know the exam of the lecture 
+
+        //  تم حذفه لاننا هنخلى الطالب يحل كل الاساله اللى على الحصه ك واجب
         public int ExamID { get; set; }
-        // Navigation properties
-        [Display(Name = "Attendance Records")]
+
+        // خصائص التنقل
+        [Display(Name = "سجلات الحضور")]
         public virtual List<Attend>? Attend { get; set; }
 
-        [Display(Name = "Comments")]
+        [Display(Name = "التعليقات")]
         public virtual List<Comment>? Comment { get; set; }
 
-        [Display(Name = "Questions")]
+        [Display(Name = "الأسئلة")]
         public virtual List<Question>? Question { get; set; }
 
-        [Display(Name = "Lecture Exams")]
+        [Display(Name = "اختبارات المحاضرة")]
         public virtual List<ExamLecture>? ExamLecture { get; set; }
 
         [ForeignKey("CourseID")]
-        [Display(Name = "Associated Course")]
+        [Display(Name = "المقرر المرتبط")]
         public virtual Course? Course { get; set; }
     }
+
 }
