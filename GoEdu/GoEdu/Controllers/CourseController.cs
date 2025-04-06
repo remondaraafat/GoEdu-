@@ -1,6 +1,7 @@
 ﻿using GoEdu.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using GoEdu.ViewModel;
+using GoEdu.Models;
 namespace GoEdu.Controllers
 {
     public class CourseController : Controller
@@ -11,23 +12,23 @@ namespace GoEdu.Controllers
             courseRepository = crseRepo;
         }
 
-        public IActionResult Index(string searchQuery, string? filterBy, string? NameOfCourse)
+        public IActionResult Index(string searchQuery, string? filterBy, string? nameAccourdFilter)
         {
             var courses = courseRepository.GetAll();
+            List<Course> courslist;
             if (!string.IsNullOrEmpty(searchQuery))
             {
                 courses = courseRepository.search(searchQuery);// courses.Where(c => c.Name.Contains(searchQuery)).ToList();
             }
-            if (!string.IsNullOrEmpty(filterBy)&&!string.IsNullOrEmpty(NameOfCourse))
+           else if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(nameAccourdFilter))
             {
-                courses = courseRepository.FilterCourses(filterBy, NameOfCourse);
+                courses = courseRepository.FilterCourses(filterBy,nameAccourdFilter);
             }
-            //if (!string.IsNullOrEmpty(NameOfCourse))
-            //{
-            //    courses = courses.Where(c => c.Name.Contains(NameOfCourse, StringComparison.OrdinalIgnoreCase)).ToList();
-            //}
+           
             return View("Index", courses);
         }
+
+
 
         public IActionResult Details(int id)
         {
