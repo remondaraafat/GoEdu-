@@ -62,5 +62,6 @@
 </div>
 <div>
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("AddQuestion", "AddQuestion", "Question", new { id = Model.ID }) |
     <a asp-action="Index">Back to List</a>
 </div>

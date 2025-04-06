@@ -120,25 +120,25 @@ namespace GoEdu.Data
             }
         }
 
-        //public IOptionRepository OptionRepo
-        //{
-        //    get
-        //    {
-        //        if (_OptionRepo == null)
-        //            _OptionRepo = new OptionRepository(context);
-        //        return _OptionRepo;
-        //    }
-        //}
+        public IOptionRepository OptionRepo
+        {
+            get
+            {
+                if (_OptionRepo == null)
+                    _OptionRepo = new OptionRepository(context);
+                return _OptionRepo;
+            }
+        }
 
-        //public IQuestionRepository QuestionRepo
-        //{
-        //    get
-        //    {
-        //        if (_QuestionRepo == null)
-        //            _QuestionRepo = new QuestionRepository(context);
-        //        return _QuestionRepo;
-        //    }
-        //}
+        public IQuestionRepository QuestionRepo
+        {
+            get
+            {
+                if (_QuestionRepo == null)
+                    _QuestionRepo = new QuestionRepository(context);
+                return _QuestionRepo;
+            }
+        }
 
         public IRegisterRepository RegisterRepo
         {

@@ -124,7 +124,7 @@ namespace GoEdu.Repositories
                 .Select(c => new CourseDetailsViewModel
                 {
                     CourseName = c.Name,
-                    Lectures = c.Lecture.Select(l => new LectureDetailsVM
+                    Lectures = c.Lecture.Select(l => new VMLectureDetails
                     {
                         Title = l.Title,
                          ID=l.ID,
