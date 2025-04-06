@@ -1,0 +1,117 @@
+﻿@using GoEdu.ViewModel
+@model VMStudentDashBoard
+
+@{
+    ViewData["Title"] = "StudentDashBoard";
+}
+
+<h1>StudentDashBoard</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<h1>Late Lectures</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                CourseName
+            </th>
+            <th>
+                LectureTime
+            </th>
+            <th>
+                Description
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.LateLectures) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LectureTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.ActionLink("LectureDetails", "LectureDetails", "Lecture" , new {  id=item.ID, StudentID = 1  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+<h1>Today Lecture Lectures</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                CourseName
+            </th>
+            <th>
+                LectureTime
+            </th>
+            <th>
+                Description
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.TodayLectures)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LectureTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.ActionLink("LectureDetails", "LectureDetails", "Lecture", new { id = item.ID, StudentID = 1 })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h1>Lecture Next Week Schedule</h1>
+@Html.ActionLink("LectureSchedule", "LectureSchedule", "Lecture")
+
+
