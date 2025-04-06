@@ -69,5 +69,12 @@ namespace GoEdu.Controllers
             lectureVM.InstructorCourses = UnitOfWork.LectureRepository.GetLectureWithCourseList(lectureVM.ID, 1).InstructorCourses;
             return View(lectureVM);
         }
+        [HttpGet]
+        public IActionResult LectureSchedule( int StudentID)
+        {
+            List<VMLectureSchedule> lectures = UnitOfWork.LectureRepository.GetStudentLectureSchedual(StudentID);
+
+            return View(lectures);
+        }
     }
 }

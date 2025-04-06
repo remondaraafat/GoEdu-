@@ -12,6 +12,10 @@ namespace GoEdu.Repositories
         {
             this.context = context;
         }
+
+        //david's Methods
+
+
         // all methods need to be tested
         public void Delete(Lecture Entity)
         {
@@ -79,6 +83,23 @@ namespace GoEdu.Repositories
                 InstructorCourses = InstCourseList
             }).FirstOrDefault(LVM => LVM.ID == LectureId);
 
+        }
+        public List<VMLectureSchedule> GetStudentLectureSchedual(int StudentID)
+        {
+            DateTime today = DateTime.Today;
+            DateTime nextWeek = today.AddDays(7);
+
+            return context.Attends
+                .Where(a=>a.StudentID==StudentID &&
+                    a.Lecture.LectureTime >= today &&
+                    a.Lecture.LectureTime <= nextWeek)
+                .Select(a=>new VMLectureSchedule {
+                    ID=a.LectureID,
+                    Title=a.Lecture.Title,
+                    LectureTime=a.Lecture.LectureTime,
+                    CourseName=a.Lecture.Course.Name
+            }).OrderByDescending(l => l.LectureTime)
+            .ToList();
         }
     }
 }
