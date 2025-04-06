@@ -10,9 +10,9 @@ namespace GoEdu.Models
         public int Id { get; set; }
         [Required]
         public string Content { get; set; }
-        public bool isDeleted { get; set; } = false;
         [ForeignKey("Question")]
         public int QuestionId {  get; set; }
+        public bool isDeleted { get; set; } = false;
         [InverseProperty("Options")]
         public Question? Question { get; set; }    
     }

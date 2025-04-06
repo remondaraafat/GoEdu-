@@ -1,0 +1,73 @@
+﻿@using GoEdu.ViewModel
+@model CourseDetailsViewModel
+
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="display-5 fw-bold text-primary">@Model.CourseName</h1>
+    </div>
+
+    <h3 class="mb-4">📚 المحاضرات</h3>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        @foreach (var lecture in Model.Lectures)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm rounded-4 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-dark">@lecture.Title</h5>
+                        <p class="card-text text-muted">@lecture.Description</p>
+                        <a href="@lecture.VideoURL" class="btn btn-outline-primary btn-sm mb-2" target="_blank">
+                            🎥 شاهد الفيديو
+                        </a>
+
+                        <a class="btn btn-sm btn-outline-secondary toggle-comments"
+                           data-bs-toggle="collapse"
+                           href="#comments-@lecture.ID"
+                           role="button"
+                           aria-expanded="false"
+                           aria-controls="comments-@lecture.ID"
+                           data-count="@lecture.Comments.Count">
+                            💬 عرض التعليقات (@lecture.Comments.Count)
+                        </a>
+
+                        <div class="collapse mt-3" id="comments-@lecture.ID">
+                            <ul class="list-group list-group-flush">
+                                @foreach (var comment in lecture.Comments)
+                                {
+                                    <li class="list-group-item">🗨️ @comment.Content</li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between">
+                        <small class="text-muted">⌚️ الوقت: @lecture.LectureTime.ToString("hh\\:mm")</small>
+                        <small class="text-muted">💬 تعليقات: @lecture.Comments.Count</small>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleLinks = document.querySelectorAll(".toggle-comments");
+
+        toggleLinks.forEach(link => {
+            const collapseId = link.getAttribute("href").replace('#', '');
+            const collapseElement = document.getElementById(collapseId);
+
+            collapseElement.addEventListener('show.bs.collapse', function () {
+                link.innerText = `🔽 إخفاء التعليقات`;
+            });
+
+            collapseElement.addEventListener('hide.bs.collapse', function () {
+                const count = link.dataset.count;
+                link.innerText = `💬 عرض التعليقات (${count})`;
+            });
+        });
+    });
+</script>
+
+
+
+

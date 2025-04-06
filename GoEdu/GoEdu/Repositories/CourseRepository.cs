@@ -83,25 +83,23 @@ namespace GoEdu.Repositories
             }
         }
 
-       public List<Course> FilterCourses(string filterBy, string searchQuery)
-           
-            {
+       public List<Course> FilterCourses(string filterBy, string NameOfCourse)
+          {
                 
                 IQueryable<Course> coursesQuery = Context.Courses;
-            if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(searchQuery))
+            if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(NameOfCourse))
             {
                 if (filterBy == "instructorName")
                 {
-                    var instructorIds =Context.Instructors
-                    .Where(i => i.Name.Contains(searchQuery))
-                    .Select(i => i.ID)
-                    .ToList();
-                    coursesQuery = coursesQuery.Where(c => instructorIds.Contains(c.InstructorID));
+                    coursesQuery = coursesQuery.Where(c => c.Instructor.Name.Contains(NameOfCourse.ToLower()));
+                    //.Select(i => i.ID)
+                   
+                    //coursesQuery = coursesQuery.Where(c => instructorIds.Contains(c.InstructorID));
                 }
                 else if (filterBy == "courseName")
                 {
 
-                    coursesQuery = coursesQuery.Where(c => c.Name.Contains(searchQuery));
+                    coursesQuery = coursesQuery.Where(c => c.Name.Contains(NameOfCourse.ToLower()));
                 }
 
             }
@@ -119,6 +117,28 @@ namespace GoEdu.Repositories
                 courses = courses.Where(c => c.Name.Contains(searchQuery)).ToList();
             }
             return courses;
+        }
+        public CourseDetailsViewModel GetCourseWithLectures(int courseId)
+        {
+            var Result=Context.Courses.Where(c=>c.ID==courseId)
+                .Select(c => new CourseDetailsViewModel
+                {
+                    CourseName = c.Name,
+                    Lectures = c.Lecture.Select(l => new VMLectureDetails
+                    {
+                        Title = l.Title,
+                         ID=l.ID,
+                        VideoURL = l.VideoURL,
+                        //ReleaseDate = l.LectureTime,
+                        Description = l.Description,
+                        Comments = l.Comment,
+                        //Question=l.Question,
+                      
+                    }).ToList()
+                }).FirstOrDefault();
+
+
+            return Result;
         }
     }
 }
