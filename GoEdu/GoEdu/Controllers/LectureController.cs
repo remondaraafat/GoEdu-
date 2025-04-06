@@ -87,6 +87,26 @@ namespace GoEdu.Controllers
         public IActionResult LectureDetails(int id, int StudentID)
         {
             VMLectureDetails lecture = UnitOfWork.LectureRepository.GetLectureVMByID(id, StudentID);
+            Attend attend = UnitOfWork.AttendRepo.GetBy2Ids(StudentID, id);
+            if (attend == null)
+            {
+                attend = new Attend();
+                attend.StudentID = StudentID;
+                attend.LectureID = id;
+                attend.ViewsCount += 1;
+                UnitOfWork.AttendRepo.Insert(attend);
+            }
+            else
+            {
+                if (UnitOfWork.CourseRepo.GetByID(UnitOfWork.LectureRepository.GetByID(id).CourseID).MaxViews > attend.ViewsCount)
+                    attend.ViewsCount += 1;
+                else
+                {
+                    ModelState.AddModelError("", "You Have reached maximum Views");
+                    return RedirectToAction("StudentDashBoard", "Student");
+                }
+            }
+
             return View(lecture);
         }
         [HttpGet]
@@ -135,6 +155,13 @@ namespace GoEdu.Controllers
             //need edit instructor id
             lectureVM.InstructorCourses = UnitOfWork.LectureRepository.GetLectureWithCourseList(lectureVM.ID, 1).InstructorCourses;
             return View(lectureVM);
+        }
+        [HttpGet]
+        public IActionResult LectureSchedule( int StudentID)
+        {
+            List<VMLectureSchedule> lectures = UnitOfWork.LectureRepository.GetStudentLectureSchedual(StudentID);
+
+            return View(lectures);
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using GoEdu.Data;
+using GoEdu.Migrations;
 using GoEdu.Models;
 using GoEdu.ViewModel;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GoEdu.Repositories
 {
@@ -12,24 +14,57 @@ namespace GoEdu.Repositories
         {
             this.context = context;
         }
-        // all methods need to be tested
-        public void Delete(Lecture Entity)
+
+        //Get today's lecture by student id
+        public List<VMLectureSchedule> GetTodayLectureByStudentId(int StudentID)
         {
-            context.lectures.Remove(Entity);
+            DateTime today = DateTime.Today;
+
+            return context.Registers
+                .Where(r => r.StudentID == StudentID)
+                .SelectMany(r => r.Course.Lecture
+                    .Where(l => l.LectureTime.Date == today)
+                    .Select(l => new VMLectureSchedule
+                    {
+                        ID = l.ID,
+                        Title = l.Title,
+                        LectureTime = l.LectureTime,
+                        CourseName = l.Course.Name,
+                        Description = l.Description
+                    }))
+                .OrderByDescending(l => l.LectureTime)
+            .ToList();
         }
 
-        public List<Lecture> GetAll()
+        public List<VMLectureSchedule> GetLateLectures(int StudentID)
         {
-            throw new NotImplementedException();
+            DateTime today = DateTime.Today;
+
+            return context.Registers
+                .Where(r => r.StudentID == StudentID)
+                .SelectMany(r => r.Course.Lecture
+                    .Where(l => l.LectureTime.Date < today && 
+                                (context.Attends
+                                .FirstOrDefault(a=>a.StudentID == StudentID && a.LectureID == l.ID)) == null)
+                    .Select(l => new VMLectureSchedule
+                    {
+                        ID = l.ID,
+                        Title = l.Title,
+                        LectureTime = l.LectureTime,
+                        CourseName = l.Course.Name,
+                        Description = l.Description
+                    }))
+                .OrderByDescending(l => l.LectureTime)
+            .ToList();
         }
+
+        // all methods need to be tested
+
         public List<Lecture> GetAllCourseLectures(int CourseID) {
             return context.lectures.Where(l=>l.CourseID==CourseID).ToList(); 
         }
 
-        public Lecture GetByID(int id)
-        {
-            return context.lectures.FirstOrDefault(d => d.ID == id);
-        }
+        
         public VMLectureDetails GetLectureVMByID(int id,int StudentID)
         {
            return context.lectures.Select(l => new VMLectureDetails { ID = l.ID,
@@ -42,21 +77,6 @@ namespace GoEdu.Repositories
                VideoURL=l.VideoURL,
                ViewsCount=l.Attend.FirstOrDefault(a => a.StudentID==StudentID && a.LectureID==id).ViewsCount
            }).FirstOrDefault(LVM => LVM.ID == id);
-        }
-        public void Insert(Lecture Entity)
-        {
-            context.lectures.Add(Entity);
-        }
-
-        public void SaveData()
-        {
-            context.SaveChanges();
-        }
-        
-        public void Update(int id, Lecture Entity)
-        {
-           // Lecture l = GetByID(id);
-            context.Update(Entity);
         }
         //need edit
         public VMLectureWithInstructorCourses GetLectureWithCourseList(int LectureId, int InstructorID)
@@ -77,8 +97,61 @@ namespace GoEdu.Repositories
                 Title = l.Title,
                 VideoURL = l.VideoURL,
                 InstructorCourses = InstCourseList
-            }).FirstOrDefault(LVM => LVM.ID == LectureId);
+                }).FirstOrDefault(LVM => LVM.ID == LectureId);
+            }
 
+
+        public List<VMLectureSchedule> GetStudentLectureSchedual(int StudentID)
+        {
+            DateTime today = DateTime.Today;
+            DateTime nextWeek = today.AddDays(7);
+
+            return context.Registers
+                .Where(r => r.StudentID == StudentID)
+                .SelectMany(r => r.Course.Lecture
+                    .Where(l => l.LectureTime >= today &&
+                                l.LectureTime <= nextWeek)
+                    .Select(l => new VMLectureSchedule
+                    {
+                        ID = l.ID,
+                        Title = l.Title,
+                        LectureTime = l.LectureTime,
+                        CourseName = l.Course.Name,
+                    }))
+                .OrderByDescending(l => l.LectureTime)
+            .ToList();
+        }
+
+        public void Delete(Lecture Entity)
+        {
+            context.lectures.Remove(Entity);
+        }
+
+        public List<Lecture> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Lecture GetByID(int id)
+        {
+            return context.lectures.FirstOrDefault(d => d.ID == id);
+        }
+
+
+        public void Insert(Lecture Entity)
+        {
+            context.lectures.Add(Entity);
+        }
+
+        public void SaveData()
+        {
+            context.SaveChanges();
+        }
+        
+        public void Update(int id, Lecture Entity)
+        {
+           // Lecture l = GetByID(id);
+            context.Update(Entity);
         }
     }
 }

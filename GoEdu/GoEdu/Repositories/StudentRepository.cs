@@ -54,8 +54,8 @@ namespace GoEdu.Repositories
 
         public void Update(int id, Student Entity)
         {
-            Student std = ctx.Students.FirstOrDefault(Entity);
-            ctx.Students.Update(std);
+            //Student std = ctx.Students.FirstOrDefault(Entity);
+            ctx.Students.Update(Entity);
         }
 
         public void SaveData()

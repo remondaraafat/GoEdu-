@@ -10,10 +10,29 @@ namespace GoEdu.Controllers
 {
     public class StudentController : Controller
     {
+<<<<<<< HEAD
         private UnitOfWork unitOfWork;
         public StudentController(UnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
+=======
+        private readonly UnitOfWork unitOfWork;
+        public StudentController(UnitOfWork unitOfWork)
+        {
+            this.unitOfWork = unitOfWork;
+        }
+        
+        public IActionResult StudentDashBoard(int StudentId)
+        {
+                VMStudentDashBoard Dashboard = new VMStudentDashBoard
+                {
+                    TodayLectures = unitOfWork.LectureRepository.GetTodayLectureByStudentId(StudentId),
+                    LateLectures = unitOfWork.LectureRepository.GetLateLectures(StudentId),
+                };
+            //nessecary need to send error from action "LectureDetails" in lecture controller
+            if (ModelState.IsValid) { }
+            return View(Dashboard);
+>>>>>>> origin/main
         }
 
 
@@ -34,10 +53,10 @@ namespace GoEdu.Controllers
             StudentsCoursesVM StdVM = new();
 
             //all Students by instructor
-            StdVM.Students = context.StudentRepo.GetStudentsByInstructor(instructorId);
+            StdVM.Students = unitOfWork.StudentRepo.GetStudentsByInstructor(instructorId);
 
             // get courses by instructor
-            StdVM.Courses = context.CourseRepo.CoursesByInstructor(instructorId);            
+            StdVM.Courses = unitOfWork.CourseRepo.CoursesByInstructor(instructorId);            
 
             return View(StdVM);
         }
@@ -48,7 +67,7 @@ namespace GoEdu.Controllers
             if (StudentsfromView.CourseId != 0)
             {
                 // get students with a specific course
-                StudentsfromView.Students = context.StudentRepo.
+                StudentsfromView.Students = unitOfWork.StudentRepo.
                                             GetStudentsByCourse(StudentsfromView.CourseId);
             }
             // filter by status 
@@ -65,7 +84,7 @@ namespace GoEdu.Controllers
 
         public IActionResult Details(int id)
         {
-            Student std = context.StudentRepo.GetByID(id);
+            Student std = unitOfWork.StudentRepo.GetByID(id);
             return View(std);
         }       
     }

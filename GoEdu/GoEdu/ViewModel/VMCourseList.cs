@@ -9,5 +9,6 @@ namespace GoEdu.ViewModel
         [Required(ErrorMessage = "Course name is required")]
         [Display(Name = "Course Name")]
         public string Name { get; set; }
+
     }
 }
