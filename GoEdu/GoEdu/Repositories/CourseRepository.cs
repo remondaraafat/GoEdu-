@@ -42,7 +42,7 @@ namespace GoEdu.Repositories
                     Price = c.Price,
                     Hours = c.Hours,
                     MaxViews = c.MaxViews,
-
+                    //Semester = c.Semester,
                     CourseLevel = c.CourseLevel,
 
                     InstructorName = c.Instructor.Name,

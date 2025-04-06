@@ -2,29 +2,32 @@
 using Microsoft.AspNetCore.Mvc;
 using GoEdu.ViewModel;
 using GoEdu.Models;
+using GoEdu.Data;
 namespace GoEdu.Controllers
 {
     public class CourseController : Controller
     {
-        ICourseRepository courseRepository;
-        public CourseController(ICourseRepository crseRepo)
+        
+       // ICourseRepository courseRepository;
+        UnitOfWork UnitOfWork;
+        public CourseController(UnitOfWork unitOfWork)
         {
-            courseRepository = crseRepo;
+            this.UnitOfWork = unitOfWork;
+           //this.courseRepository = courseRepository;
         }
 
         public IActionResult Index(string searchQuery, string? filterBy, string? nameAccourdFilter)
         {
-            var courses = courseRepository.GetAll();
-            List<Course> courslist;
+            var courses = UnitOfWork.CourseRepo.GetAll();
+           
             if (!string.IsNullOrEmpty(searchQuery))
             {
-                courses = courseRepository.search(searchQuery);// courses.Where(c => c.Name.Contains(searchQuery)).ToList();
+                courses = UnitOfWork.CourseRepo.search(searchQuery);
             }
-           else if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(nameAccourdFilter))
+            else if (!string.IsNullOrEmpty(filterBy) && !string.IsNullOrEmpty(nameAccourdFilter))
             {
-                courses = courseRepository.FilterCourses(filterBy,nameAccourdFilter);
+                courses = UnitOfWork.CourseRepo.FilterCourses(filterBy, nameAccourdFilter);
             }
-           
             return View("Index", courses);
         }
 
@@ -32,7 +35,7 @@ namespace GoEdu.Controllers
 
         public IActionResult Details(int id)
         {
-            var Course = courseRepository.GetByID(id);
+            var Course = UnitOfWork.CourseRepo.GetByID(id);
             if (Course == null)
             {
                 return NotFound();
@@ -41,20 +44,15 @@ namespace GoEdu.Controllers
         }
         public IActionResult GetAllWithIns()
         {
-            var courses = courseRepository.GetAllcourses();
+            var courses = UnitOfWork.CourseRepo.GetAllcourses();
             return View("GetAllWithIns", courses);
 
         }
-        //public IActionResult filtered(string? instructorName,)
-        //{
-        //    var filteredCourses = courseRepository.FilterCourses(instructorName);
-        //    return View("filtered", filteredCourses);
-        //}
+       
 
         public IActionResult CourseDetails(int id)
         {
-            var courseDetails= courseRepository.GetCourseWithLectures(id);
-            if (courseDetails == null)
+            var courseDetails= UnitOfWork.CourseRepo.GetCourseWithLectures(id); 
             {
                 return NotFound("Course not found");
             }
