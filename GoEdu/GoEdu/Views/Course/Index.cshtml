@@ -16,7 +16,7 @@
 
     <div>
         <label class="form-label">الكلمة المفتاحية</label>
-        <input type="text" name="searchQuery" class="form-control" placeholder="اكتب هنا..." value="@Context.Request.Query["searchQuery"]" />
+        <input type="text" name="nameAccourdFilter" class="form-control" placeholder="اكتب هنا..." value="@Context.Request.Query["nameAccourdFilter"]" />
     </div>
 
     <div>
@@ -54,9 +54,10 @@
                 <td>@course.StudentStage</td>
                 <td>
                     @course.Instructor.Name
+                    </td>
                 <td>
 
-                    <a href="/Course/Details">Details</a>
+                    <a href="/Course/CourseDetails/@course.ID">Details</a>
                 </td>
             </tr>
         }

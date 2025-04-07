@@ -1,5 +1,12 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model Course
+
+<td>@Model.Name</td>
+
+<td>@Model.Price</td>
+<td>@Model.Hours</td>
+<td>@Model.CourseLevel</td>
+<td>@Model.Semester</td>
+<td>@Model.StudentStage</td>
+<td>
+    @Model.Instructor.Name
+</td>

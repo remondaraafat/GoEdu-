@@ -20,6 +20,6 @@ namespace GoEdu.Models
         public int ExamId {  get; set; }
 
         public virtual Student? Student { get; set; }
-        public virtual Exam? Exam { get; set; }
+        public virtual Exams? Exam { get; set; }
     }
 }

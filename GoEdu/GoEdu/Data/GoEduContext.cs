@@ -14,7 +14,7 @@ namespace GoEdu.Data
         public DbSet<Register> Registers { get; set; }
         public DbSet<Attend> Attends { get; set; }
         public DbSet<Comment> Comments { get; set; }
-        public DbSet<Exam> Exams { get; set; }
+        public DbSet<Exams> Exams { get; set; }
         public DbSet<ExamLecture> ExamLectures { get; set; }
         public DbSet<Answer> Answers { get; set; }
 
