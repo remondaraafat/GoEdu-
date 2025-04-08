@@ -41,6 +41,10 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Attend.cs",
@@ -50,8 +54,7 @@
               "RelativeToolTip": "GoEdu\\Models\\Attend.cs",
               "ViewState": "AgIAAAYAAADAIjMzMzMLwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T21:52:53.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T21:52:53.587Z"
             },
             {
               "$type": "Document",
@@ -63,8 +66,7 @@
               "RelativeToolTip": "GoEdu\\Interface\\IAttendRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T21:44:59.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T21:44:59.039Z"
             },
             {
               "$type": "Document",
@@ -76,12 +78,7 @@
               "RelativeToolTip": "GoEdu\\Repositories\\AttendRepository.cs",
               "ViewState": "AgIAAAkAAAAAmZmZmZkVwBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T21:35:53.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-04-06T21:35:53.904Z"
             },
             {
               "$type": "Document",
@@ -91,7 +88,7 @@
               "RelativeDocumentMoniker": "GoEdu\\Controllers\\LectureController.cs",
               "ToolTip": "F:\\Dot_Net_9_Month\\16 MVC\\Project\\GoEdu-\\GoEdu\\GoEdu\\Controllers\\LectureController.cs",
               "RelativeToolTip": "GoEdu\\Controllers\\LectureController.cs",
-              "ViewState": "AgIAABoAAADAo5mZmZktwCgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAACAMDMzMzMLwA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T19:00:41.495Z",
               "EditorCaption": ""
@@ -106,8 +103,7 @@
               "RelativeToolTip": "GoEdu\\Views\\Student\\StudentDashBoard.cshtml",
               "ViewState": "AgIAAE4AAAAAY2ZmZmYkwHUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T18:54:32.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T18:54:32.372Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "GoEdu\\Repositories\\LectureRepository.cs",
               "ViewState": "AgIAAC8AAADAW2ZmZmYSwCIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:55:00.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T15:55:00.452Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "GoEdu\\Controllers\\StudentController.cs",
               "ViewState": "AgIAAAcAAAAemJmZmZk+wBgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T15:41:17.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T15:41:17.979Z"
             }
           ]
         }
