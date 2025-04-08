@@ -1,20 +1,16 @@
 ﻿using GoEdu.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using GoEdu.ViewModel;
-<<<<<<< HEAD
 using GoEdu.Data;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using GoEdu.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-=======
 using GoEdu.Models;
->>>>>>> origin/main
 namespace GoEdu.Controllers
 {
     public class CourseController : Controller
     {
         UnitOfWork unitOfWork;
-        //IunitOfWork.CourseRepo unitOfWork.CourseRepo;
         public CourseController(UnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork; 
@@ -22,34 +18,23 @@ namespace GoEdu.Controllers
 
         public IActionResult Index(string searchQuery, string? filterBy, string? nameAccourdFilter)
         {
-<<<<<<< HEAD
             var courses = unitOfWork.CourseRepo.GetAll();
-=======
-            var courses = courseRepository.GetAll();
+            //var courses = courseRepository.GetAll();
             List<Course> courslist;
->>>>>>> origin/main
             if (!string.IsNullOrEmpty(searchQuery))
             {
                 courses = unitOfWork.CourseRepo.search(searchQuery);// courses.Where(c => c.Name.Contains(searchQuery)).ToList();
             }
            else if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(nameAccourdFilter))
             {
-<<<<<<< HEAD
-                courses = unitOfWork.CourseRepo.FilterCourses(filterBy, NameOfCourse);
-=======
-                courses = courseRepository.FilterCourses(filterBy,nameAccourdFilter);
->>>>>>> origin/main
+                courses = unitOfWork.CourseRepo.FilterCourses(filterBy, nameAccourdFilter);
+                //courses = courseRepository.FilterCourses(filterBy,nameAccourdFilter);
+
             }
            
             return View("Index", courses);
         }
-<<<<<<< HEAD
-        //not working
-=======
 
-
-
->>>>>>> origin/main
         public IActionResult Details(int id)
         {
             var Course = unitOfWork.CourseRepo.GetByID(id);
