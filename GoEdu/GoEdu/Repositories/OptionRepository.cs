@@ -24,6 +24,11 @@ namespace GoEdu.Repositories
             context.Options.Remove(Entity);
         }
 
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Option> GetAll()
         {
             return context.Options.ToList();

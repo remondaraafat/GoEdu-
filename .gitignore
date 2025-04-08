@@ -40,4 +40,8 @@ appsettings.*.json
 
 # JetBrains Rider / Resharper
 _Resharper
+<<<<<<< HEAD
 *.Resharper
+=======
+*.Resharper
+>>>>>>> origin/main

@@ -1,6 +1,8 @@
 ﻿using GoEdu.Models;
 using GoEdu.ViewModel;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+
 namespace GoEdu.Repositories
 {
     public interface ICourseRepository : ICRUD<Course>
@@ -15,6 +17,21 @@ namespace GoEdu.Repositories
         //david methods
         public List<Course> CoursesByInstructor(int instructorId);
 
+<<<<<<< HEAD
+=======
+        #region Mark Section
+        public List<CourseWithInstructorVM> GetIstructorCourses(int insID);
+        public int GetInsStudentCount(int InsID);
+        public int GetInsCourseCount(int InsID);
+
+        public void SaveNew(AddCourseWithInstructorVM newCrs);
+
+        public AddCourseWithInstructorVM EditCourse(int id);
+
+        public void SaveEdit(AddCourseWithInstructorVM crsFromReq);
+        #endregion
+
+>>>>>>> origin/mark
     }
 
     //        public List<CourseViewModel> GetAllcourses();

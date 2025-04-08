@@ -1,21 +1,94 @@
-﻿using GoEdu.Data;
+﻿using System.Collections.Generic;
+using GoEdu.Data;
 using GoEdu.Models;
 using GoEdu.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GoEdu.Controllers
 {
     public class LectureController : Controller
     {
+
         UnitOfWork UnitOfWork;
         public LectureController(UnitOfWork unitOfWork)
         {
             this.UnitOfWork = unitOfWork;
         }
-        public IActionResult Index()
+
+        #region Mark Section
+        #region All Lecture Course
+        public IActionResult GetLectures(int id)
         {
-            return View();
+            List<LectureWithInstructorVM> lectures = UnitOfWork.LectureRepository.GetLectureCourses(id);
+
+            if (lectures == null)
+            {
+                return NoContent();
+            }
+            ViewData["LectureCount"] = UnitOfWork.LectureRepository.LectureCount(id);
+            return View(lectures);
         }
+        #endregion
+
+        #region Add Lecture
+        public IActionResult NewLecture(int CrsID)
+        {
+            AddOrEditLectureVM CrsId = new AddOrEditLectureVM() { CourseID = CrsID };
+            return View(CrsId);
+        }
+
+
+        [HttpPost]
+        public IActionResult SaveNew(AddOrEditLectureVM lctFromReq)
+        {
+            if (ModelState.IsValid == true)
+            {
+                try
+                {
+                    Lecture lecture = new Lecture
+                    {
+                        Title = lctFromReq.Title,
+                        VideoURL = "videoUrl",
+                        LectureTime = lctFromReq.LectureTime,
+                        Description = lctFromReq.Description,
+                        isDeleted = false,
+                        CourseID = lctFromReq.CourseID,
+                    };
+                    UnitOfWork.LectureRepository.Insert(lecture);
+                    TempData["SuccessMessage"] = "تم إضافة المحاضرة بنجاح!";
+                    return RedirectToAction("GetLectures", new { id = lctFromReq.CourseID });
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty, ex.Message.ToString());
+                }
+            }
+            return View("NewLecture", lctFromReq);
+        }
+        #endregion
+
+        #region Delete Lecture
+        public IActionResult DeleteLecture(int id, int CrsID)
+        {
+            UnitOfWork.LectureRepository.Delete(id);
+            TempData["Deleted"] = "تم الحذف بنجاح !";
+
+            return RedirectToAction("GetLectures", new { id = CrsID });
+        }
+        #endregion
+        #endregion
+
+
+        //[HttpGet]
+
+
+        //public IActionResult LectureDetails(int id)
+        //{
+        //    Lecture lecture = UnitOfWork.LectureRepository.GetByID(id);
+        //    return View(lecture);
+        //}
+
         [HttpGet]
         public IActionResult LectureDetails(int id, int StudentID)
         {
@@ -49,6 +122,7 @@ namespace GoEdu.Controllers
 
             return View(lecture);
         }
+
         [HttpPost]
         public IActionResult EditLecture(VMLectureWithInstructorCourses lectureVM)
         {
@@ -59,7 +133,6 @@ namespace GoEdu.Controllers
                 if (lecture != null)
                 {
                     lecture.Description = lectureVM.Description;
-                    lecture.ExamID = lectureVM.ExamId;
                     lecture.ID = lectureVM.ID;
                     lecture.Title = lectureVM.Title;
                     lecture.LectureTime = lectureVM.LectureTime;
@@ -67,7 +140,6 @@ namespace GoEdu.Controllers
 
                     try
                     {
-
                         UnitOfWork.LectureRepository.Update(lecture.ID, lecture);
                         UnitOfWork.save();
                         //need edit student id 
@@ -89,6 +161,7 @@ namespace GoEdu.Controllers
             lectureVM.InstructorCourses = UnitOfWork.LectureRepository.GetLectureWithCourseList(lectureVM.ID, 1).InstructorCourses;
             return View(lectureVM);
         }
+
         [HttpGet]
         public IActionResult LectureSchedule( int StudentID)
         {
@@ -98,3 +171,4 @@ namespace GoEdu.Controllers
         }
     }
 }
+
