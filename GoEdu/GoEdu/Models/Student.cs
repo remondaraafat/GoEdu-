@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using GoEdu.Interface;
 
 namespace GoEdu.Models
 {
-    public class Student:IsDeleted
+    public class Student: IDeleted
     {
         public int ID { get; set; }
 
@@ -24,13 +25,13 @@ namespace GoEdu.Models
         [RegularExpression(@"^\\+?[0-9][0-9]{7,14}$", ErrorMessage = "Invalid Phone Number")]
         [Compare("StudentPhone")]
         public string ParentPhone { get; set; }
-       
+        public bool isDeleted { get; set; } = false;
 
-        public virtual List<Register>? Register { get; set; }
+        public virtual List<Enroll>? Register { get; set; }
         public virtual List<Attend>? Attend { get; set; }    
         public virtual List<Comment>? Comment { get; set; }
         public virtual List<Answer>? Answers { get; set; }
-        public virtual List<StudentPerformeExam>? Exams { get; set; }
+        public virtual List<StudentPerformance>? Exams { get; set; }
     }
    
 
