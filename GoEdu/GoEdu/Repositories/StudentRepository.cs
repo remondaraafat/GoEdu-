@@ -15,7 +15,7 @@ namespace GoEdu.Repositories
 
         public List<Student> GetStudentsByInstructor(int instructorId)
         {
-            List<Student> std = ctx.Registers.Where(r=>r.InstructorID == instructorId).Select(r=>r.Student).ToList();
+            List<Student> std = ctx.Enrolls.Where(r=>r.InstructorID == instructorId).Select(r=>r.Student).ToList();
 
             return std;
 
@@ -32,7 +32,7 @@ namespace GoEdu.Repositories
         }
         public List<Student> GetStudentsByCourse(int CoureId)
         {
-            List<Student> std = ctx.Registers.Where(r => r.CourseID == CoureId).Select(r => r.Student).ToList();
+            List<Student> std = ctx.Enrolls.Where(r => r.CourseID == CoureId).Select(r => r.Student).ToList();
 
             return std;
         }

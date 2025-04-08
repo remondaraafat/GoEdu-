@@ -70,10 +70,55 @@ namespace GoEdu.Controllers
 
             return View();
         }
+        //show question for student by lecture
+        [HttpGet]
+        public IActionResult ShowLectureQuestions(int LectureID,int StudentId) 
+        {
+            StudentPerformance studentPerformance = unitOfWork.StudentPerformanceRepo.GetBy2IDs(StudentId,LectureID);
+            if (studentPerformance == null) {
+                ModelState.AddModelError("", "لقد امتحنت هذا الامتحان مسبقا!");
+                return RedirectToAction("LectureDetails", "Lecture",new { id= LectureID,  StudentID=StudentId });
+            }
+            List<VMQuestionAnswer> questions= unitOfWork.QuestionRepo.GetQuestionsByLectureID(LectureID);
+            return View(questions);
+        }
+        [HttpPost]
+        public IActionResult ShowLectureQuestions(List<VMQuestionAnswer> questionAnswers)
+        {
+            int grad = 0;
+            foreach (var ans in questionAnswers)
+            {
+                
+                if (ans.StudentAnswer ==ans.ModelAnswer)
+                {
+                    grad++;
+                }
+                
+                var answer = new Answer
+                {
+                    QuestionId = ans.QuestionId,
+                    StudentId = ans.StudentId,
+                    StudentAnswer = ans.StudentAnswer
+                };
+                
 
+                unitOfWork.AnswerRepo.Insert(answer);
+            }
+            int percent=100*grad/ questionAnswers.Count();
+            StudentPerformance studentPerformance=new StudentPerformance
+            {
+                LectureId= questionAnswers[0].LectureId,
+                StudentId= questionAnswers[0].StudentId,
+                Grade=percent
+            };
+            unitOfWork.StudentPerformanceRepo.Insert(studentPerformance);
+            unitOfWork.save();
+            return RedirectToAction("LectureDetails", "Lecture", new { id = questionAnswers[0].LectureId, StudentID = questionAnswers[0].StudentId });
+        }
 
         public IActionResult Index()
         {
+            
             return View();
         }
 

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 namespace GoEdu.Models
 {
     [PrimaryKey(nameof(StudentID), nameof(CourseID), nameof(InstructorID))]
-    public class Register: IDeleted
+    public class Enroll: IDeleted
     {
         public int StudentID { get; set; }
         public int CourseID { get; set; }
