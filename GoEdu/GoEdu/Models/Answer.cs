@@ -8,8 +8,9 @@ namespace GoEdu.Models
     {
         [Key]  
         public int Id { get; set; }
-        [ForeignKey("Exam")]
-        public int ExamId { get; set; }
+        //محزوفه 
+        //[ForeignKey("Exam")]
+        //public int ExamId { get; set; }
       
         [ForeignKey("Student")]
         public int StudentId { get; set; }
@@ -19,8 +20,13 @@ namespace GoEdu.Models
         [ForeignKey("Question")]
         public int QuestionId { get; set; }
       
+<<<<<<< HEAD
+        
+        //public virtual Exam? Exam { get; set; }
+=======
         [Required]
-        public virtual Exam? Exam { get; set; }
+        public virtual Exams? Exam { get; set; }
+>>>>>>> origin/main
         public virtual Student? Student { get; set; }
         public virtual Question? Question { get; set; }
         

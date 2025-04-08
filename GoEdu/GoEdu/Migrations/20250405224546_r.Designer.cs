@@ -4,6 +4,7 @@ using GoEdu.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GoEdu.Migrations
 {
     [DbContext(typeof(GoEduContext))]
-    partial class GoEduContextModelSnapshot : ModelSnapshot
+    [Migration("20250405224546_r")]
+    partial class r
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -159,6 +162,38 @@ namespace GoEdu.Migrations
                     b.ToTable("Courses");
                 });
 
+            modelBuilder.Entity("GoEdu.Models.Exam", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ExamDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ExamType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MCQCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TrueFalseCount")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Exams");
+                });
+
             modelBuilder.Entity("GoEdu.Models.ExamLecture", b =>
                 {
                     b.Property<int>("ExamId")
@@ -193,38 +228,6 @@ namespace GoEdu.Migrations
                     b.HasIndex("QuestionId");
 
                     b.ToTable("ExamQuestions");
-                });
-
-            modelBuilder.Entity("GoEdu.Models.Exams", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("ExamDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ExamType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("MCQCount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TrueFalseCount")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("isDeleted")
-                        .HasColumnType("bit");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Exams");
                 });
 
             modelBuilder.Entity("GoEdu.Models.Instructor", b =>
@@ -340,7 +343,7 @@ namespace GoEdu.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ExamsID")
+                    b.Property<int?>("ExamID")
                         .HasColumnType("int");
 
                     b.Property<int>("LectureId")
@@ -357,7 +360,7 @@ namespace GoEdu.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ExamsID");
+                    b.HasIndex("ExamID");
 
                     b.HasIndex("LectureId");
 
@@ -458,7 +461,7 @@ namespace GoEdu.Migrations
 
             modelBuilder.Entity("GoEdu.Models.Answer", b =>
                 {
-                    b.HasOne("GoEdu.Models.Exams", "Exam")
+                    b.HasOne("GoEdu.Models.Exam", "Exam")
                         .WithMany("Answers")
                         .HasForeignKey("ExamId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -534,7 +537,7 @@ namespace GoEdu.Migrations
 
             modelBuilder.Entity("GoEdu.Models.ExamLecture", b =>
                 {
-                    b.HasOne("GoEdu.Models.Exams", "Exam")
+                    b.HasOne("GoEdu.Models.Exam", "Exam")
                         .WithMany("ExamLectures")
                         .HasForeignKey("ExamId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -553,7 +556,7 @@ namespace GoEdu.Migrations
 
             modelBuilder.Entity("GoEdu.Models.ExamQuestion", b =>
                 {
-                    b.HasOne("GoEdu.Models.Exams", "Exam")
+                    b.HasOne("GoEdu.Models.Exam", "Exam")
                         .WithMany()
                         .HasForeignKey("ExamId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -594,9 +597,9 @@ namespace GoEdu.Migrations
 
             modelBuilder.Entity("GoEdu.Models.Question", b =>
                 {
-                    b.HasOne("GoEdu.Models.Exams", null)
+                    b.HasOne("GoEdu.Models.Exam", null)
                         .WithMany("Question")
-                        .HasForeignKey("ExamsID");
+                        .HasForeignKey("ExamID");
 
                     b.HasOne("GoEdu.Models.Lecture", "Lecture")
                         .WithMany("Question")
@@ -636,7 +639,7 @@ namespace GoEdu.Migrations
 
             modelBuilder.Entity("GoEdu.Models.StudentPerformeExam", b =>
                 {
-                    b.HasOne("GoEdu.Models.Exams", "Exam")
+                    b.HasOne("GoEdu.Models.Exam", "Exam")
                         .WithMany("Students")
                         .HasForeignKey("ExamId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -660,7 +663,7 @@ namespace GoEdu.Migrations
                     b.Navigation("Register");
                 });
 
-            modelBuilder.Entity("GoEdu.Models.Exams", b =>
+            modelBuilder.Entity("GoEdu.Models.Exam", b =>
                 {
                     b.Navigation("Answers");
 

@@ -20,7 +20,7 @@ namespace GoEdu.Repositories
         {
             DateTime today = DateTime.Today;
 
-            return context.Registers
+            return context.Enrolls
                 .Where(r => r.StudentID == StudentID)
                 .SelectMany(r => r.Course.Lecture
                     .Where(l => l.LectureTime.Date == today)
@@ -40,7 +40,7 @@ namespace GoEdu.Repositories
         {
             DateTime today = DateTime.Today;
 
-            return context.Registers
+            return context.Enrolls
                 .Where(r => r.StudentID == StudentID)
                 .SelectMany(r => r.Course.Lecture
                     .Where(l => l.LectureTime.Date < today && 
@@ -106,7 +106,7 @@ namespace GoEdu.Repositories
             DateTime today = DateTime.Today;
             DateTime nextWeek = today.AddDays(7);
 
-            return context.Registers
+            return context.Enrolls
                 .Where(r => r.StudentID == StudentID)
                 .SelectMany(r => r.Course.Lecture
                     .Where(l => l.LectureTime >= today &&

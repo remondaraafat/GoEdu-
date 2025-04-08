@@ -30,7 +30,7 @@ namespace GoEdu.Models
         public bool isDeleted { get; set; } = false;
 
         public virtual List<Lecture>? Lecture { get; set; }
-        public virtual List<Register>? Register { get; set; }
+        public virtual List<Enroll>? Register { get; set; }
         public virtual Instructor? Instructor { get; set; }
 
     }

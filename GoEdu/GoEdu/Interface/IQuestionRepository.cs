@@ -8,5 +8,6 @@ namespace GoEdu.Repositories
         public VMQuestionWithQuestions GetAndAddQustionListByLectureId(int LectureId);
 
         public Question GetQuestionByContent(string content);
+        public List<VMQuestionAnswer> GetQuestionsByLectureID(int LectureID);
     }
 }

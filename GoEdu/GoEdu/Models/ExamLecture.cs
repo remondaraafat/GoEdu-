@@ -13,7 +13,7 @@ namespace GoEdu.Models
         public int LectureId { get; set; }
         public bool isDeleted { get; set; } = false;
 
-        public virtual Exam? Exam { get; set; }
+        public virtual Exams? Exam { get; set; }
         public virtual Lecture? Lecture { get; set; }
     }
 }

@@ -29,7 +29,7 @@ namespace GoEdu.Repositories
 
         public void Insert(Answer Entity)
         {
-            throw new NotImplementedException();
+            context.Answers.Add(Entity);
         }
 
         public void SaveData()

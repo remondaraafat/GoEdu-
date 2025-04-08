@@ -30,7 +30,18 @@ namespace GoEdu.Repositories
 
             return qustionList;
         }
-
+        //show question for student by lecture
+        public List<VMQuestionAnswer> GetQuestionsByLectureID(int LectureID) {
+            return context.Questions.Where(q=>q.LectureId==LectureID)
+                .Select(q=>new VMQuestionAnswer {
+                    Content = q.Content,
+                    LectureId = q.LectureId,
+                    ModelAnswer=q.ModelAnswer,
+                    QuestionId = q.Id,
+                    options=q.Options
+                })
+                .ToList();
+        }
         public Question GetQuestionByContent(string content)
         {
             return context.Questions.FirstOrDefault(q => q.Content == content);
