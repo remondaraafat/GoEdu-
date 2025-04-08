@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 @model List<Course>
 
 @{
     ViewData["Title"] = "Index";
 }
 
+=======
+﻿ @model List<Course>
+ @{
+    Layout= "_AdvancedLayout";
+ }
+>>>>>>> origin/Tena
 <h2>جميع الكورسات</h2>
 <form asp-controller="Course" asp-action="Index" method="get"> 
     <input type="text" name="searchQuery" placeholder="ابحث عن كورس..." class="form-control" value="@Context.Request.Query["searchQuery"]" /> 

@@ -20,7 +20,10 @@ namespace GoEdu.Models
         public int LectureId {  get; set; }
 
         public virtual Student? Student { get; set; }
+<<<<<<< HEAD:GoEdu/GoEdu/Models/StudentPerformance.cs
         public virtual Lecture? Lecture { get; set; }
+=======
+>>>>>>> origin/Tena:GoEdu/GoEdu/Models/StudentPerformeExam.cs
         public virtual Exams? Exam { get; set; }
     }
 }

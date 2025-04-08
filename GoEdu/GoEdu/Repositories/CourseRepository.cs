@@ -147,8 +147,13 @@ namespace GoEdu.Repositories
                     Price = c.Price,
                     Hours = c.Hours,
                     MaxViews = c.MaxViews,
+<<<<<<< HEAD
 
                     //CourseLevel = c.CourseLevel,
+=======
+                    //Semester = c.Semester,
+                    CourseLevel = c.CourseLevel,
+>>>>>>> origin/Tena
 
                     InstructorName = c.Instructor.Name,
 
