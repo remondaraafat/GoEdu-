@@ -20,13 +20,8 @@ namespace GoEdu.Models
         [ForeignKey("Question")]
         public int QuestionId { get; set; }
       
-<<<<<<< HEAD
-        
-        //public virtual Exam? Exam { get; set; }
-=======
         [Required]
         public virtual Exams? Exam { get; set; }
->>>>>>> origin/main
         public virtual Student? Student { get; set; }
         public virtual Question? Question { get; set; }
         

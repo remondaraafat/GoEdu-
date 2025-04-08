@@ -12,6 +12,12 @@ namespace GoEdu.Repositories
             this.context = context;
         }
 
+        // Total Views 
+        public int LecturesTotalViewsByInstructorId(int instructorId)
+        {
+            return context.Attends.Where(a => a.Lecture.Course.InstructorID == instructorId).Select(a => a.ViewsCount).Sum();
+        }
+
         //get by two ids
         public Attend GetBy2Ids(int StudentId, int LectureId)
         {

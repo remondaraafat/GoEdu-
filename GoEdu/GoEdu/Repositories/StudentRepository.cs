@@ -18,18 +18,8 @@ namespace GoEdu.Repositories
             List<Student> std = ctx.Enrolls.Where(r=>r.InstructorID == instructorId).Select(r=>r.Student).ToList();
 
             return std;
-
-            //return ctx.Students.Select(s => new Student
-            //{
-            //    Name = s.Name,
-            //    StudentPhone = s.StudentPhone,
-            //    Email = s.Email,
-            //    Age = s.Age,
-            //    Address = s.Address,
-            //    ParentPhone = s.ParentPhone,
-            //    Register = s.Register.Where(r => r.InstructorID == instructorId).ToList(),
-            //}).ToList();
         }
+
         public List<Student> GetStudentsByCourse(int CoureId)
         {
             List<Student> std = ctx.Enrolls.Where(r => r.CourseID == CoureId).Select(r => r.Student).ToList();

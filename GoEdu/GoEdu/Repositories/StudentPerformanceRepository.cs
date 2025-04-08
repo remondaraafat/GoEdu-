@@ -1,5 +1,6 @@
 ﻿using GoEdu.Models;
 using GoEdu.Data;
+using GoEdu.ViewModel;
 namespace GoEdu.Repositories
 {
     public class StudentPerformanceRepository : IStudentPerformanceRepository
@@ -13,6 +14,48 @@ namespace GoEdu.Repositories
         public StudentPerformance GetBy2IDs(int studentID,int LectureID)
         {
             return context.StudentPerformances.FirstOrDefault(s=>s.StudentId==studentID && s.LectureId==LectureID);
+        }
+
+        public List<VMStudentPerformance> GetStudentPerformanceByStudentId(int studentID)
+        {
+            return context.StudentPerformances.Where(p => p.StudentId == studentID).Select(p => new VMStudentPerformance
+            {
+                StudentId = studentID,
+                LectureID = p.LectureId,
+                LectureTitle=p.Lecture.Title,
+                StudentName = p.Student.Name,
+                CourseName = p.Lecture.Course.Name,
+                LectureTime = p.Lecture.LectureTime,
+                Grade = p.Grade
+            }).OrderByDescending(l => l.LectureTime).ToList();
+        }
+
+        public List<VMStudentPerformance> GetStudentPerformanceByInstructorId(int InstructorId)
+        {
+            return context.StudentPerformances.Where(p => p.Lecture.Course.InstructorID == InstructorId).Select(p => new VMStudentPerformance
+            {
+                StudentId = p.StudentId,
+                LectureID = p.LectureId,
+                LectureTitle = p.Lecture.Title,
+                StudentName = p.Student.Name,
+                CourseName = p.Lecture.Course.Name,
+                LectureTime = p.Lecture.LectureTime,
+                Grade = p.Grade
+            }).OrderByDescending(l => l.LectureTime).ToList();
+        }
+
+        public List<VMStudentPerformance> TopTenByInstructorId(int instructorId)
+        {
+            return context.StudentPerformances.Where(p => p.Lecture.Course.InstructorID == instructorId).Select(p => new VMStudentPerformance
+            {
+                StudentId = p.StudentId,
+                LectureID = p.LectureId,
+                LectureTitle = p.Lecture.Title,
+                StudentName = p.Student.Name,
+                CourseName = p.Lecture.Course.Name,
+                LectureTime = p.Lecture.LectureTime,
+                Grade = p.Grade
+            }).OrderByDescending(l => l.LectureTime).OrderByDescending(g => g.Grade).Take(10).ToList();
         }
         public void Delete(StudentPerformance Entity)
         {

@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoEdu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d08c02c01daf7f56f2e06d5dd8ea39569dbc43c")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0862aa7213664e16694dde685f650882ebef7e4f")]
->>>>>>> origin/main
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57cdc56d674d2c2a2aa0c30f855e9c4570f0b187")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoEdu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoEdu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

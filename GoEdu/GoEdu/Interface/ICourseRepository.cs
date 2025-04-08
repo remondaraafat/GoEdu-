@@ -14,6 +14,7 @@ namespace GoEdu.Repositories
 
         //david methods
         public List<Course> CoursesByInstructor(int instructorId);
+
     }
 
     //        public List<CourseViewModel> GetAllcourses();

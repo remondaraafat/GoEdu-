@@ -1,0 +1,66 @@
+﻿@model IEnumerable<GoEdu.ViewModel.VMStudentPerformance>
+
+@{
+    ViewData["Title"] = "ShowStudentPerformanceByInstructorId";
+}
+
+<h1>ShowStudentPerformanceByInstructorId</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LectureID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LectureTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LectureTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grade)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LectureID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LectureTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LectureTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
