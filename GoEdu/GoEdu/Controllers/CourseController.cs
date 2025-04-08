@@ -1,18 +1,18 @@
 ﻿using GoEdu.Data;
 using GoEdu.Models;
 using GoEdu.ViewModel;
-<<<<<<< HEAD
+
 using GoEdu.Data;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using GoEdu.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using GoEdu.Models;
-=======
+
 using GoEdu.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
->>>>>>> origin/mark
+
 namespace GoEdu.Controllers
 {
     public class CourseController : Controller
@@ -20,9 +20,9 @@ namespace GoEdu.Controllers
         UnitOfWork unitOfWork;
         public CourseController(UnitOfWork unitOfWork)
         {
-<<<<<<< HEAD
+
             this.unitOfWork = unitOfWork; 
-=======
+
             this.unitOfWork = unitOfWork;
         }
 
@@ -128,30 +128,29 @@ namespace GoEdu.Controllers
         public IActionResult CourseInsDetails(int id)
         {
             return View();
->>>>>>> origin/mark
+
         }
 
         public IActionResult Index(string searchQuery, string? filterBy, string? nameAccourdFilter)
         {
             var courses = unitOfWork.CourseRepo.GetAll();
-<<<<<<< HEAD
+
             //var courses = courseRepository.GetAll();
             List<Course> courslist;
-=======
->>>>>>> origin/mark
+
             if (!string.IsNullOrEmpty(searchQuery))
             {
                 courses = unitOfWork.CourseRepo.search(searchQuery);// courses.Where(c => c.Name.Contains(searchQuery)).ToList();
             }
            else if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(nameAccourdFilter))
             {
-<<<<<<< HEAD
+
                 courses = unitOfWork.CourseRepo.FilterCourses(filterBy, nameAccourdFilter);
                 //courses = courseRepository.FilterCourses(filterBy,nameAccourdFilter);
 
-=======
-                courses = unitOfWork.CourseRepo.FilterCourses(filterBy, NameOfCourse);
->>>>>>> origin/mark
+
+              //  courses = unitOfWork.CourseRepo.FilterCourses(filterBy, NameOfCourse);
+
             }
            
             return View("Index", courses);

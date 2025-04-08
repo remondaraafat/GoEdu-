@@ -17,8 +17,7 @@ namespace GoEdu.Repositories
         //david methods
         public List<Course> CoursesByInstructor(int instructorId);
 
-<<<<<<< HEAD
-=======
+
         #region Mark Section
         public List<CourseWithInstructorVM> GetIstructorCourses(int insID);
         public int GetInsStudentCount(int InsID);
@@ -31,7 +30,7 @@ namespace GoEdu.Repositories
         public void SaveEdit(AddCourseWithInstructorVM crsFromReq);
         #endregion
 
->>>>>>> origin/mark
+
     }
 
     //        public List<CourseViewModel> GetAllcourses();

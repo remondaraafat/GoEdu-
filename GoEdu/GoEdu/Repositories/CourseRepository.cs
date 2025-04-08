@@ -34,13 +34,13 @@ namespace GoEdu.Repositories
                     CrsStage = c.StudentStage,
                     CrsLevel = c.CourseLevel,
                     NumOfLecture = Context.lectures.Where(l => l.CourseID == c.ID && l.isDeleted == false).Count(),
-                    NumOfStudent = Context.Registers.Where(r => r.CourseID == c.ID && r.isDeleted == false).Count()
+                    NumOfStudent = Context.Enrolls.Where(r => r.CourseID == c.ID && r.isDeleted == false).Count()
                 }).AsNoTracking().ToList();
             return crsVm;
         }
         public int GetInsStudentCount(int InsID)
         {
-            int Count = Context.Registers.Where(r => r.InstructorID == InsID && r.isDeleted == false).Count();
+            int Count = Context.Enrolls.Where(r => r.InstructorID == InsID && r.isDeleted == false).Count();
             return Count;
         }
         public int GetInsCourseCount(int InsID)

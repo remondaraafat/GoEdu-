@@ -164,7 +164,6 @@ R:\iti_intake_45\22_MVC\GoEdu-\GoEdu\GoEdu\obj\Debug\net8.0\GoEdu.sourcelink.jso
 R:\iti_intake_45\22_MVC\GoEdu-\GoEdu\GoEdu\obj\Debug\net8.0\GoEdu.dll
 R:\iti_intake_45\22_MVC\GoEdu-\GoEdu\GoEdu\obj\Debug\net8.0\refint\GoEdu.dll
 R:\iti_intake_45\22_MVC\GoEdu-\GoEdu\GoEdu\obj\Debug\net8.0\GoEdu.pdb
-R:\iti_intake_45\22_MVC\GoEdu-\GoEdu\GoEdu\bin\Debug\net8.0\appsettings.Development.json
 R:\iti_intake_45\22_MVC\GoEdu-\GoEdu\GoEdu\bin\Debug\net8.0\appsettings.json
 R:\iti_intake_45\22_MVC\GoEdu-\GoEdu\GoEdu\bin\Debug\net8.0\GoEdu.staticwebassets.runtime.json
 R:\iti_intake_45\22_MVC\GoEdu-\GoEdu\GoEdu\bin\Debug\net8.0\GoEdu.staticwebassets.endpoints.json
