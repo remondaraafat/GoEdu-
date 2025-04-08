@@ -54,7 +54,7 @@ namespace GoEdu.Repositories
         }
         public Course GetByID(int id)
         {
-            Course course = Context.Courses.FirstOrDefault(c => c.ID == id);
+            Course course = Context.Courses.Include(c=>c.Instructor).FirstOrDefault(c => c.ID == id);
             return course;
         }
 
@@ -83,15 +83,15 @@ namespace GoEdu.Repositories
             }
         }
 
-       public List<Course> FilterCourses(string filterBy, string NameOfCourse)
+       public List<Course> FilterCourses(string filterBy, string nameAccourdFilter)
           {
                 
                 IQueryable<Course> coursesQuery = Context.Courses;
-            if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(NameOfCourse))
+            if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(nameAccourdFilter))
             {
                 if (filterBy == "instructorName")
                 {
-                    coursesQuery = coursesQuery.Where(c => c.Instructor.Name.Contains(NameOfCourse.ToLower()));
+                    coursesQuery = coursesQuery.Where(c => c.Instructor.Name.ToLower().Contains(nameAccourdFilter.ToLower()));
                     //.Select(i => i.ID)
                    
                     //coursesQuery = coursesQuery.Where(c => instructorIds.Contains(c.InstructorID));
@@ -99,7 +99,7 @@ namespace GoEdu.Repositories
                 else if (filterBy == "courseName")
                 {
 
-                    coursesQuery = coursesQuery.Where(c => c.Name.Contains(NameOfCourse.ToLower()));
+                    coursesQuery = coursesQuery.Where(c => c.Name.Contains(nameAccourdFilter.ToLower()));
                 }
 
             }

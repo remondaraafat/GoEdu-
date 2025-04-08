@@ -1,10 +1,14 @@
 ﻿using GoEdu.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using GoEdu.ViewModel;
+<<<<<<< HEAD
 using GoEdu.Data;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using GoEdu.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+=======
+using GoEdu.Models;
+>>>>>>> origin/main
 namespace GoEdu.Controllers
 {
     public class CourseController : Controller
@@ -16,24 +20,36 @@ namespace GoEdu.Controllers
             this.unitOfWork = unitOfWork; 
         }
 
-        public IActionResult Index(string searchQuery, string? filterBy, string? NameOfCourse)
+        public IActionResult Index(string searchQuery, string? filterBy, string? nameAccourdFilter)
         {
+<<<<<<< HEAD
             var courses = unitOfWork.CourseRepo.GetAll();
+=======
+            var courses = courseRepository.GetAll();
+            List<Course> courslist;
+>>>>>>> origin/main
             if (!string.IsNullOrEmpty(searchQuery))
             {
                 courses = unitOfWork.CourseRepo.search(searchQuery);// courses.Where(c => c.Name.Contains(searchQuery)).ToList();
             }
-            if (!string.IsNullOrEmpty(filterBy)&&!string.IsNullOrEmpty(NameOfCourse))
+           else if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(nameAccourdFilter))
             {
+<<<<<<< HEAD
                 courses = unitOfWork.CourseRepo.FilterCourses(filterBy, NameOfCourse);
+=======
+                courses = courseRepository.FilterCourses(filterBy,nameAccourdFilter);
+>>>>>>> origin/main
             }
-            //if (!string.IsNullOrEmpty(NameOfCourse))
-            //{
-            //    courses = courses.Where(c => c.Name.Contains(NameOfCourse, StringComparison.OrdinalIgnoreCase)).ToList();
-            //}
+           
             return View("Index", courses);
         }
+<<<<<<< HEAD
         //not working
+=======
+
+
+
+>>>>>>> origin/main
         public IActionResult Details(int id)
         {
             var Course = unitOfWork.CourseRepo.GetByID(id);
