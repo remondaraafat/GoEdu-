@@ -70,13 +70,10 @@ namespace GoEdu.Repositories
         {
             throw new NotImplementedException();
         }
-<<<<<<< HEAD
 
         public void Delete(int id)
         {
             throw new NotImplementedException();
         }
-=======
->>>>>>> origin/Tena
     }
 }

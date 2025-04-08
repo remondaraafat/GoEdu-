@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoEdu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0569d1d7b40ff8b849794359e94c04ee98e076a0")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d65291f1dbefbad86ae0174aa1a01b57f275c1ca")]
->>>>>>> origin/Tena
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38bdfa5c90c2cd6404817d3441ee853dc611d3e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoEdu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoEdu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

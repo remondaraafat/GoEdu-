@@ -5,12 +5,700 @@
       "PackagePath": "staticwebassets\\GoEdu.vy0lp8dsp3.bundle.scp.css"
     },
     {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\css\\materialize.css",
+      "PackagePath": "staticwebassets\\css\\materialize.css"
+    },
+    {
       "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\css\\style-mob.css",
+      "PackagePath": "staticwebassets\\css\\style-mob.css"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\fontawesome-webfont5b62.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont5b62.eot"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\fontawesome-webfont5b62.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont5b62.svg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\fontawesome-webfont5b62.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont5b62.ttf"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\fontawesome-webfont5b62.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont5b62.woff"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\fontawesome-webfont5b62.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont5b62.woff2"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\glyphicons-halflings-regular-2.html",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular-2.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\glyphicons-halflings-regular-3.html",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular-3.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\glyphicons-halflings-regular-4.html",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular-4.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\glyphicons-halflings-regular-5.html",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular-5.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\glyphicons-halflings-regular.html",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\glyphicons-halflings-regulard41d.html",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regulard41d.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\roboto\\Roboto-Bold-2.html",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Bold-2.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\roboto\\Roboto-Bold.html",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Bold.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\roboto\\Roboto-Light-2.html",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Light-2.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\roboto\\Roboto-Light.html",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Light.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\roboto\\Roboto-Medium-2.html",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Medium-2.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\roboto\\Roboto-Medium.html",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Medium.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\roboto\\Roboto-Regular-2.html",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Regular-2.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\roboto\\Roboto-Regular.html",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Regular.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\roboto\\Roboto-Thin-2.html",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Thin-2.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\fonts\\roboto\\Roboto-Thin.html",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Thin.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\3.png",
+      "PackagePath": "staticwebassets\\images\\3.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\4.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\adv\\1.png",
+      "PackagePath": "staticwebassets\\images\\adv\\1.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\adv\\2.png",
+      "PackagePath": "staticwebassets\\images\\adv\\2.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\adv\\3.png",
+      "PackagePath": "staticwebassets\\images\\adv\\3.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\adv\\4.png",
+      "PackagePath": "staticwebassets\\images\\adv\\4.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\adv\\5.png",
+      "PackagePath": "staticwebassets\\images\\adv\\5.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\adv\\6.png",
+      "PackagePath": "staticwebassets\\images\\adv\\6.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\10.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\10.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\11.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\11.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\2.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\3.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\4.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\5.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\6.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\7.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\8.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ami\\9.jpg",
+      "PackagePath": "staticwebassets\\images\\ami\\9.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ban-bg.png",
+      "PackagePath": "staticwebassets\\images\\ban-bg.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\banner.html",
+      "PackagePath": "staticwebassets\\images\\banner.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\bg-2.html",
+      "PackagePath": "staticwebassets\\images\\bg-2.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\bg.html",
+      "PackagePath": "staticwebassets\\images\\bg.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\bg\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\bg\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\2.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\bg\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\3.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\bg\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\4.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\blog\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\2.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\blog\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\3.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\blog\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\4.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\blog\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\5.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\blog\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\6.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\book.png",
+      "PackagePath": "staticwebassets\\images\\book.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\cancel.png",
+      "PackagePath": "staticwebassets\\images\\cancel.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course.jpg",
+      "PackagePath": "staticwebassets\\images\\course.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\3.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\4.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\5.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\sm-1.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\sm-1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\sm-2.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\sm-2.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\sm-3.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\sm-3.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\sm-4.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\sm-4.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\sm-5.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\sm-5.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\sm-6.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\sm-6.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\sm-7.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\sm-7.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\course\\sm-8.jpg",
+      "PackagePath": "staticwebassets\\images\\course\\sm-8.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ev-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\ev-bg.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ev-bg1.jpg",
+      "PackagePath": "staticwebassets\\images\\ev-bg1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ev-bg2.jpg",
+      "PackagePath": "staticwebassets\\images\\ev-bg2.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\ev-in-bg1.jpg",
+      "PackagePath": "staticwebassets\\images\\ev-in-bg1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\event-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\event-bg.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\event\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\event\\1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\event\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\event\\2.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\event\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\event\\3.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\event\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\event\\4.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\facilities\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\facilities\\1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\facilities\\10.jpg",
+      "PackagePath": "staticwebassets\\images\\facilities\\10.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\facilities\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\facilities\\2.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\facilities\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\facilities\\3.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\facilities\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\facilities\\4.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\facilities\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\facilities\\5.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\facilities\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\facilities\\6.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\facilities\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\facilities\\7.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\facilities\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\facilities\\8.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\facilities\\9.jpg",
+      "PackagePath": "staticwebassets\\images\\facilities\\9.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\fav.ico",
+      "PackagePath": "staticwebassets\\images\\fav.ico"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\h-about.jpg",
+      "PackagePath": "staticwebassets\\images\\h-about.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\h-about1.jpg",
+      "PackagePath": "staticwebassets\\images\\h-about1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\h-adm.jpg",
+      "PackagePath": "staticwebassets\\images\\h-adm.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\h-adm1.jpg",
+      "PackagePath": "staticwebassets\\images\\h-adm1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\h-cam.jpg",
+      "PackagePath": "staticwebassets\\images\\h-cam.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\h-cam1.jpg",
+      "PackagePath": "staticwebassets\\images\\h-cam1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\h-res.jpg",
+      "PackagePath": "staticwebassets\\images\\h-res.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\h-res1.jpg",
+      "PackagePath": "staticwebassets\\images\\h-res1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\home-ser-bg.html",
+      "PackagePath": "staticwebassets\\images\\home-ser-bg.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\home-ser-bg1.html",
+      "PackagePath": "staticwebassets\\images\\home-ser-bg1.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\1.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\1.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\10.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\10.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\11.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\11.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\12.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\12.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\2.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\2.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\3.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\3.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\4.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\4.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\5.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\5.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\6.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\6.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\7.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\7.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\8.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\8.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\awa\\9.png",
+      "PackagePath": "staticwebassets\\images\\icon\\awa\\9.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\cor1.png",
+      "PackagePath": "staticwebassets\\images\\icon\\cor1.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\cor3.png",
+      "PackagePath": "staticwebassets\\images\\icon\\cor3.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\cor4.png",
+      "PackagePath": "staticwebassets\\images\\icon\\cor4.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\cor5.png",
+      "PackagePath": "staticwebassets\\images\\icon\\cor5.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\db1.png",
+      "PackagePath": "staticwebassets\\images\\icon\\db1.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\db2.png",
+      "PackagePath": "staticwebassets\\images\\icon\\db2.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\db3.png",
+      "PackagePath": "staticwebassets\\images\\icon\\db3.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\db4.png",
+      "PackagePath": "staticwebassets\\images\\icon\\db4.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\db5.png",
+      "PackagePath": "staticwebassets\\images\\icon\\db5.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\flag-1.png",
+      "PackagePath": "staticwebassets\\images\\icon\\flag-1.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\flag-2.png",
+      "PackagePath": "staticwebassets\\images\\icon\\flag-2.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\flag-3.png",
+      "PackagePath": "staticwebassets\\images\\icon\\flag-3.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\flag-4.png",
+      "PackagePath": "staticwebassets\\images\\icon\\flag-4.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\flag-5.png",
+      "PackagePath": "staticwebassets\\images\\icon\\flag-5.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\flag-6.png",
+      "PackagePath": "staticwebassets\\images\\icon\\flag-6.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\flag-7.png",
+      "PackagePath": "staticwebassets\\images\\icon\\flag-7.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\flag-8.png",
+      "PackagePath": "staticwebassets\\images\\icon\\flag-8.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\form-1.png",
+      "PackagePath": "staticwebassets\\images\\icon\\form-1.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\form-2.png",
+      "PackagePath": "staticwebassets\\images\\icon\\form-2.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\form-3.png",
+      "PackagePath": "staticwebassets\\images\\icon\\form-3.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\form-4.png",
+      "PackagePath": "staticwebassets\\images\\icon\\form-4.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\h-ic1.png",
+      "PackagePath": "staticwebassets\\images\\icon\\h-ic1.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\h-ic2.png",
+      "PackagePath": "staticwebassets\\images\\icon\\h-ic2.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\h-ic3.png",
+      "PackagePath": "staticwebassets\\images\\icon\\h-ic3.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\icon\\h-ic4.png",
+      "PackagePath": "staticwebassets\\images\\icon\\h-ic4.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\login.html",
+      "PackagePath": "staticwebassets\\images\\login.html"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\logo1.png",
+      "PackagePath": "staticwebassets\\images\\logo1.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\map.png",
+      "PackagePath": "staticwebassets\\images\\map.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\mm-col-bg.png",
+      "PackagePath": "staticwebassets\\images\\mm-col-bg.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\placeholder.jpg",
+      "PackagePath": "staticwebassets\\images\\placeholder.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\pro-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\pro-bg.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\search.png",
+      "PackagePath": "staticwebassets\\images\\search.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\seminar-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\seminar-bg.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\slider\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\1.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\slider\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\2.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\slider\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\3.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\sm\\1.png",
+      "PackagePath": "staticwebassets\\images\\sm\\1.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\sm\\2.png",
+      "PackagePath": "staticwebassets\\images\\sm\\2.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\sm\\3.png",
+      "PackagePath": "staticwebassets\\images\\sm\\3.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\sm\\4.png",
+      "PackagePath": "staticwebassets\\images\\sm\\4.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\sm\\5.png",
+      "PackagePath": "staticwebassets\\images\\sm\\5.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\sm\\6.png",
+      "PackagePath": "staticwebassets\\images\\sm\\6.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\sm\\7.png",
+      "PackagePath": "staticwebassets\\images\\sm\\7.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\sprite.png",
+      "PackagePath": "staticwebassets\\images\\sprite.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\user.jpg",
+      "PackagePath": "staticwebassets\\images\\user.jpg"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\user\\1.png",
+      "PackagePath": "staticwebassets\\images\\user\\1.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\user\\2.png",
+      "PackagePath": "staticwebassets\\images\\user\\2.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\user\\3.png",
+      "PackagePath": "staticwebassets\\images\\user\\3.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\user\\4.png",
+      "PackagePath": "staticwebassets\\images\\user\\4.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\user\\5.png",
+      "PackagePath": "staticwebassets\\images\\user\\5.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\user\\6.png",
+      "PackagePath": "staticwebassets\\images\\user\\6.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\images\\weather.png",
+      "PackagePath": "staticwebassets\\images\\weather.png"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\js\\main.min.js",
+      "PackagePath": "staticwebassets\\js\\main.min.js"
+    },
+    {
+      "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\js\\materialize.min.js",
+      "PackagePath": "staticwebassets\\js\\materialize.min.js"
     },
     {
       "Id": "R:\\iti_intake_45\\22_MVC\\GoEdu-\\GoEdu\\GoEdu\\wwwroot\\js\\site.js",

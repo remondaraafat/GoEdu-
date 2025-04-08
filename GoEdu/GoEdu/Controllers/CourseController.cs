@@ -1,7 +1,7 @@
 ﻿using GoEdu.Data;
 using GoEdu.Models;
 using GoEdu.ViewModel;
-<<<<<<< HEAD
+
 
 using GoEdu.Data;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
@@ -14,22 +14,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 
-=======
+
 using GoEdu.Models;
 using GoEdu.Data;
->>>>>>> origin/Tena
+
 namespace GoEdu.Controllers
 {
     public class CourseController : Controller
     {
-<<<<<<< HEAD
+
         UnitOfWork unitOfWork;
         public CourseController(UnitOfWork unitOfWork)
         {
 
             this.unitOfWork = unitOfWork; 
 
-            this.unitOfWork = unitOfWork;
+            
         }
 
         #region Mark Section
@@ -137,57 +137,48 @@ namespace GoEdu.Controllers
 
         }
 
+        //public IActionResult Index(string searchQuery, string? filterBy, string? nameAccourdFilter)
+        //{
+        //    var courses = unitOfWork.CourseRepo.GetAll();
+
+        //    //var courses = courseRepository.GetAll();
+        //    List<Course> courslist;
+
+        //    if (!string.IsNullOrEmpty(searchQuery))
+        //    {
+        //        courses = unitOfWork.CourseRepo.search(searchQuery);// courses.Where(c => c.Name.Contains(searchQuery)).ToList();
+        //    }
+        //    else if (!string.IsNullOrEmpty(filterBy) && !string.IsNullOrEmpty(nameAccourdFilter))
+        //    {
+
+        //        courses = unitOfWork.CourseRepo.FilterCourses(filterBy, nameAccourdFilter);
+        //        //courses = courseRepository.FilterCourses(filterBy,nameAccourdFilter);
+
+
+        //        //  courses = unitOfWork.CourseRepo.FilterCourses(filterBy, NameOfCourse);
+
+        //    } }
+           
+        
+       // ICourseRepository courseRepository;
+        
+
         public IActionResult Index(string searchQuery, string? filterBy, string? nameAccourdFilter)
         {
             var courses = unitOfWork.CourseRepo.GetAll();
-
-            //var courses = courseRepository.GetAll();
-            List<Course> courslist;
-
-            if (!string.IsNullOrEmpty(searchQuery))
-            {
-                courses = unitOfWork.CourseRepo.search(searchQuery);// courses.Where(c => c.Name.Contains(searchQuery)).ToList();
-            }
-           else if (!string.IsNullOrEmpty(filterBy)&& !string.IsNullOrEmpty(nameAccourdFilter))
-            {
-
-                courses = unitOfWork.CourseRepo.FilterCourses(filterBy, nameAccourdFilter);
-                //courses = courseRepository.FilterCourses(filterBy,nameAccourdFilter);
-
-
-              //  courses = unitOfWork.CourseRepo.FilterCourses(filterBy, NameOfCourse);
-
-            }
-           
-=======
-        
-       // ICourseRepository courseRepository;
-        UnitOfWork UnitOfWork;
-        public CourseController(UnitOfWork unitOfWork)
-        {
-            this.UnitOfWork = unitOfWork;
-           //this.courseRepository = courseRepository;
-        }
-
-        public IActionResult Index(string searchQuery, string? filterBy, string? nameAccourdFilter)
-        {
-            var courses = UnitOfWork.CourseRepo.GetAll();
            
             if (!string.IsNullOrEmpty(searchQuery))
             {
-                courses = UnitOfWork.CourseRepo.search(searchQuery);
+                courses = unitOfWork.CourseRepo.search(searchQuery);
             }
             else if (!string.IsNullOrEmpty(filterBy) && !string.IsNullOrEmpty(nameAccourdFilter))
             {
-                courses = UnitOfWork.CourseRepo.FilterCourses(filterBy, nameAccourdFilter);
+                courses = unitOfWork.CourseRepo.FilterCourses(filterBy, nameAccourdFilter);
             }
->>>>>>> origin/Tena
+
             return View("Index", courses);
         }
 
-
-
-<<<<<<< HEAD
 
 
         #region Edit
@@ -196,14 +187,13 @@ namespace GoEdu.Controllers
         #endregion
 
 
+        //public IActionResult Details(int id)
+        //{
+        //    var Course = unitOfWork.CourseRepo.GetByID(id);
         public IActionResult Details(int id)
         {
             var Course = unitOfWork.CourseRepo.GetByID(id);
-=======
-        public IActionResult Details(int id)
-        {
-            var Course = UnitOfWork.CourseRepo.GetByID(id);
->>>>>>> origin/Tena
+
             if (Course == null)
             {
                 return NotFound();
@@ -213,31 +203,27 @@ namespace GoEdu.Controllers
 
         public IActionResult GetAllWithIns()
         {
-<<<<<<< HEAD
+
             var courses = unitOfWork.CourseRepo.GetAllcourses();
-=======
-            var courses = UnitOfWork.CourseRepo.GetAllcourses();
->>>>>>> origin/Tena
+
+           
             return View("GetAllWithIns", courses);
         }
-<<<<<<< HEAD
         //public IActionResult filtered(string? instructorName,)
         //{
         //    var filteredCourses = unitOfWork.CourseRepo.FilterCourses(instructorName);
         //    return View("filtered", filteredCourses);
         //}
         //course id
-        public IActionResult CourseDetails(int id)
-        {
-            var courseDetails= unitOfWork.CourseRepo.GetCourseWithLectures(id);
-            if (courseDetails == null)
-=======
+        //public IActionResult CourseDetails(int id)
+        //{
+        //    var courseDetails= unitOfWork.CourseRepo.GetCourseWithLectures(id);
+        //    if (courseDetails == null)
        
 
         public IActionResult CourseDetails(int id)
         {
-            var courseDetails= UnitOfWork.CourseRepo.GetCourseWithLectures(id); 
->>>>>>> origin/Tena
+            var courseDetails= unitOfWork.CourseRepo.GetCourseWithLectures(id); 
             {
                 return NotFound("Course not found");
             }
