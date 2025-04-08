@@ -15,10 +15,10 @@ namespace GoEdu.Controllers
             this.unitOfWork = unitOfWork;
         }
 
+        #region Mark Section
 
-        #region Mark
-        //need to Edit
-        public IActionResult GetInsCourses(int id)
+        #region  Get Instructor Courses
+        public IActionResult GetInsCourses(int id = 8)
         {
             var courses = unitOfWork.CourseRepo.GetIstructorCourses(id);
 
@@ -26,21 +26,13 @@ namespace GoEdu.Controllers
             {
                 return NotFound();
             }
-
+            ViewData["NumOfAllStudent"] = unitOfWork.CourseRepo.GetInsStudentCount(id);
+            ViewData["NumOfCourses"] = unitOfWork.CourseRepo.GetInsCourseCount(id);
             return View(courses);
         }
+        #endregion
 
-        public IActionResult DeleteCourse(int id)
-        {
-            unitOfWork.CourseRepo.Delete(id);
-            return RedirectToAction("GetInsCourses");
-        }
-
-        public IActionResult CourseInsDetails(int id)
-        {
-            return View();
-        }
-
+        #region New Course
         public IActionResult NewCourse()
         {
             return View();
@@ -55,16 +47,19 @@ namespace GoEdu.Controllers
                 {
                     unitOfWork.CourseRepo.SaveNew(newCrs);
                     TempData["CourseCreated"] = "تم الإضافة بنجاح!";
-                    return RedirectToAction("Index");
+                    return RedirectToAction("GetInsCourses");
                 }
                 catch (Exception ex)
                 {
                     ModelState.AddModelError(string.Empty, ex.Message.ToString());
                 }
             }
-            return View("New", newCrs);
+            return View("NewCourse", newCrs);
         }
 
+        #endregion
+
+        #region Edit Course
         public IActionResult Edit(int id)
         {
             AddCourseWithInstructorVM course = unitOfWork.CourseRepo.EditCourse(id);
@@ -80,17 +75,13 @@ namespace GoEdu.Controllers
         [HttpPost]
         public IActionResult SaveEdit(AddCourseWithInstructorVM crsFromReq)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    TempData["Error"] = "ModelState غير صالح";
-            //}
-            if (ModelState.IsValid == true)
+            if (ModelState.IsValid)
             {
                 try
                 {
                     unitOfWork.CourseRepo.SaveEdit(crsFromReq);
                     TempData["CoursEdited"] = "تم التعديل بنجاح!";
-                    return RedirectToAction("Index");
+                    return RedirectToAction("GetInsCourses");
                 }
                 catch (Exception ex)
                 {
@@ -99,6 +90,17 @@ namespace GoEdu.Controllers
             }
             return View("Edit", crsFromReq);
         }
+        #endregion
+
+        #region Delete Course
+        public IActionResult DeleteCourse(int id)
+        {
+            unitOfWork.CourseRepo.Delete(id);
+            TempData["Deleted"] = "تم الحذف بنجاح !";
+
+            return RedirectToAction("GetInsCourses");
+        }
+        #endregion
 
         [HttpGet]
         public IActionResult CheckPrice(double CrsPrice)
@@ -109,8 +111,13 @@ namespace GoEdu.Controllers
             }
             return Json(false);
         }
+
         #endregion
 
+        public IActionResult CourseInsDetails(int id)
+        {
+            return View();
+        }
 
         public IActionResult Index(string searchQuery, string? filterBy, string? NameOfCourse)
         {
@@ -172,5 +179,7 @@ namespace GoEdu.Controllers
            // return Content("Course ID is: " + id);
            return View("CourseDetails", courseDetails);
         }
+
+
     }
 }

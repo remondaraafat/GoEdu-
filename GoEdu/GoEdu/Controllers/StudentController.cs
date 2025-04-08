@@ -3,24 +3,17 @@ using GoEdu.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GoEdu.Models;
-using GoEdu.ViewModel;
-using Microsoft.AspNetCore.Mvc;
 
 namespace GoEdu.Controllers
 {
     public class StudentController : Controller
     {
-<<<<<<< HEAD
         private UnitOfWork unitOfWork;
         public StudentController(UnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
-=======
-        private readonly UnitOfWork unitOfWork;
-        public StudentController(UnitOfWork unitOfWork)
-        {
-            this.unitOfWork = unitOfWork;
-        }
+
+        }  
         
         public IActionResult StudentDashBoard(int StudentId)
         {
@@ -32,22 +25,21 @@ namespace GoEdu.Controllers
             //nessecary need to send error from action "LectureDetails" in lecture controller
             if (ModelState.IsValid) { }
             return View(Dashboard);
->>>>>>> origin/main
         }
 
 
-        public IActionResult Index(int insID = 3)
-        {
-            List<StudentWithInstructorVM> student = context.Registers.Where(r=>r.InstructorID ==insID&& r.isDeleted==false).Select(s=>new StudentWithInstructorVM()
-            {
-                StdID = s.Student.ID,
-                StdName = s.Student.Name,
-                stdEmail = s.Student.Email,
-                StdPhone = s.Student.StudentPhone,
-                PrtPhone = s.Student.ParentPhone,
-            }).AsNoTracking().ToList();
-            return View(student);
-        }
+        //public IActionResult Index(int insID = 3)
+        //{
+        //    List<StudentWithInstructorVM> student = context.Registers.Where(r=>r.InstructorID ==insID&& r.isDeleted==false).Select(s=>new StudentWithInstructorVM()
+        //    {
+        //        StdID = s.Student.ID,
+        //        StdName = s.Student.Name,
+        //        stdEmail = s.Student.Email,
+        //        StdPhone = s.Student.StudentPhone,
+        //        PrtPhone = s.Student.ParentPhone,
+        //    }).AsNoTracking().ToList();
+        //    return View(student);
+        //}
         public IActionResult AllStudentsByInstructor(int instructorId)
         {
             StudentsCoursesVM StdVM = new();

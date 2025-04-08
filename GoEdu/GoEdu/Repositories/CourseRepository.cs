@@ -16,6 +16,109 @@ namespace GoEdu.Repositories
             Context = contxt;
         }
 
+
+        #region Mark Section
+
+        #region Get Instructor Courses
+        public List<CourseWithInstructorVM> GetIstructorCourses(int insID)
+        {
+            List<CourseWithInstructorVM> crsVm = Context.Courses.Where(c => c.InstructorID == insID && c.isDeleted == false)
+                .Select(c => new CourseWithInstructorVM()
+                {
+                    CrsID = c.ID,
+                    CrsName = c.Name,
+                    CrsPrice = c.Price,
+                    CrsHours = c.Hours,
+                    CrsMinDegree = c.MinDegree,
+                    CrsSemester = c.Semester,
+                    CrsStage = c.StudentStage,
+                    CrsLevel = c.CourseLevel,
+                    NumOfLecture = Context.lectures.Where(l => l.CourseID == c.ID && l.isDeleted == false).Count(),
+                    NumOfStudent = Context.Registers.Where(r => r.CourseID == c.ID && r.isDeleted == false).Count()
+                }).AsNoTracking().ToList();
+            return crsVm;
+        }
+        public int GetInsStudentCount(int InsID)
+        {
+            int Count = Context.Registers.Where(r => r.InstructorID == InsID && r.isDeleted == false).Count();
+            return Count;
+        }
+        public int GetInsCourseCount(int InsID)
+        {
+            int Count = Context.Courses.Where(r => r.InstructorID == InsID && r.isDeleted == false).Count();
+            return Count;
+        }
+        #endregion
+
+        #region New Course
+        public void SaveNew(AddCourseWithInstructorVM newCrs)
+        {
+            Course crs = new Course()
+            {
+                Name = newCrs.CrsName,
+                Price = newCrs.CrsPrice,
+                Hours = newCrs.CrsHours,
+                Degree = 100,
+                MinDegree = newCrs.CrsMinDegree,
+                Semester = newCrs.CrsSemester,
+                StudentStage = newCrs.CrsStage,
+                CourseLevel = newCrs.CrsLevel,
+                isDeleted = false,
+                InstructorID = newCrs.InsID
+            };
+            Context.Courses.Add(crs);
+            SaveData();
+        }
+
+        #endregion
+
+        #region Edit Course
+        public AddCourseWithInstructorVM EditCourse(int id)
+        {
+            Course crsFromDB = GetByID(id);
+
+            AddCourseWithInstructorVM crsVM = new AddCourseWithInstructorVM()
+            {
+                CrsID = crsFromDB.ID,
+                CrsName = crsFromDB.Name,
+                CrsPrice = crsFromDB.Price,
+                CrsHours = crsFromDB.Hours,
+                CrsMinDegree = crsFromDB.MinDegree,
+                CrsSemester = crsFromDB.Semester,
+                CrsStage = crsFromDB.StudentStage,
+                CrsLevel = crsFromDB.CourseLevel,
+            };
+            return crsVM;
+        }
+
+        public void SaveEdit(AddCourseWithInstructorVM crsFromReq)
+        {
+            Course? crsFromDB = Context.Courses.FirstOrDefault(c => c.ID == crsFromReq.CrsID);
+
+            crsFromDB.Name = crsFromReq.CrsName;
+            crsFromDB.Price = crsFromReq.CrsPrice;
+            crsFromDB.Hours = crsFromReq.CrsHours;
+            crsFromDB.MinDegree = crsFromReq.CrsMinDegree;
+            SaveData();
+        }
+
+        #endregion
+
+        #region Delete Course
+        public void Delete(int id)
+        {
+            Course? course = Context.Courses.FirstOrDefault(c => c.ID == id && c.isDeleted == false);
+            if (course != null)
+            {
+                course.isDeleted = true;
+                SaveData();
+            }
+        }
+        #endregion
+
+        #endregion
+
+
         public List<Course> CoursesByInstructor(int instructorId)
         {
             return Context.Courses.Where(c=>c.InstructorID == instructorId).ToList();
@@ -140,89 +243,5 @@ namespace GoEdu.Repositories
 
             return Result;
         }
-
-        //mark
-        public List<CourseWithInstructorVM> GetIstructorCourses(int insID)
-        {
-            List<CourseWithInstructorVM> crsVm = Context.Courses.Where(c => c.InstructorID == insID && c.isDeleted == false)
-                .Select(c => new CourseWithInstructorVM()
-                {
-                    CrsID = c.ID,
-                    CrsName = c.Name,
-                    CrsPrice = c.Price,
-                    CrsHours = c.Hours,
-                    CrsMinDegree = c.MinDegree,
-                    CrsSemester = c.Semester,
-                    CrsStage = c.StudentStage,
-                    CrsLevel = c.CourseLevel,
-                    NumOfLecture = Context.lectures.Where(l => l.CourseID == c.ID).Count(),
-                    NumOfStudent = Context.Registers.Where(r => r.CourseID == c.ID).Count()
-                }).AsNoTracking().ToList();
-            return crsVm;
-        }
-
-        public void Delete(int id)
-        {
-            Course? course = Context.Courses.FirstOrDefault(c => c.ID == id && c.isDeleted == false);
-            if (course != null)
-            {
-                course.isDeleted = true;
-                SaveData();
-                //TempDataAttribute["CourseDeleted"] = "تم الحذف بنجاح !";
-            }
-            
-        }
-
-        public void SaveNew(AddCourseWithInstructorVM newCrs)
-        {
-            Course crs = new Course()
-            {
-                Name = newCrs.CrsName,
-                Price = newCrs.CrsPrice,
-                Hours = newCrs.CrsHours,
-                Degree = 100,
-                MinDegree = newCrs.CrsMinDegree,
-                //Semester = newCrs.CrsSemester,
-                //StudentStage = newCrs.CrsStage,
-                //CourseLevel = newCrs.CrsLevel,
-                isDeleted = false,
-                InstructorID = newCrs.InsID
-            };
-            SaveNew(newCrs);
-        }
-
-        public AddCourseWithInstructorVM EditCourse(int id)
-        {
-            Course crsFromDB =  GetByID(id);
-
-            AddCourseWithInstructorVM crsVM = new AddCourseWithInstructorVM()
-            {
-                CrsID = crsFromDB.ID,
-                CrsName = crsFromDB.Name,
-                CrsPrice = crsFromDB.Price,
-                CrsHours = crsFromDB.Hours,
-                CrsMinDegree = crsFromDB.MinDegree,
-                //CrsSemester = crsFromDB.Semester,
-                //CrsStage = crsFromDB.StudentStage,
-                //CrsLevel = crsFromDB.CourseLevel,
-
-            };
-            return crsVM;
-
-
-        }
-
-        public void SaveEdit(AddCourseWithInstructorVM crsFromReq)
-        {
-            Course? crsFromDB = Context.Courses.FirstOrDefault(c => c.ID == crsFromReq.CrsID);
-
-            crsFromDB.Name = crsFromReq.CrsName;
-            crsFromDB.Price = crsFromReq.CrsPrice;
-            crsFromDB.Hours = crsFromReq.CrsHours;
-            crsFromDB.MinDegree = crsFromReq.CrsMinDegree;
-
-            SaveData();
-        }
-
     }
 }

@@ -14,13 +14,12 @@ namespace GoEdu.ViewModel
         public Semester CrsSemester { get; set; }
         public Stage CrsStage { get; set; }
         public Level CrsLevel { get; set; }
-
-
         public int InsID { get; set; }
-        //public int NumOfCourses { get; set; }
-        public int NumOfStudent {  get; set; }
+        
+        public int NumOfAllStudent { get; set; }
+        public int NumOfStudent { get; set; }
         public int NumOfLecture { get; set; }
-
+        public int NumOfCourses { get; set; }
 
         public List<Course> courses { get; set; }
 

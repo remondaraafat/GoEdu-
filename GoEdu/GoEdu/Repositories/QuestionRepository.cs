@@ -91,5 +91,9 @@ namespace GoEdu.Repositories
             context.Questions.Update(ques);
         }
 
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
