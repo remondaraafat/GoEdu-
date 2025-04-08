@@ -31,7 +31,7 @@ namespace GoEdu.Models
         public virtual List<Attend>? Attend { get; set; }    
         public virtual List<Comment>? Comment { get; set; }
         public virtual List<Answer>? Answers { get; set; }
-        public virtual List<StudentPerformeExam>? Exams { get; set; }
+        public virtual List<StudentPerformance>? Exams { get; set; }
     }
    
 

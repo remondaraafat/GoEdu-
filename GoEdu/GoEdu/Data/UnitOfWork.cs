@@ -18,7 +18,7 @@ namespace GoEdu.Data
         private IOptionRepository _OptionRepo;
         private IQuestionRepository _QuestionRepo;
         private IRegisterRepository _RegisterRepo;
-        private IStudentPerformanceExamRepository _StudentPerformanceExamRepo;
+        private IStudentPerformanceRepository _StudentPerformanceRepo;
         private IStudentRepository _StudentRepo;
 
         public UnitOfWork(GoEduContext ctx)
@@ -150,15 +150,15 @@ namespace GoEdu.Data
             }
         }
 
-        //public IStudentPerformanceExamRepository StudentPerformanceExamRepo
-        //{
-        //    get
-        //    {
-        //        if (_StudentPerformanceExamRepo == null)
-        //            _StudentPerformanceExamRepo = new StudentPerformanceExamRepository(context);
-        //        return _StudentPerformanceExamRepo;
-        //    }
-        //}
+        public IStudentPerformanceRepository StudentPerformanceRepo
+        {
+            get
+            {
+                if (_StudentPerformanceRepo == null)
+                    _StudentPerformanceRepo = new StudentPerformanceRepository(context);
+                return _StudentPerformanceRepo;
+            }
+        }
 
         public IStudentRepository StudentRepo
         {

@@ -20,7 +20,7 @@ namespace GoEdu.Data
 
         public DbSet<Question> Questions { get; set; }
 
-        public DbSet<StudentPerformeExam> StudentPerformeExams { get; set; }
+        public DbSet<StudentPerformance> StudentPerformances { get; set; }
 
         public DbSet<Option> Options { get; set; }
         public DbSet<ExamQuestion> ExamQuestions { get; set; }
