@@ -123,6 +123,9 @@ namespace GoEdu.Migrations
                     b.Property<int>("CourseLevel")
                         .HasColumnType("int");
 
+                    b.Property<double>("Degree")
+                        .HasColumnType("float");
+
                     b.Property<int>("Hours")
                         .HasColumnType("int");
 
@@ -132,18 +135,17 @@ namespace GoEdu.Migrations
                     b.Property<int>("MaxViews")
                         .HasColumnType("int");
 
+                    b.Property<double>("MinDegree")
+                        .HasColumnType("float");
+
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
                     b.Property<int>("Semester")
-                        .HasColumnType("int");
-
-                    b.Property<int>("StudentLevel")
                         .HasColumnType("int");
 
                     b.Property<int>("StudentStage")

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GoEdu.Migrations
 {
     [DbContext(typeof(GoEduContext))]
-    [Migration("20250404162203_init")]
-    partial class init
+    [Migration("20250404180233_a1")]
+    partial class a1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -126,6 +126,9 @@ namespace GoEdu.Migrations
                     b.Property<int>("CourseLevel")
                         .HasColumnType("int");
 
+                    b.Property<double>("Degree")
+                        .HasColumnType("float");
+
                     b.Property<int>("Hours")
                         .HasColumnType("int");
 
@@ -134,6 +137,9 @@ namespace GoEdu.Migrations
 
                     b.Property<int>("MaxViews")
                         .HasColumnType("int");
+
+                    b.Property<double>("MinDegree")
+                        .HasColumnType("float");
 
                     b.Property<string>("Name")
                         .IsRequired()

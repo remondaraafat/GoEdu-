@@ -12,5 +12,13 @@ namespace GoEdu.Repositories
 
         public List<VMLectureSchedule> GetTodayLectureByStudentId(int StudentID);
         public List<VMLectureSchedule> GetLateLectures(int StudentID);
+
+        #region Mark Section
+
+        public List<LectureWithInstructorVM> GetLectureCourses(int CrsID);
+        public int LectureCount(int CrsID);
+
+
+        #endregion
     }
 }

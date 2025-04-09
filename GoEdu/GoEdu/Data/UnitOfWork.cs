@@ -50,15 +50,15 @@ namespace GoEdu.Data
             }
         }
 
-        //public ICommentRepository CommentRepo
-        //{
-        //    get
-        //    {
-        //        if (_CommentRepo == null)
-        //            _CommentRepo = new CommentRepository(context);
-        //        return _CommentRepo;
-        //    }
-        //}
+        public ICommentRepository CommentRepo
+        {
+            get
+            {
+                if (_CommentRepo == null)
+                    _CommentRepo = new CommentRepository(context);
+                return _CommentRepo;
+            }
+        }
 
         public ICourseRepository CourseRepo
         {
@@ -115,7 +115,7 @@ namespace GoEdu.Data
             get
             {
                 if (_LectureRepo == null)
-                    _LectureRepo = new LectureRepository(context);
+                    _LectureRepo = new LectureRepository(context, this);
                 return _LectureRepo;
             }
         }

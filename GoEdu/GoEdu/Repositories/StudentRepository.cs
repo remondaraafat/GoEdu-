@@ -58,5 +58,9 @@ namespace GoEdu.Repositories
             ctx.Students.Remove(Entity);
         }
 
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

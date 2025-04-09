@@ -1,19 +1,69 @@
-﻿using GoEdu.Data;
+﻿using System.Linq;
+using GoEdu.Data;
 using GoEdu.Migrations;
 using GoEdu.Models;
 using GoEdu.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GoEdu.Repositories
 {
     internal class LectureRepository:ILectureRepository
     {
         private GoEduContext context;
+        private UnitOfWork unitOfWork;
 
-        public LectureRepository(GoEduContext context)
+        public LectureRepository(GoEduContext context, UnitOfWork unitOfWork)
         {
             this.context = context;
+            this.unitOfWork = unitOfWork;
         }
+
+        #region Mark Section
+        #region Get Course Lectures
+        public List<LectureWithInstructorVM> GetLectureCourses(int CrsID)
+        {
+            List<LectureWithInstructorVM> lectures = context.lectures.Where(l => l.CourseID == CrsID && l.isDeleted == false)
+                    .Select(l => new LectureWithInstructorVM()
+                    {
+                        LctID = l.ID,
+                        Title = l.Title,
+                        LctTime = l.LectureTime,
+                        Description = l.Description,
+                        CrsID = l.CourseID
+                    }).AsNoTracking().ToList();
+
+            return lectures;
+        }
+
+        public int LectureCount(int CrsID)
+        {
+            int NumOfLectures = context.lectures.Where(l => l.CourseID == CrsID && l.isDeleted == false).Count();
+            return NumOfLectures;
+        }
+        #endregion
+
+        #region Add Lecture
+        public void Insert(Lecture lctFromReq)
+        {
+            context.lectures.Add(lctFromReq);
+            SaveData();
+        }
+        #endregion
+
+        #region Delete Lecture
+        public void Delete(int id)
+        {
+            Lecture? lecture = context.lectures.FirstOrDefault(c => c.ID == id && c.isDeleted == false);
+            if (lecture != null)
+            {
+                lecture.isDeleted = true;
+                SaveData();
+            }
+        }
+        #endregion
+        #endregion
+
 
         //Get today's lecture by student id
         public List<VMLectureSchedule> GetTodayLectureByStudentId(int StudentID)
@@ -67,11 +117,12 @@ namespace GoEdu.Repositories
         
         public VMLectureDetails GetLectureVMByID(int id,int StudentID)
         {
-           return context.lectures.Select(l => new VMLectureDetails { ID = l.ID,
-               Comments=l.Comment,
+            return context.lectures.Select(l => new VMLectureDetails
+            {
+                ID = l.ID,
+               Comments= unitOfWork.CommentRepo.GetCommentsByLectureId(id),
                CourseName=l.Course.Name,
                Description=l.Description,
-               ExamId=l.ExamID,
                LectureTime=l.LectureTime,
                Title=l.Title,
                VideoURL=l.VideoURL,
@@ -92,7 +143,6 @@ namespace GoEdu.Repositories
                 Comments = l.Comment,
                 CourseID = l.Course.ID,
                 Description = l.Description,
-                ExamId = l.ExamID,
                 LectureTime = l.LectureTime,
                 Title = l.Title,
                 VideoURL = l.VideoURL,
@@ -138,10 +188,7 @@ namespace GoEdu.Repositories
         }
 
 
-        public void Insert(Lecture Entity)
-        {
-            context.lectures.Add(Entity);
-        }
+
 
         public void SaveData()
         {
@@ -153,5 +200,10 @@ namespace GoEdu.Repositories
            // Lecture l = GetByID(id);
             context.Update(Entity);
         }
+
+
+
+
+
     }
 }

@@ -1,5 +1,8 @@
-﻿ @model List<Course>
 
+@model List<Course>
+ @{
+    Layout= "_AdvancedLayout";
+ }
 <h2>جميع الكورسات</h2>
 <form asp-controller="Course" asp-action="Index" method="get"> 
     <input type="text" name="searchQuery" placeholder="ابحث عن كورس..." class="form-control" value="@Context.Request.Query["searchQuery"]" /> 
@@ -23,9 +26,6 @@
         <button type="submit" class="btn btn-primary">فلتر</button>
     </div>
 </form>
-
-
-
 
 <table class="table">
     <thead>

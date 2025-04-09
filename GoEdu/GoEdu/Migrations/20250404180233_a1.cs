@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GoEdu.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class a1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -75,6 +75,8 @@ namespace GoEdu.Migrations
                     Price = table.Column<double>(type: "float", nullable: false),
                     Hours = table.Column<int>(type: "int", nullable: false),
                     MaxViews = table.Column<int>(type: "int", nullable: false),
+                    Degree = table.Column<double>(type: "float", nullable: false),
+                    MinDegree = table.Column<double>(type: "float", nullable: false),
                     CourseLevel = table.Column<int>(type: "int", nullable: false),
                     Semester = table.Column<int>(type: "int", nullable: false),
                     StudentStage = table.Column<int>(type: "int", nullable: false),

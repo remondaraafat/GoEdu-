@@ -32,6 +32,7 @@ namespace GoEdu.Models
         public virtual List<Comment>? Comment { get; set; }
         public virtual List<Answer>? Answers { get; set; }
         public virtual List<StudentPerformance>? Exams { get; set; }
+        public string ImageUrl { get; internal set; }
     }
    
 
