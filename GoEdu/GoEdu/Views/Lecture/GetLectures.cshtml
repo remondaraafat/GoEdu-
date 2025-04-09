@@ -1,0 +1,53 @@
+﻿@model List<LectureWithInstructorVM>
+@{
+    ViewData["Title"] = "GetAll";
+
+}
+
+<h1>المحاضرات</h1>
+<p><strong>عدد المحاضرات:</strong> @ViewData["LectureCount"]</p>
+
+<a class="btn btn-secondary" asp-action="NewLecture" asp-controller="Lecture" asp-route-CrsID="@Model.FirstOrDefault()?.CrsID">إضافة</a>
+
+<table class="table table-hover table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>اسم الحصة</th>
+        <th>تاريخ الحصة </th>
+        <th>الوصف</th>
+        <th>عرض</th>
+        <th>تعديل</th>
+        <th>حذف</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.LctID</td>
+            <td>@item.Title</td>
+            <td>@item.LctTime</td>
+            <td>@item.Description</td>
+            <td>
+                <a class="btn btn-success" asp-action="Details" asp-controller="Lecture" asp-route-id="@item.LctID">عرض</a>
+            </td>
+            <td>
+                <a class="btn btn-primary" asp-action="EditLecture" asp-controller="Lecture" asp-route-id="@item.LctID">تعديل</a>
+            </td>
+            <td>
+                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                        onclick="setDeleteId(@item.LctID, @item.CrsID)">
+                    حذف
+                </button>
+            </td>
+        </tr>
+    }
+</table>
+
+
+<script>
+    function setDeleteId(LectureID, CourseID) {
+        var deleteUrl = "/Lecture/DeleteLecture/" +  + LectureID + "?CrsID=" + CourseID;
+        document.getElementById("confirmDeleteBtn").setAttribute("href", deleteUrl);
+    }
+</script>
+<partial name="_DeletedPartial"></partial>

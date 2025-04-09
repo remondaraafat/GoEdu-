@@ -38,8 +38,11 @@ namespace GoEdu.ViewModel
         [Display(Name = "عدد المشاهدات")]
         public int ViewsCount { get; set; }
 
+        [Required]
+        public string CommentContent {  get; set; }
+
         [Display(Name = "التعليقات")]
-        public virtual List<Comment>? Comments { get; set; }
+        public virtual List<VMComment>? Comments { get; set; }
 
         // from coure
         [Display(Name = "اسم الدورة")]

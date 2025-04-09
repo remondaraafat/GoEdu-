@@ -23,7 +23,7 @@ namespace GoEdu.Models
         [RegularExpression(@"^\\+?[0-9][0-9]{7,14}$", ErrorMessage = "Invalid Phone Number")]
         public string Phone { get; set; }
         public bool isDeleted { get; set; } = false;
-        public virtual List<Register>? Registers { get; set; }   
+        public virtual List<Enroll>? Registers { get; set; }   
         public virtual List<Course>? Courses { get; set; }
 
     }

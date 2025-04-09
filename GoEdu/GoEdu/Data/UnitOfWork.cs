@@ -17,7 +17,7 @@ namespace GoEdu.Data
         private ILectureRepository _LectureRepo;
         private IOptionRepository _OptionRepo;
         private IQuestionRepository _QuestionRepo;
-        private IRegisterRepository _RegisterRepo;
+        private IEnrollRepository _EnrollRepo;
         private IStudentPerformanceRepository _StudentPerformanceRepo;
         private IStudentRepository _StudentRepo;
 
@@ -50,15 +50,15 @@ namespace GoEdu.Data
             }
         }
 
-        //public ICommentRepository CommentRepo
-        //{
-        //    get
-        //    {
-        //        if (_CommentRepo == null)
-        //            _CommentRepo = new CommentRepository(context);
-        //        return _CommentRepo;
-        //    }
-        //}
+        public ICommentRepository CommentRepo
+        {
+            get
+            {
+                if (_CommentRepo == null)
+                    _CommentRepo = new CommentRepository(context);
+                return _CommentRepo;
+            }
+        }
 
         public ICourseRepository CourseRepo
         {
@@ -140,13 +140,13 @@ namespace GoEdu.Data
             }
         }
 
-        public IRegisterRepository RegisterRepo
+        public IEnrollRepository EnrollRepo
         {
             get
             {
-                if (_RegisterRepo == null)
-                    _RegisterRepo = new RegisterRepository(context);
-                return _RegisterRepo;
+                if (_EnrollRepo == null)
+                    _EnrollRepo = new EnrollRepository(context);
+                return _EnrollRepo;
             }
         }
 

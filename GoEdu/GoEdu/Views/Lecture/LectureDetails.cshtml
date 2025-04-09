@@ -60,8 +60,81 @@
         </dd>
     </dl>
 </div>
+
+@* Comments Zone *@
+<ul id="Comments">
+@foreach(VMComment comment in Model.Comments)
+{
+        <li>@comment.UserId
+        <img src="@comment.UserImageUrl" />
+        @comment.UserName
+        @comment.Content
+        @comment.Date</li>
+}
+</ul>
+
+
+@* <form asp-action="AddComment"> *@
+@*     <div asp-validation-summary="All" class="text-danger"></div> *@
+@*     <div class="form-group"> *@
+@*         <label asp-for="@Model.CommentContent" class="control-label"></label> *@
+@*         <input asp-for="@Model.CommentContent" class="form-control" /> *@
+@*         <span asp-validation-for="@Model.CommentContent" class="text-danger"></span> *@
+@*     </div> *@
+@*     <div class="form-group"> *@
+@*         <input type="submit" value="Comment" class="btn btn-primary" /> *@
+@*     </div> *@
+@* </form> *@
+
 <div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <label>WriteComment:</label>
+    @* // User Id From Identity*@
+    <input value="@Model.ID" type="hidden" name="LectureId" id="lectureId" />
+    <input type="Text" name="Content" id="content" />
+    <input class="btn btn-success" type="button" onclick="WriteCommentJS()" value="Send Message" />
+</div>
+
+
+<div>
     @Html.ActionLink("AddQuestion", "AddQuestion", "Question", new { id = Model.ID }) |
     <a asp-action="Index">Back to List</a>
 </div>
+
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+@* <script src="~/lib/microsoft-signalr/signalr.min.js"></script> *@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"
+        integrity="sha512-7SRCYIJtR6F8ocwW7UxW6wGKqbSyqREDbfCORCbGLatU0iugBLwyOXpzhkPyHIFdBO0K2VCu57fvP2Twgx1o2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    var hub = new signalR.HubConnectionBuilder().withUrl("\CommentHub").build();
+    hub.start();
+    //.then(
+        //function () {
+            // console.log("Hub Connect opened Success");
+        //}
+    //);
+
+    hub.on("CommentAdded", function (comment) { //json Serialization
+        if(comment.LectureId == @Model.ID)
+        {
+            console.log(comment);
+            $("#div1").html(`<li>
+            <img src="${comment.UserImageUrl}" />
+            ${comment.UserName +
+            comment.Content +
+            comment.Date}</li>`)
+        }
+        });
+
+    // function to invoke another function in server
+    function WriteCommentJS(){
+        var lectureId = $("#lectureId").val();
+        var content = $("#content").val();
+
+        hub.invoke("AddComment", new{ LectureID = lectureId, Content = content };
+    }
+
+</script>
+

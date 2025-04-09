@@ -27,11 +27,12 @@ namespace GoEdu.Models
         public string ParentPhone { get; set; }
         public bool isDeleted { get; set; } = false;
 
-        public virtual List<Register>? Register { get; set; }
+        public virtual List<Enroll>? Register { get; set; }
         public virtual List<Attend>? Attend { get; set; }    
         public virtual List<Comment>? Comment { get; set; }
         public virtual List<Answer>? Answers { get; set; }
         public virtual List<StudentPerformance>? Exams { get; set; }
+        public string ImageUrl { get; internal set; }
     }
    
 

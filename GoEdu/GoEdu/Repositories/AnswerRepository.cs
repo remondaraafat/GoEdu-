@@ -17,6 +17,11 @@ namespace GoEdu.Repositories
             throw new NotImplementedException();
         }
 
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Answer> GetAll()
         {
             throw new NotImplementedException();
@@ -29,7 +34,7 @@ namespace GoEdu.Repositories
 
         public void Insert(Answer Entity)
         {
-            throw new NotImplementedException();
+            context.Answers.Add(Entity);
         }
 
         public void SaveData()
