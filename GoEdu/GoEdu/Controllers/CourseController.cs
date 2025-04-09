@@ -224,6 +224,7 @@ namespace GoEdu.Controllers
         public IActionResult CourseDetails(int id)
         {
             var courseDetails= unitOfWork.CourseRepo.GetCourseWithLectures(id); 
+            if(courseDetails == null)
             {
                 return NotFound("Course not found");
             }

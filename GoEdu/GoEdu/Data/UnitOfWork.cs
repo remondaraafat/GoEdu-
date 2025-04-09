@@ -115,7 +115,7 @@ namespace GoEdu.Data
             get
             {
                 if (_LectureRepo == null)
-                    _LectureRepo = new LectureRepository(context);
+                    _LectureRepo = new LectureRepository(context, this);
                 return _LectureRepo;
             }
         }

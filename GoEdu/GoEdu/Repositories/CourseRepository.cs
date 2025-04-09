@@ -236,9 +236,17 @@ namespace GoEdu.Repositories
                         VideoURL = l.VideoURL,
                         //ReleaseDate = l.LectureTime,
                         Description = l.Description,
-                        Comments = l.Comment,
+                        Comments = l.Comment.Select(c => new VMComment
+                        {
+                            Content = c.Content,
+                            Date = c.Date,
+                            LectureId = c.LectureID,
+                            UserId = c.UserID,
+                            UserImageUrl = c.Student.ImageUrl,
+                            UserName = c.Student.Name
+                        }).ToList(),
                         //Question=l.Question,
-                      
+
                     }).ToList()
                 }).FirstOrDefault();
 

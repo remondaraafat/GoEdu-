@@ -175,37 +175,6 @@ namespace GoEdu.Controllers
             return View(lectures);
         }
 
-        [HttpPost]
-        public IActionResult AddComment(Comment c)
-        {
-            if (ModelState.IsValid)
-            {
-
-                Comment comment = new Comment
-                {
-                    Content = c.Content,
-                    Date = DateTime.Now,
-                    LectureID = c.LectureID,
-                    UserID = 1 // identity
-                };
-                UnitOfWork.CommentRepo.Insert(comment);
-                UnitOfWork.save();
-
-                Student std = UnitOfWork.StudentRepo.GetByID(1);
-                VMComment newcomm = new VMComment
-                {
-                    Content = comment.Content,
-                    Date = comment.Date,
-                    UserName = std.Name,
-                    UserImageUrl = std.ImageUrl
-                };
-                hubContext.Clients.All.SendAsync("CommentAdded", newcomm);//obj .net
-
-                return RedirectToAction("LectureDetails");
-            }
-            return View(product);
-        }
-
     }
 }
 
