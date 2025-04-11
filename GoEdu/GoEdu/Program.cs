@@ -2,7 +2,6 @@ using GoEdu.Data;
 using Microsoft.AspNetCore.Mvc;
 using GoEdu.Repositories;
 using Microsoft.EntityFrameworkCore;
-using GoEdu.Hubs;
 
 namespace GoEdu
 {
@@ -26,20 +25,7 @@ namespace GoEdu
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             });
 
-            // SignalR Service for external applications and pages
-            builder.Services.AddCors(options =>
-            {
-                options.AddDefaultPolicy(policy =>
-                {
-                    policy.AllowAnyMethod()
-                    .AllowAnyHeader()
-                    .SetIsOriginAllowed(url => true)
-                    .AllowCredentials();
-
-                });
-            });
-
-            builder.Services.AddSignalR();
+            builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 
 
             var app = builder.Build();
@@ -54,8 +40,6 @@ namespace GoEdu
             app.UseRouting();
 
             app.UseAuthorization();
-
-            app.MapHub<CommentHub>("/CommentHub");
 
             app.MapControllerRoute(
                 name: "default",

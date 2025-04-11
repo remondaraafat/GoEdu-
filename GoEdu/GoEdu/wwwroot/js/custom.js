@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	"use strict";
-    $('.chips').material_chip();
+    $('.chips').material_chip;
     $('select').material_select();
 
     //FILTER SELECT OPTIONS

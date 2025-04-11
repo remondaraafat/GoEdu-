@@ -17,8 +17,9 @@ namespace GoEdu.Repositories
 
         public List<LectureWithInstructorVM> GetLectureCourses(int CrsID);
         public int LectureCount(int CrsID);
+        public void SaveEdit(AddOrEditLectureVM LctFromReq);
 
-
+        public LectureDetailsVM LctDetails(int LctID);
         #endregion
     }
 }

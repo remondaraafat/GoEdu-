@@ -7,7 +7,7 @@
         public DateTime LctTime { get; set; }
         public string? Description { get; set; }
         public int CrsID { get; set; }
-
+        public string? VideoURL {  get; set; }  
         public int LectureCount { get; set; }
     }
 }

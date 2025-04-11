@@ -1,9 +1,490 @@
-﻿
-@{
-    ViewData["Title"] = "Home Page";
+﻿@{
+    ViewData["Title"] = "الصفحة الرئيسية";
+    Layout = "_Layout";
 }
+<body dir="rtl">
+    <!-- قائمة الجوال -->
+    <section>
+        <div class="ed-mob-menu">
+            <div class="ed-mob-menu-con">
+                <div class="ed-mm-left">
+                    <div class="wed-logo">
+                        <a href="index-2.html">
+                            <img src="images/logo.png" alt="شعار الجامعة" />
+                        </a>
+                    </div>
+                </div>
+                <div class="ed-mm-right">
+                    <div class="ed-mm-menu">
+                        <a href="#!" class="ed-micon"><i class="fa fa-bars"></i></a>
+                        <div class="ed-mm-inn">
+                            <a href="#!" class="ed-mi-close"><i class="fa fa-times"></i></a>
+                            <h4>جميع الكورسات</h4>
+                            <ul>
+                                <li><a href="course-details.html">المحاسبة والمالية</a></li>
+                                <li><a href="course-details.html">الهندسة المدنية</a></li>
+                                <li><a href="course-details.html">الفن والتصميم</a></li>
+                                <li><a href="course-details.html">الهندسة البحرية</a></li>
+                                <li><a href="course-details.html">إدارة الأعمال</a></li>
+                                <li><a href="course-details.html">الصحافة والكتابة</a></li>
+                                <li><a href="course-details.html">التربية البدنية</a></li>
+                                <li><a href="course-details.html">العلوم السياسية</a></li>
+                                <li><a href="course-details.html">العلوم</a></li>
+                                <li><a href="course-details.html">الإحصاء</a></li>
+                                <li><a href="course-details.html">تصميم وتطوير الويب</a></li>
+                                <li><a href="course-details.html">تحسين محركات البحث</a></li>
+                                <li><a href="course-details.html">أعمال جوجل</a></li>
+                                <li><a href="course-details.html">التصميم الجرافيكي</a></li>
+                                <li><a href="course-details.html">دورات الشبكات</a></li>
+                                <li><a href="course-details.html">تكنولوجيا المعلومات</a></li>
+                            </ul>
+                            <h4>حساب المستخدم</h4>
+                            <ul>
+                                <li><a href="#!" data-toggle="modal" data-target="#modal1">تسجيل الدخول</a></li>
+                                <li><a href="#!" data-toggle="modal" data-target="#modal2">تسجيل جديد</a></li>
+                            </ul>
+                            <h4>جميع الصفحات</h4>
+                            <ul>
+                                <li><a href="index-2.html">الرئيسية</a></li>
+                                <li><a href="about.html">من نحن</a></li>
+                                <li><a href="admission.html">القبول</a></li>
+                                <li><a href="all-courses.html">جميع الكورسات</a></li>
+                                <li><a href="course-details.html">تفاصيل الكورس</a></li>
+                                <li><a href="awards.html">الجوائز</a></li>
+                                <li><a href="seminar.html">الندوات</a></li>
+                                <li><a href="events.html">الفعاليات</a></li>
+                                <li><a href="event-details.html">تفاصيل الفعالية</a></li>
+                                <li><a href="event-register.html">تسجيل الفعالية</a></li>
+                                <li><a href="contact-us.html">اتصل بنا</a></li>
+                            </ul>
+                            <h4>ملف المستخدم</h4>
+                            <ul>
+                                <li><a href="dashboard.html">ملف المستخدم</a></li>
+                                <li><a href="db-courses.html">الكورسات</a></li>
+                                <li><a href="db-exams.html">الامتحانات</a></li>
+                                <li><a href="db-profile.html">الملف الشخصي</a></li>
+                                <li><a href="db-time-line.html">الخط الزمني</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <!-- قسم الهيدر -->
+    <section>
+        <!-- الشريط العلوي -->
+        <div class="ed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ed-com-t1-left">
+                            <ul>
+                                <li><a href="#">العنوان: طريق البحيرة، المبنى 180، الولايات المتحدة</a></li>
+                                <li><a href="#">الهاتف: 1231-1231-101+</a></li>
+                            </ul>
+                        </div>
+                        <div class="ed-com-t1-right">
+                            <ul>
+                                <li><a href="#!" data-toggle="modal" data-target="#modal1">تسجيل الدخول</a></li>
+                                <li><a href="#!" data-toggle="modal" data-target="#modal2">تسجيل جديد</a></li>
+                            </ul>
+                        </div>
+                        <div class="ed-com-t1-social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الشعار والقائمة -->
+        <div class="top-logo" data-spy="affix" data-offset-top="250">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wed-logo">
+                            <a href="index-2.html">
+                                <img src="images/logo.png" alt="شعار الجامعة" />
+                            </a>
+                        </div>
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="index-2.html">الرئيسية</a></li>
+                                <li class="about-menu">
+                                    <a href="about.html" class="mm-arr">من نحن</a>
+                                </li>
+                                <li class="admi-menu">
+                                    <a href="#" class="mm-arr">القبول</a>
+                                </li>
+                                <li><a href="all-courses.html">جميع الكورسات</a></li>
+                                <li class="cour-menu">
+                                    <a href="#!" class="mm-arr">جميع الصفحات</a>
+                                </li>
+                                <li><a href="events.html">الفعاليات</a></li>
+                                <li><a href="dashboard.html">الطلاب</a></li>
+                                <li><a href="contact-us.html">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="all-drop-down-menu"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- شريط البحث -->
+        <div class="search-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="search-form">
+                            <form>
+                                <div class="sf-type">
+                                    <div class="sf-input">
+                                        <input type="text" id="sf-box" placeholder="ابحث عن كورس أو عروض خاصة">
+                                    </div>
+                                    <div class="sf-list">
+                                        <ul>
+                                            <li><a href="course-details.html">المحاسبة/التمويل</a></li>
+                                            <li><a href="course-details.html">الهندسة المدنية</a></li>
+                                            <li><a href="course-details.html">الفن/التصميم</a></li>
+                                            <li><a href="course-details.html">الهندسة البحرية</a></li>
+                                            <li><a href="course-details.html">إدارة الأعمال</a></li>
+                                            <li><a href="course-details.html">الصحافة/الكتابة</a></li>
+                                            <li><a href="course-details.html">التربية البدنية</a></li>
+                                            <li><a href="course-details.html">العلوم السياسية</a></li>
+                                            <li><a href="course-details.html">العلوم</a></li>
+                                            <li><a href="course-details.html">الإحصاء</a></li>
+                                            <li><a href="course-details.html">تصميم/تطوير الويب</a></li>
+                                            <li><a href="course-details.html">تحسين محركات البحث</a></li>
+                                            <li><a href="course-details.html">أعمال جوجل</a></li>
+                                            <li><a href="course-details.html">التصميم الجرافيكي</a></li>
+                                            <li><a href="course-details.html">دورات الشبكات</a></li>
+                                            <li><a href="course-details.html">تكنولوجيا المعلومات</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sf-submit">
+                                    <input type="submit" value="ابحث عن كورس">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- السلايدر -->
+    <section>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item slider1 active">
+                    <img src="images/slider/1.jpg" alt="سلايدر الجامعة">
+                    <div class="carousel-caption slider-con">
+                        <h2>مرحبًا بكم في <span>جامعتنا</span></h2>
+                        <p>هناك العديد من الأنواع المتاحة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما</p>
+                        <a href="#" class="bann-btn-1">جميع الكورسات</a>
+                        <a href="#" class="bann-btn-2">اقرأ المزيد</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/slider/2.jpg" alt="سلايدر القبول">
+                    <div class="carousel-caption slider-con">
+                        <h2>فتح باب القبول <span>2023</span></h2>
+                        <p>هناك العديد من الأنواع المتاحة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما</p>
+                        <a href="#" class="bann-btn-1">التقديم</a>
+                        <a href="#" class="bann-btn-2">اقرأ المزيد</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/slider/3.jpg" alt="سلايدر التعليم">
+                    <div class="carousel-caption slider-con">
+                        <h2>التعليم <span>الرائد</span></h2>
+                        <p>هناك العديد من الأنواع المتاحة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما</p>
+                        <a href="#" class="bann-btn-1">جميع الكورسات</a>
+                        <a href="#" class="bann-btn-2">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-chevron-right slider-arr"></i>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <i class="fa fa-chevron-left slider-arr"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- الروابط السريعة -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="wed-hom-ser">
+                    <ul>
+                        <li>
+                            <a href="awards.html" class="waves-effect waves-light btn-large wed-pop-ser-btn">
+                                <img src="images/icon/h-ic1.png" alt=""> الأكاديمية
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admission.html" class="waves-effect waves-light btn-large wed-pop-ser-btn">
+                                <img src="images/icon/h-ic2.png" alt=""> القبول
+                            </a>
+                        </li>
+                        <li>
+                            <a href="all-courses.html" class="waves-effect waves-light btn-large wed-pop-ser-btn">
+                                <img src="images/icon/h-ic4.png" alt=""> الكورسات
+                            </a>
+                        </li>
+                        <li>
+                            <a href="seminar.html" class="waves-effect waves-light btn-large wed-pop-ser-btn">
+                                <img src="images/icon/h-ic3.png" alt=""> الندوات
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- اكتشف المزيد -->
+    <section>
+        <div class="container com-sp pad-bot-70">
+            <div class="row">
+                <div class="con-title">
+                    <h2>اكتشف <span>المزيد</span></h2>
+                    <p>نقدم لكم مجموعة متنوعة من الخدمات الأكاديمية والبحثية لتطوير مسيرتكم التعليمية</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ed-course">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="about.html">
+                                <img src="images/h-about.jpg" alt="الأكاديمية">
+                                <span>الأكاديمية</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="admission.html">
+                                <img src="images/h-adm1.jpg" alt="القبول">
+                                <span>القبول</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="dashboard.html">
+                                <img src="images/h-cam.jpg" alt="ملف الطالب">
+                                <span>ملف الطالب</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="research.html">
+                                <img src="images/h-res.jpg" alt="البحث والتعليم">
+                                <span>البحث والتعليم</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الكورسات الشائعة -->
+    <section class="pop-cour">
+        <div class="container com-sp pad-bot-70">
+            <div class="row">
+                <div class="con-title">
+                    <h2>الكورسات <span>الشائعة</span></h2>
+                    <p>نقدم مجموعة متنوعة من الكورسات في مختلف التخصصات الأكاديمية</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <div class="home-top-cour">
+                            <div class="col-md-3"> <img src="images/course/sm-1.jpg" alt="هندسة الفضاء"> </div>
+                            <div class="col-md-9 home-top-cour-desc">
+                                <a href="course-details.html">
+                                    <h3>هندسة الفضاء</h3>
+                                </a>
+                                <h4>التكنولوجيا / الفضاء / الطيران</h4>
+                                <p>تبدأ الدروس يوم الجمعة القادم (21 يونيو 2023)، إجمالي المقاعد 72 والمقاعد المتاحة 10</p>
+                                <span class="home-top-cour-rat">4.2</span>
+                                <div class="hom-list-share">
+                                    <ul>
+                                        <li><a href="course-details.html"><i class="fa fa-bar-chart" aria-hidden="true"></i> سجل الآن</a></li>
+                                        <li><a href="course-details.html"><i class="fa fa-eye" aria-hidden="true"></i> 10 مقاعد</a></li>
+                                        <li><a href="course-details.html"><i class="fa fa-share-alt" aria-hidden="true"></i> 570</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <div class="home-top-cour">
+                            <div class="col-md-3"> <img src="images/course/sm-5.jpg" alt="تكنولوجيا الموضة"> </div>
+                            <div class="col-md-9 home-top-cour-desc">
+                                <a href="course-details.html">
+                                    <h3>تكنولوجيا الموضة</h3>
+                                </a>
+                                <h4>التكنولوجيا / الموضة / التصميم</h4>
+                                <p>تبدأ الدروس يوم الجمعة القادم (21 يونيو 2023)، إجمالي المقاعد 72 والمقاعد المتاحة 10</p>
+                                <span class="home-top-cour-rat">4.2</span>
+                                <div class="hom-list-share">
+                                    <ul>
+                                        <li><a href="course-details.html"><i class="fa fa-bar-chart" aria-hidden="true"></i> سجل الآن</a></li>
+                                        <li><a href="course-details.html"><i class="fa fa-eye" aria-hidden="true"></i> 10 مقاعد</a></li>
+                                        <li><a href="course-details.html"><i class="fa fa-share-alt" aria-hidden="true"></i> 570</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأخبار والفعاليات -->
+    <section>
+        <div class="container com-sp">
+            <div class="row">
+                <div class="con-title">
+                    <h2>الأخبار <span>والفعاليات</span></h2>
+                    <p>تابع آخر أخبار الجامعة والفعاليات القادمة</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bot-gal h-gal ho-event-mob-bot-sp">
+                        <h4>معرض الصور</h4>
+                        <ul>
+                            <li><img class="materialboxed" data-caption="صور الجامعة" src="images/ami/8.jpg" alt=""></li>
+                            <li><img class="materialboxed" data-caption="صور الجامعة" src="images/ami/9.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bot-gal h-vid ho-event-mob-bot-sp">
+                        <h4>معرض الفيديو</h4>
+                        <iframe src="https://www.youtube.com/embed/2WqFtiR4-F4?autoplay=0&amp;showinfo=0&amp;controls=0" allowfullscreen></iframe>
+                        <h5>فيديو تعريفي عن الجامعة</h5>
+                        <p>تعرف على مرافق الجامعة وبرامجها الأكاديمية المتميزة</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bot-gal h-blog ho-event">
+                        <h4>الأخبار والفعاليات</h4>
+                        <div class="ho-event">
+                            <ul>
+                                <li>
+                                    <div class="ho-ev-date">
+                                        <span>07</span><span>يناير, 2023</span>
+                                    </div>
+                                    <div class="ho-ev-link">
+                                        <a href="events.html">
+                                            <h4>معرض الجامعة 2023</h4>
+                                        </a>
+                                        <p>فرصة للتعرف على برامج الجامعة ومرافقها</p>
+                                        <span>9:15 صباحًا – 5:00 مساءً</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ho-ev-date">
+                                        <span>12</span><span>يناير, 2023</span>
+                                    </div>
+                                    <div class="ho-ev-link">
+                                        <a href="events.html">
+                                            <h4>دورة تدريبية في البحث العلمي</h4>
+                                        </a>
+                                        <p>ورشة عمل حول منهجيات البحث العلمي</p>
+                                        <span>9:15 صباحًا – 5:00 مساءً</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <section class="wed-hom-footer">
+        <div class="container">
+            <div class="row wed-foot-link">
+                <div class="col-md-4 foot-tc-mar-t-o">
+                    <h4>أهم الكورسات</h4>
+                    <ul>
+                        <li><a href="course-details.html">المحاسبة/التمويل</a></li>
+                        <li><a href="course-details.html">الهندسة المدنية</a></li>
+                        <li><a href="course-details.html">الفن/التصميم</a></li>
+                        <li><a href="course-details.html">الهندسة البحرية</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>كورسات جديدة</h4>
+                    <ul>
+                        <li><a href="course-details.html">العلوم</a></li>
+                        <li><a href="course-details.html">الإحصاء</a></li>
+                        <li><a href="course-details.html">تطوير الويب</a></li>
+                        <li><a href="course-details.html">تحسين محركات البحث</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>المساعدة والدعم</h4>
+                    <ul>
+                        <li><a href="#">الدعم الفني على مدار الساعة</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">نصائح السلامة</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- حقوق النشر -->
+    <section class="wed-rights">
+        <div class="container">
+            <div class="row">
+                <div class="copy-right">
+                    <p>جميع الحقوق محفوظة &copy; 2023 جامعةنا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- مشاركة وسائل التواصل -->
+    <section>
+        <div class="icon-float">
+            <ul>
+                <li><a href="#" class="sh">1k <br> مشاركة</a></li>
+                <li><a href="#" class="fb1"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="tw1"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="wa1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ملفات الجافاسكريبت -->
+    <script src="js/main.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>

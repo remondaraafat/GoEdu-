@@ -1,22 +1,12 @@
 ﻿using GoEdu.Data;
 using GoEdu.Models;
 using GoEdu.ViewModel;
-
-
-using GoEdu.Data;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
-using GoEdu.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-using GoEdu.Models;
-
 using GoEdu.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-
-
-using GoEdu.Models;
-using GoEdu.Data;
 
 namespace GoEdu.Controllers
 {
@@ -26,16 +16,13 @@ namespace GoEdu.Controllers
         UnitOfWork unitOfWork;
         public CourseController(UnitOfWork unitOfWork)
         {
-
-            this.unitOfWork = unitOfWork; 
-
-            
+            this.unitOfWork = unitOfWork;            
         }
 
         #region Mark Section
 
         #region  Get Instructor Courses
-        public IActionResult GetInsCourses(int id = 8)
+        public IActionResult GetInsCourses(int id = 9)
         {
             var courses = unitOfWork.CourseRepo.GetIstructorCourses(id);
 
@@ -224,7 +211,6 @@ namespace GoEdu.Controllers
         public IActionResult CourseDetails(int id)
         {
             var courseDetails= unitOfWork.CourseRepo.GetCourseWithLectures(id); 
-            if(courseDetails == null)
             {
                 return NotFound("Course not found");
             }

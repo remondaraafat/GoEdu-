@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using GoEdu.Data;
+﻿using GoEdu.Data;
 using GoEdu.Migrations;
 using GoEdu.Models;
 using GoEdu.ViewModel;
@@ -11,12 +10,10 @@ namespace GoEdu.Repositories
     internal class LectureRepository:ILectureRepository
     {
         private GoEduContext context;
-        private UnitOfWork unitOfWork;
 
-        public LectureRepository(GoEduContext context, UnitOfWork unitOfWork)
+        public LectureRepository(GoEduContext context)
         {
             this.context = context;
-            this.unitOfWork = unitOfWork;
         }
 
         #region Mark Section
@@ -30,6 +27,7 @@ namespace GoEdu.Repositories
                         Title = l.Title,
                         LctTime = l.LectureTime,
                         Description = l.Description,
+                        VideoURL = l.VideoURL,
                         CrsID = l.CourseID
                     }).AsNoTracking().ToList();
 
@@ -50,6 +48,25 @@ namespace GoEdu.Repositories
             SaveData();
         }
         #endregion
+
+        #region Save Edit 
+        public void SaveEdit(AddOrEditLectureVM LctFromReq)
+        {
+            Lecture? LctFromDB = context.lectures.FirstOrDefault(l => l.ID == LctFromReq.LctID);
+            LctFromDB.Title = LctFromReq.Title;
+            LctFromDB.LectureTime = LctFromReq.LectureTime;
+            LctFromDB.Description = LctFromReq.Description;
+
+            SaveData();
+        }
+        #endregion
+
+        public LectureDetailsVM LctDetails(int LctID)
+        {
+            LectureDetailsVM LctFromDB = new LectureDetailsVM();
+            return LctFromDB;
+        }
+
 
         #region Delete Lecture
         public void Delete(int id)
@@ -114,13 +131,12 @@ namespace GoEdu.Repositories
             return context.lectures.Where(l=>l.CourseID==CourseID).ToList(); 
         }
 
-        
         public VMLectureDetails GetLectureVMByID(int id,int StudentID)
         {
             return context.lectures.Select(l => new VMLectureDetails
             {
                 ID = l.ID,
-               Comments= unitOfWork.CommentRepo.GetCommentsByLectureId(id),
+               Comments=l.Comment,
                CourseName=l.Course.Name,
                Description=l.Description,
                LectureTime=l.LectureTime,
@@ -129,6 +145,7 @@ namespace GoEdu.Repositories
                ViewsCount=l.Attend.FirstOrDefault(a => a.StudentID==StudentID && a.LectureID==id).ViewsCount
            }).FirstOrDefault(LVM => LVM.ID == id);
         }
+
         //need edit
         public VMLectureWithInstructorCourses GetLectureWithCourseList(int LectureId, int InstructorID)
         {

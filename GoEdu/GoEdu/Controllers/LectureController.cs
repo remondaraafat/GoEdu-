@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
 using GoEdu.Data;
-using GoEdu.Hubs;
 using GoEdu.Models;
 using GoEdu.ViewModel;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 namespace GoEdu.Controllers
@@ -13,12 +11,9 @@ namespace GoEdu.Controllers
     {
 
         UnitOfWork UnitOfWork;
-        private IHubContext<CommentHub> hubContext;
-
-        public LectureController(UnitOfWork unitOfWork, IHubContext<CommentHub> hubContext)
+        public LectureController(UnitOfWork unitOfWork)
         {
             this.UnitOfWork = unitOfWork;
-            this.hubContext = hubContext;
         }
 
         #region Mark Section
@@ -39,6 +34,7 @@ namespace GoEdu.Controllers
         #region Add Lecture
         public IActionResult NewLecture(int CrsID)
         {
+
             AddOrEditLectureVM CrsId = new AddOrEditLectureVM() { CourseID = CrsID };
             return View(CrsId);
         }
@@ -54,7 +50,7 @@ namespace GoEdu.Controllers
                     Lecture lecture = new Lecture
                     {
                         Title = lctFromReq.Title,
-                        VideoURL = "videoUrl",
+                        VideoURL = lctFromReq.VideoURL,
                         LectureTime = lctFromReq.LectureTime,
                         Description = lctFromReq.Description,
                         isDeleted = false,
@@ -71,8 +67,46 @@ namespace GoEdu.Controllers
             }
             return View("NewLecture", lctFromReq);
         }
-        #endregion
 
+        #endregion
+        #region Edit Lecture
+
+        [HttpGet]
+        public IActionResult EditLectureee(int id)
+        {
+            Lecture lecture = UnitOfWork.LectureRepository.GetByID(id);
+            AddOrEditLectureVM lectureVM = new AddOrEditLectureVM()
+            {
+                LctID = lecture.ID,
+                Title = lecture.Title,
+                LectureTime = lecture.LectureTime,
+                Description = lecture.Description,
+                CourseID = lecture.CourseID,
+            };
+            return View(lectureVM);
+        }
+
+
+        [HttpPost]
+        public IActionResult SaveEdit(AddOrEditLectureVM LctFromReq)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    UnitOfWork.LectureRepository.SaveEdit(LctFromReq);
+                    TempData["CoursEdited"] = "تم التعديل بنجاح!";
+                    return RedirectToAction("GetLectures", new { id = LctFromReq.CourseID });
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty, ex.Message.ToString());
+                }
+            }
+            return View("EditLecture", LctFromReq);
+        }
+
+        #endregion
         #region Delete Lecture
         public IActionResult DeleteLecture(int id, int CrsID)
         {
@@ -120,52 +154,6 @@ namespace GoEdu.Controllers
 
             return View(lecture);
         }
-        [HttpGet]
-        public IActionResult EditLecture(int id, int InstructorID)
-        {
-            VMLectureWithInstructorCourses lecture = UnitOfWork.LectureRepository.GetLectureWithCourseList(id, InstructorID);
-
-            return View(lecture);
-        }
-
-        [HttpPost]
-        public IActionResult EditLecture(VMLectureWithInstructorCourses lectureVM)
-        {
-
-            if (ModelState.IsValid)
-            {
-                Lecture lecture = UnitOfWork.LectureRepository.GetByID(lectureVM.ID);
-                if (lecture != null)
-                {
-                    lecture.Description = lectureVM.Description;
-                    lecture.ID = lectureVM.ID;
-                    lecture.Title = lectureVM.Title;
-                    lecture.LectureTime = lectureVM.LectureTime;
-                    lecture.VideoURL = lectureVM.VideoURL;
-
-                    try
-                    {
-                        UnitOfWork.LectureRepository.Update(lecture.ID, lecture);
-                        UnitOfWork.save();
-                        //need edit student id 
-                        return RedirectToAction("LectureDetails", new { id = lecture.ID, StudentID = 1 });
-                    }
-                    catch (Exception ex)
-                    {
-                        ModelState.AddModelError(string.Empty, ex.InnerException?.Message ?? ex.Message);
-                    }
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "Lecture not found.");
-                    lectureVM.InstructorCourses = UnitOfWork.LectureRepository.GetLectureWithCourseList(lectureVM.ID, 1).InstructorCourses;
-                    return View(lectureVM);
-                }
-            }
-            //need edit instructor id
-            lectureVM.InstructorCourses = UnitOfWork.LectureRepository.GetLectureWithCourseList(lectureVM.ID, 1).InstructorCourses;
-            return View(lectureVM);
-        }
 
         [HttpGet]
         public IActionResult LectureSchedule( int StudentID)
@@ -174,7 +162,6 @@ namespace GoEdu.Controllers
 
             return View(lectures);
         }
-
     }
 }
 
